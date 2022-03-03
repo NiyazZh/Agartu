@@ -3948,7 +3948,11 @@ hr {
 
 .single-wrap .roted {
     transform: rotate(180deg);
-    display: block
+    display: block;
+    font-size: 24px;
+    color: red;
+    position: relative;
+    top: -6px
 }
 
 .single-wrap .right-arrow {
