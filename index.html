@@ -25,6 +25,13 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="../assets3/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../assets3/owlcarousel/assets/owl.theme.default.min.css" />
+
+    <!-- javascript -->
+    <script src="../assets3/vendors/jquery.min.js"></script>
+    <script src="../assets3/owlcarousel/owl.carousel.js"></script>
     <style>
         #carouselExampleControls1 {
             margin-left: 88px;
@@ -126,24 +133,23 @@
             position: relative;
             right: 12%;
         }
+        
+        .btn-index-news {
+            background-color: #2791d7;
+        }
+        
+        .row .align-items-center {
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        
+        .submenu2 .submenu li {
+            padding: 20px 10px;
+        }
     </style>
 </head>
 
 <body>
-
-    <!-- Preloader Start -->
-    <!-- <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/logo.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Preloader Start -->
-
     <header>
         <!-- Header Start -->
         <div class="header-area">
@@ -183,10 +189,10 @@
                 </div>
                 <div class="header-bottom header-relative">
                     <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
+                        <div class="row align-items-center" style="flex-wrap:nowrap">
+                            <div class="col-xl-11 col-lg-11 col-md-11 header-flex">
                                 <!-- sticky -->
-                                <div class="sticky-logo">
+                                <div class="sticky-logo info-open">
                                     <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
                                 </div>
                                 <!-- Main-menu -->
@@ -195,32 +201,41 @@
                                         <ul id="navigation">
                                             <li><a href="index.html">Главная</a></li>
                                             <li><a href="about.html">О Agartu</a></li>
-                                            <li><a href="latest_news.html">Новости</a></li>
+                                            <li><a href="news-list.html">Новости</a></li>
                                             <li><a href="comunit.html">Сообщества</a></li>
                                             <li><a href="blog.html">Обсуждения</a></li>
                                             <li><a href="regseti.html">Региональные сети</a></li>
-                                            <li><a href="vak.html">Вакансии</a></li>
-                                            <li><a href="#">3lvl</a>
-                                                <ul class="submenu">
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="#">Blog</a>
-                                                        <ul class="submenu">
-                                                            <li><a href="elements.html">Element</a></li>
-                                                            <li><a href="blog.html">Blog</a></li>
-                                                        </ul>
-                                                    </li>
+                                            <!-- <li><a href="vak.html">Работа</a></li> -->
+                                            <li><a href="#">Работа</a>
+                                                <ul class="submenu2 submenu">
+                                                    <li><a href="vak.html">Вакансии</li>
+                                                    <li><a href="job.html">Работа</a></li>
                                                 </ul>
                                             </li>
+
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
                             <div class="col-xl-1 col-lg-1 col-md-1">
-                                <a style="color: black;" href="Search.html" class="Search-news header-right-btn f-right "><i class="fas fa-search"></i></a>
+                                <a href="Search.html" class="Search-news header-right-btn f-right "><i class="fas fa-search"></i></a>
                             </div>
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-md-none"></div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-md-none">
+                                <div class="slicknav_menu">
+                                    <a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"></a>
+                                    <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+                                        <li><a href="index.html" role="menuitem" tabindex="-1">Главная</a></li>
+                                        <li><a href="about.html" role="menuitem" tabindex="-1">О Agartu</a></li>
+                                        <li><a href="news-list.html" role="menuitem" tabindex="-1">Новости</a></li>
+                                        <li><a href="comunit.html" role="menuitem" tabindex="-1">Сообщества</a></li>
+                                        <li><a href="blog.html" role="menuitem" tabindex="-1">Обсуждения</a></li>
+                                        <li><a href="regseti.html" role="menuitem" tabindex="-1">Региональные сети</a></li>
+                                        <li><a href="vak.html" role="menuitem" tabindex="-1">Работа</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -260,7 +275,7 @@
                                     <img src="assets/img/trending/trending_top.jpg" alt="">
                                     <div class="trend-top-cap">
                                         <span>Образование</span>
-                                        <h2><a href="details.html">Добро Пожаловать на конкурс</br> "Лучшая Модель года"</a></h2>
+                                        <h2><a href="latest_news.html">Добро Пожаловать на конкурс</br> "Лучшая Модель года"</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -274,7 +289,7 @@
                                             </div>
                                             <div class="trend-bottom-cap">
                                                 <span class="color1">Культура</span>
-                                                <h4><a href="details.html">Создайте иллюзию более полных ресниц с помощью “Маскировки”.</a></h4>
+                                                <h4><a href="latest_news.html">Создайте иллюзию более полных ресниц с помощью “Маскировки”.</a></h4>
                                             </div>
                                         </div>
                                     </div>
@@ -286,7 +301,7 @@
                                             <div class="trend-bottom-cap">
                                                 <span class="color2">Спорт</span>
                                                 <h4>
-                                                    <h4><a href="details.html">Создайте иллюзию более полных ресниц с помощью “Маскировки”.</a></h4>
+                                                    <h4><a href="latest_news.html">Создайте иллюзию более полных ресниц с помощью “Маскировки”.</a></h4>
                                                 </h4>
                                             </div>
                                         </div>
@@ -298,7 +313,7 @@
                                             </div>
                                             <div class="trend-bottom-cap">
                                                 <span class="color3">Туризм</span>
-                                                <h4><a href="details.html"> Добро Пожаловать На Конкурс "Лучшая Модель-Победитель"</a></h4>
+                                                <h4><a href="latest_news.html"> Добро Пожаловать На Конкурс "Лучшая Модель-Победитель"</a></h4>
                                             </div>
                                         </div>
                                     </div>
@@ -313,7 +328,7 @@
                                 </div>
                                 <div class="trand-right-cap">
                                     <span class="color1">Увлечения</span>
-                                    <h4><a href="details.html">Добро Пожаловать На Конкурс "Лучшая Модель-Победитель"</a></h4>
+                                    <h4><a href="latest_news.html">Добро Пожаловать На Конкурс "Лучшая Модель-Победитель"</a></h4>
                                 </div>
                             </div>
                             <div class="trand-right-single d-flex">
@@ -322,7 +337,7 @@
                                 </div>
                                 <div class="trand-right-cap">
                                     <span class="color3">Технологии</span>
-                                    <h4><a href="details.html">Добро Пожаловать На Конкурс "Лучшая Модель-Победитель"</a></h4>
+                                    <h4><a href="latest_news.html">Добро Пожаловать На Конкурс "Лучшая Модель-Победитель"</a></h4>
                                 </div>
                             </div>
                             <div class="trand-right-single d-flex">
@@ -331,7 +346,7 @@
                                 </div>
                                 <div class="trand-right-cap">
                                     <span class="color2">Мода</span>
-                                    <h4><a href="details.html">Добро Пожаловать На Конкурс "Лучшая Модель-Победитель"</a></h4>
+                                    <h4><a href="latest_news.html">Добро Пожаловать На Конкурс "Лучшая Модель-Победитель"</a></h4>
                                 </div>
                             </div>
                             <div class="trand-right-single d-flex">
@@ -340,7 +355,7 @@
                                 </div>
                                 <div class="trand-right-cap">
                                     <span class="color4">хобби</span>
-                                    <h4><a href="details.html">Добро Пожаловать На Конкурс "Лучшая Модель-Победитель"</a></h4>
+                                    <h4><a href="latest_news.html">Добро Пожаловать На Конкурс "Лучшая Модель-Победитель"</a></h4>
                                 </div>
                             </div>
                             <div class="trand-right-single d-flex">
@@ -349,7 +364,7 @@
                                 </div>
                                 <div class="trand-right-cap">
                                     <span class="color1">Творчество</span>
-                                    <h4><a href="details.html">Добро Пожаловать На Конкурс "Лучшая Модель-Победитель"</a></h4>
+                                    <h4><a href="latest_news.html">Добро Пожаловать На Конкурс "Лучшая Модель-Победитель"</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -357,65 +372,6 @@
                 </div>
             </div>
         </div>
-        <!-- Trending Area End -->
-        <!--   Weekly-News start -->
-        <!--  <div class="weekly-news-area pt-50">
-            <div class="container">
-               <div class="weekly-wrapper">
-                    
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="section-tittle mb-30">
-                                <h3>Еженедельные Главные Новости</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="weekly-news-active dot-style d-flex dot-style">
-                                <div class="weekly-single">
-                                    <div class="weekly-img">
-                                        <img src="assets/img/news/weeklyNews2.jpg" alt="">
-                                    </div>
-                                    <div class="weekly-caption">
-                                        <span class="color1">Страйк</span>
-                                        <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
-                                    </div>
-                                </div> 
-                                <div class="weekly-single active">
-                                    <div class="weekly-img">
-                                            <img src="assets/img/news/weeklyNews1.jpg" alt="">
-                                    </div>
-                                    <div class="weekly-caption">
-                                        <span class="color1">Страйк</span>
-                                        <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
-                                    </div>
-                                </div>
-                                <div class="weekly-single">
-                                    <div class="weekly-img">
-                                            <img src="assets/img/news/weeklyNews3.jpg" alt="">
-                                    </div>
-                                    <div class="weekly-caption">
-                                        <span class="color1">Страйк</span>
-                                        <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
-                                    </div>
-                                </div>
-                                <div class="weekly-single">
-                                    <div class="weekly-img">
-                                        <img src="assets/img/news/weeklyNews1.jpg" alt="">
-                                    </div>
-                                    <div class="weekly-caption">
-                                        <span class="color1">Страйк</span>
-                                        <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-               </div>
-            </div>
-        </div>         -->
-        <!-- End Weekly-News -->
         <!-- Whats New Start -->
         <section class="whats-news-area pt-50 pb-20">
             <div class="container">
@@ -463,7 +419,7 @@
                                                         </div>
                                                         <div class="what-cap">
                                                             <span class="color1">Ночная вечеринка</span>
-                                                            <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
+                                                            <h4><a href="latest_news.html">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -474,7 +430,7 @@
                                                         </div>
                                                         <div class="what-cap">
                                                             <span class="color1">Ночная вечеринка</span>
-                                                            <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
+                                                            <h4><a href="latest_news.html">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -485,7 +441,7 @@
                                                         </div>
                                                         <div class="what-cap">
                                                             <span class="color1">Ночная вечеринка</span>
-                                                            <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
+                                                            <h4><a href="latest_news.html">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -496,7 +452,7 @@
                                                         </div>
                                                         <div class="what-cap">
                                                             <span class="color1">Ночная вечеринка</span>
-                                                            <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
+                                                            <h4><a href="latest_news.html">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -514,7 +470,7 @@
                                                         </div>
                                                         <div class="what-cap">
                                                             <span class="color1">Ночная вечеринка</span>
-                                                            <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
+                                                            <h4><a href="latest_news.html">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -525,7 +481,7 @@
                                                         </div>
                                                         <div class="what-cap">
                                                             <span class="color1">Ночная вечеринка</span>
-                                                            <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
+                                                            <h4><a href="latest_news.html">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -536,7 +492,7 @@
                                                         </div>
                                                         <div class="what-cap">
                                                             <span class="color1">Ночная вечеринка</span>
-                                                            <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
+                                                            <h4><a href="latest_news.html">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -547,7 +503,7 @@
                                                         </div>
                                                         <div class="what-cap">
                                                             <span class="color1">Ночная вечеринка</span>
-                                                            <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
+                                                            <h4><a href="latest_news.html">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -565,7 +521,7 @@
                                                         </div>
                                                         <div class="what-cap">
                                                             <span class="color1">Ночная вечеринка</span>
-                                                            <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
+                                                            <h4><a href="latest_news.html">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -576,7 +532,7 @@
                                                         </div>
                                                         <div class="what-cap">
                                                             <span class="color1">Ночная вечеринка</span>
-                                                            <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
+                                                            <h4><a href="latest_news.html">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -587,7 +543,7 @@
                                                         </div>
                                                         <div class="what-cap">
                                                             <span class="color1">Ночная вечеринка</span>
-                                                            <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
+                                                            <h4><a href="latest_news.html">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -598,7 +554,7 @@
                                                         </div>
                                                         <div class="what-cap">
                                                             <span class="color1">Ночная вечеринка</span>
-                                                            <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
+                                                            <h4><a href="latest_news.html">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -763,6 +719,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4">
                         <!-- Section Tittle -->
                         <div class="section-tittle mb-40">
@@ -788,6 +745,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- New Poster -->
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
@@ -811,164 +769,16 @@
                     </div>
                 </div>
             </div>
+
             <div class="center">
-                <p><input type="button" value="Все новости"></p>
+                <p><input type="button" class="btn btn-index-news" href="news-list.html" value="Все новости"></p>
             </div>
         </section>
-        <!-- Whats New End -->
-        <!--   Weekly2-News start -->
-        <!-- <div class="weekly2-news-area  weekly2-pading gray-bg">
-            <div class="container">
-                <div class="weekly2-wrapper">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="section-tittle mb-30">
-                                <h3>Еженедельные главные новости</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="weekly2-news-active dot-style d-flex dot-style">
-                                <div class="weekly2-single">
-                                    <div class="weekly2-img">
-                                        <img src="assets/img/news/weekly2News1.jpg" alt="">
-                                    </div>
-                                    <div class="weekly2-caption">
-                                        <span class="color1">Корпоратив</span>
-                                        <p>25 Jan 2020</p>
-                                        <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
-                                    </div>
-                                </div> 
-                                <div class="weekly2-single">
-                                    <div class="weekly2-img">
-                                        <img src="assets/img/news/weekly2News2.jpg" alt="">
-                                    </div>
-                                    <div class="weekly2-caption">
-                                        <span class="color1">Ночь событий</span>
-                                        <p>25 Jan 2020</p>
-                                        <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
-                                    </div>
-                                </div> 
-                                <div class="weekly2-single">
-                                    <div class="weekly2-img">
-                                        <img src="assets/img/news/weekly2News3.jpg" alt="">
-                                    </div>
-                                    <div class="weekly2-caption">
-                                        <span class="color1">Корпоратив</span>
-                                        <p>25 Jan 2020</p>
-                                        <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
-                                    </div>
-                                </div>
-                                 <div class="weekly2-single">
-                                    <div class="weekly2-img">
-                                        <img src="assets/img/news/weekly2News4.jpg" alt="">
-                                    </div>
-                                    <div class="weekly2-caption">
-                                        <span class="color1">Время события</span>
-                                        <p>25 Jan 2020</p>
-                                        <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
-                                    </div>
-                                </div> 
-                                 <div class="weekly2-single">
-                                    <div class="weekly2-img">
-                                        <img src="assets/img/news/weekly2News4.jpg" alt="">
-                                    </div>
-                                    <div class="weekly2-caption">
-                                        <span class="color1">Корпоратив</span>
-                                        <p>25 Jan 2020</p>
-                                        <h4><a href="#">Добро пожаловать на конкурс победителей на лучшую модель</a></h4>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>            -->
-        <!-- End Weekly-News -->
-        <!-- Start Youtube -->
-        <!--<div class="youtube-area video-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="video-items-active">
-                            <div class="video-items text-center">
-                                <iframe src="https://www.youtube.com/embed/ZqicbU7puXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="video-items text-center">
-                                <iframe  src="https://www.youtube.com/embed/JNl1_hRwpXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="video-items text-center">
-                                <iframe src="https://www.youtube.com/embed/yUXJjIvhZz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="video-items text-center">
-                                <iframe src="https://www.youtube.com/embed/1D5cxbDbKMc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="video-items text-center">
-                                <iframe src="https://www.youtube.com/embed/r-NbrmDClLE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-info">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="video-caption">
-                                <div class="top-caption">
-                                    <span class="color1">Politics</span>
-                                </div>
-                                <div class="bottom-caption">
-                                    <h2>Новость: МИД РФ: выборы в Сирии — важный шаг на пути укрепления внутренней стабильности</h2>
-                                    <p>тест: определите по фото, кому из русских князей принадлежит «подарок» ко Дню пограничника: а вы угадаете: «награда нашла героя»: все подробности о новой награде для российских пограничников</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="testmonial-nav text-center">
-                                <div class="single-video">
-                                    <iframe  src="https://www.youtube.com/embed/ZqicbU7puXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <div class="video-intro">
-                                        <h4>video 1t</h4>
-                                    </div>
-                                </div>
-                                <div class="single-video">
-                                    <iframe  src="https://www.youtube.com/embed/JNl1_hRwpXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <div class="video-intro">
-                                        <h4>video 2test</h4>
-                                    </div>
-                                </div>
-                                <div class="single-video">
-                                    <iframe src="https://www.youtube.com/embed/yUXJjIvhZz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <div class="video-intro">
-                                        <h4>video 3st</h4>
-                                    </div>
-                                </div>
-                                <div class="single-video">
-                                    <iframe src="https://www.youtube.com/embed/1D5cxbDbKMc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <div class="video-intro">
-                                        <h4>video 4ontest</h4>
-                                    </div>
-                                </div>
-                                <div class="single-video">
-                                    <iframe src="https://www.youtube.com/embed/r-NbrmDClLE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <div class="video-intro">
-                                        <h4>video 5</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-
         <div class="trending-area fix">
             <div class="container">
                 <div class="trending-main">
                     <!-- Trending Tittle -->
                     <div class="row">
-
                         <div class="col-lg-8">
                             <br>
                             <div class="col__social">
@@ -997,7 +807,7 @@
                                             </div>
                                             <div class="trend-bottom-cap">
 
-                                                <h4><a href="details.html">Сообщество фотографов</a></h4>
+                                                <h4><a href="latest_news.html">Сообщество фотографов</a></h4>
                                             </div>
                                         </div>
                                     </div>
@@ -1007,9 +817,8 @@
                                                 <img src="assets/img/logo/matem.jpg" alt="">
                                             </div>
                                             <div class="trend-bottom-cap">
-
                                                 <h4>
-                                                    <h4><a href="details.html">Преподаватели Математики</a></h4>
+                                                    <h4><a href="latest_news.html">Преподаватели Математики</a></h4>
                                                 </h4>
                                             </div>
                                         </div>
@@ -1021,21 +830,15 @@
                                             </div>
                                             <div class="trend-bottom-cap">
 
-                                                <h4><a href="details.html">Заполняем школьные сайты</a></h4>
+                                                <h4><a href="latest_news.html">Заполняем школьные сайты</a></h4>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <!-- <div class="communities_block_all"> 
-                                        <a href="#">все сообщества</a>
-                                    </div>-->
                                     <div style="padding-bottom: 50px;" class="follow-us d-flex align-items-center">
-                                        <div " class="follow-count ">  
+                                        <div class="follow-count ">
                                             <span style="padding-left: 15px; " class="communities "><a style="color: #fff; padding: 20px 20px; background: #0088cc; border-radius: 10px; " href="https://vk.com/bmc_sales ">Все сообщества</a></span>
                                         </div>
-                                    </div> 
-    
-    
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1048,104 +851,76 @@
                                 </div>
                             </div>
                             <br>
-    
                             <div class="trand-right-single d-flex ">
-                                <!--<div class="trand-right-img ">
-                                    <img src="assets/img/trending/right1.jpg " alt=" ">
-                                </div>-->
                                 <div style="padding-left: 0; " class="trand-right-cap ">
-                                    
                                     <h4><a href="details.html ">Финансовые успехи, и как их заработать</a></h4>
                                     <h6>Предлагайте свои идеи и разработки по улучшению бизнеса</h6>
                                 </div>
                             </div>
                             <div class="trand-right-single d-flex ">
-                                <!--<div class="trand-right-img ">
-                                    <img src="assets/img/trending/right1.jpg " alt=" ">
-                                </div>-->
                                 <div style="padding-left: 0; " class="trand-right-cap ">
-                                    
+
                                     <h4><a href="details.html ">Методики обучения</a></h4>
                                     <h6>Обучение на открытом воздухе.</h6>
                                 </div>
                             </div>
                             <div class="trand-right-single d-flex ">
-                                <!--<div class="trand-right-img ">
-                                    <img src="assets/img/trending/right1.jpg " alt=" ">
-                                </div>-->
                                 <div style="padding-left: 0; " class="trand-right-cap ">
-                                    
                                     <h4><a href="details.html ">Школьные уроки</a></h4>
                                     <h6>Как вы считаете, нужно ли убрать домашние задания из школьной программы?</h6>
                                 </div>
                             </div>
                             <div class="trand-right-single d-flex ">
-                                <!--<div class="trand-right-img ">
-                                    <img src="assets/img/trending/right1.jpg " alt=" ">
-                                </div>-->
                                 <div style="padding-left: 0; " class="trand-right-cap ">
-                                    
                                     <h4><a href="details.html ">Вопрос сокращения школьных домашних заданий</a></h4>
                                     <h6>По словам министра образования и науки РК, задания планируют сократить на час в день и не давать на выходные дни.</h6>
                                 </div>
                             </div>
                             <div class="trand-right-single d-flex ">
-                                <!--<div class="trand-right-img ">
-                                    <img src="assets/img/trending/right1.jpg " alt=" ">
-                                </div>-->
                                 <div style="padding-left: 0; " class="trand-right-cap ">
-                                    
                                     <h4><a href="details.html ">День Знаний</a></h4>
                                     <h6>1 СЕНТЯБРЯ- ДЕНЬ ЗНАНИЙ!</h6>
                                 </div>
                             </div>
-    
                             <div style="padding-bottom: 50px; padding-top: 40px; " class="follow-us d-flex align-items-center ">
-                                <div  class="follow-count ">  
+                                <div class="follow-count ">
                                     <span style="padding-left: 0; " class="communities "><a style="color: #fff; padding: 20px 20px; background: #0088cc; border-radius: 10px; " href="https://vk.com/bmc_sales ">Все обсуждения</a></span>
                                 </div>
-                            </div> 
-    
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div id="carouselExampleControls1 " class="carousel slide " data-ride="carousel ">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active ">
+                            <a href="https://mektepforma.kz/ "><img class="d-block w-100 " src="assets/img/hero/header_card.png " alt=" "></a>
+                        </div>
+                        <div class="carousel-item ">
+                            <a href="https://t.me/kdtkzchat "><img class="d-block w-100 " src="assets/img/hero/header_card2.png " alt=" "></a>
+                        </div>
+                        <div class="carousel-item ">
+                            <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi "></a><img class="d-block w-100 " src="assets/img/hero/header_card3.png " alt=" "></a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev " href="#carouselExampleControls " role="button " data-slide="prev ">
+                        <span class="sr-only ">Previous</span>
+                    </a>
+                    <a class="carousel-control-next " href="#carouselExampleControls " role="button " data-slide="next ">
+                        <span class="sr-only ">Next</span>
+                    </a>
                 </div>
             </div>
         </div>
 
 
-        <div id="carouselExampleControls1" class="carousel slide " data-ride="carousel ">
-            <div class="carousel-inner ">
-              <div class="carousel-item active ">
-                <a href="https://mektepforma.kz/ "><img class="d-block w-100 " src="assets/img/hero/header_card.png " alt=" "></a>
-              </div>
-              <div class="carousel-item ">
-                <a href="https://t.me/kdtkzchat "><img class="d-block w-100 " src="assets/img/hero/header_card2.png " alt=" "></a>
-              </div>
-              <div class="carousel-item ">
-                <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi "></a><img class="d-block w-100 " src="assets/img/hero/header_card3.png " alt=" "></a>
-              </div>
-            </div>
-            <a class="carousel-control-prev " href="#carouselExampleControls " role="button " data-slide="prev ">
-              <span class="sr-only ">Previous</span>
-            </a>
-            <a class="carousel-control-next " href="#carouselExampleControls " role="button " data-slide="next ">
-              <span class="sr-only ">Next</span>
-            </a>
-          </div>
-        <!-- End Start youtube -->
-        <!--  Recent Articles start -->
-    
 
 
+    </main>
 
-        
-
-
-
-
+    <footer>
         <div class="recent-articles ">
             <div class="container ">
-               <div class="recent-wrapper ">
+                <div class="recent-wrapper ">
                     <!-- section Tittle -->
                     <div class="row ">
                         <div class="col-lg-12 ">
@@ -1217,177 +992,191 @@
                             </div>
                         </div>
                     </div>
-               </div>
+                </div>
             </div>
-        </div>    
-        <!--Recent Articles End -->
-        </main>
-    
-    <footer>
+        </div>
         <!-- Footer Start-->
         <div class="footer-area footer-padding fix ">
-         <div class="container ">
-             <div class="row d-flex justify-content-between ">
-                 <div class="col-xl-5 col-lg-5 col-md-7 col-sm-12 ">
-                     <div class="single-footer-caption ">
-                         <div class="single-footer-caption ">
-                             <!-- logo -->
-                             <div class="footer-logo ">
-                                 <a href="index.html "><img src="assets/img/logo/logo2_footer.png " alt=" "></a>
-                             </div>
-                             <div class="footer-tittle ">
-                                 <div class="footer-pera ">
-                                     <p>Значимость этих проблем настолько очевидна, что консультация с широким активом представляет собой интересный эксперимент проверки новых предложений. Товарищи! укрепление и развитие структуры играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач.</p>
-                                 </div>
-                             </div>
-                             <!-- social -->
-                             <div class="footer-social ">
-                                 <a href="https://t.me/kdtkz "><i class="fab fa-telegram "></i></a>
-                                 <a href="https://vk.com/bmc_sales "><i class="fab fa-vk "></i></a>
-                                 <a href="https://twitter.com/bmcsales2 "><i class="fab fa-twitter "></i></a>
-                                 <a href="https://www.facebook.com/benchmarkconsultingltd/ "><i class="fab fa-facebook "></i></a>
-                                 <a href="https://www.youtube.com/user/bmcsales1 "><i class="fab fa-youtube "></i></a>
-                                 <a href="https://bmconsult.kz/rss "><i class="fa fa-rss "></i></a>
-                                 <!--<a class="footer__link desktop " target="_blank " href="https://t.me/tcdaily ">
+            <div class="container ">
+                <div class="row d-flex justify-content-between ">
+                    <div class="col-xl-4 col-lg-5 col-md-7 col-sm-12 ">
+                        <div class="single-footer-caption ">
+                            <div class="single-footer-caption ">
+                                <!-- logo -->
+                                <div class="footer-logo ">
+                                    <a href="index.html "><img src="assets/img/logo/logo2_footer.png " alt=" "></a>
+                                </div>
+                                <div class="footer-tittle ">
+                                    <div class="footer-pera ">
+                                        <p>Значимость этих проблем настолько очевидна, что консультация с широким активом представляет собой интересный эксперимент проверки новых предложений. Товарищи! укрепление и развитие структуры играет важную роль в
+                                            формировании позиций, занимаемых участниками в отношении поставленных задач.</p>
+                                    </div>
+                                </div>
+                                <!-- social -->
+                                <div class="footer-social ">
+                                    <a href="# "><i class="fab fa-telegram "></i></a>
+                                    <a href="# "><i class="fab fa-vk "></i></a>
+                                    <a href="# "><i class="fab fa-twitter "></i></a>
+                                    <a href="# "><i class="fab fa-facebook "></i></a>
+                                    <a href="# "><i class="fab fa-youtube "></i></a>
+                                    <a href="# "><i class="fa fa-rss "></i></a>
+                                    <!--<a class="footer__link desktop " target="_blank " href="https://t.me/tcdaily ">
                                      <span>Мы в <span class="telegram__icon "><img class="tg__png " src="assets/img/logo/telegram.png " title="telegram icons " alt="telegram "></span> Telegram</span>
                                  </a> <br>
                                  <a class="footer__link desktop " target="_blank " href="https://vk.com/trafficcardinal ">
                                      <span>Мы в <span class="telegram__icon "><img src="/frontend/images/svg/vk-footer.svg " alt="vk "></span> VK</span>
                                  </a>-->
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 ">
-                     <div class="single-footer-caption mt-60 ">
-                         <div class="footer-tittle ">
-                             <h4>Статистика платформы</h4>
-                             <!-- Form -->
-                             <div class="footer-form " >
-                                 <div id="mc_embed_signup ">
-                                     <ul id="statistika ">
-                                         <li class="stat ">За месяц: <span>137197</span></li>
-                                         <li class="stat ">За неделю: <span>51269</span></li>
-                                         <li class="stat ">Вчера: <span>8575</span></li>
-                                         <li class="stat ">Сегодня: <span>1066</span></li>
-                                         <li class="stat ">Онлайн: <span>234</span></li>
-                                     </ul>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 ">
-                     <div class="single-footer-caption mb-50 mt-60 ">
-                         <div class="footer-tittle ">
-                             <h4>Статистика сайта</h4>
-                             <div class="footer-form " >
-                                 <div id="mc_embed_signup ">
-                                     <ul id="statistika ">
-                                         <li>За месяц: <span>308</span></li>
-                                         <li>За неделю: <span>97</span></li>
-                                         <li>Вчера: <span>8</span></li>
-                                         <li>Сегодня: <span>2</span></li>
-                                         <li>Онлайн: <span>1</span></li>
-                                     </ul>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
+                        <div class="single-footer-caption mt-60 ">
+                            <div class="footer-tittle ">
+                                <h4>Статистика платформы</h4>
+                                <!-- Form -->
+                                <div class="footer-form ">
+                                    <div id="mc_embed_signup ">
+                                        <ul id="statistika ">
+                                            <li class="stat ">За месяц: <span>137197</span></li>
+                                            <li class="stat ">За неделю: <span>51269</span></li>
+                                            <li class="stat ">Вчера: <span>8575</span></li>
+                                            <li class="stat ">Сегодня: <span>1066</span></li>
+                                            <li class="stat ">Онлайн: <span>234</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 ">
+                        <div class="single-footer-caption mb-50 mt-60 ">
+                            <div class="footer-tittle ">
+                                <h4>Статистика сайта</h4>
+                                <div class="footer-form ">
+                                    <div id="mc_embed_signup ">
+                                        <ul id="statistika ">
+                                            <li>За месяц: <span>308</span></li>
+                                            <li>За неделю: <span>97</span></li>
+                                            <li>Вчера: <span>8</span></li>
+                                            <li>Сегодня: <span>2</span></li>
+                                            <li>Онлайн: <span>1</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 ">
+                        <div class="single-footer-caption mb-50 mt-60 ">
+                            <nav>
+                                <div class="footer-tittle footer-tittle-navigation ">
+                                    <h4>Меню</h4>
+                                    <ul class="footer_navigation ">
+                                        <li><a class="footer_navigation_text " href="index.html ">Главная</a></li>
+                                        <li><a class="footer_navigation_text " href="about.html ">О Agartu</a></li>
+                                        <li><a class="footer_navigation_text " href="latest_news.html ">Новости</a></li>
+                                        <li><a class="footer_navigation_text " href="comunit.html ">Сообщества</a></li>
+                                        <li><a class="footer_navigation_text " href="blog.html ">Обсуждения</a></li>
+                                        <li><a class="footer_navigation_text " href="regseti.html ">Региональные сети</a></li>
+                                        <!-- <li><a class="footer_navigation_text " href="obrport.html ">Образовательные порталы</a></li> -->
+                                        <li><a class="footer_navigation_text " href="vak.html ">Вакансии</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 ">
+                        <div class="single-footer-caption mb-50 mt-60 ">
+                            <nav>
+                                <div class="footer-tittle footer-tittle-navigation ">
+                                    <h4>Дополнительное меню</h4>
+                                    <ul class="footer_navigation ">
+                                        <li>
+                                            <a class="footer_navigation_text " href=" "></a>
+                                        </li>
+                                        <li>
+                                            <a class="footer_navigation_text " href=" "></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- footer-bottom aera -->
         <div class="footer-bottom-area ">
-         <div class="container ">
-             <div class="footer-border ">
-                  <div class="row d-flex align-items-center justify-content-between ">
-                      <div class="col-lg-6 ">
-                          <div class="footer-copy-right ">
-                              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
- <!--Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart " aria-hidden="true "></i> by <a href="https://colorlib.com " target="_blank ">Colorlib</a>-->
- <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> <a href="https://bmconsult.kz/ ">© 2022 "BenchMark Consulting "</a></p>
-                          </div>
-                      </div>
-                      <div class="col-lg-6 ">
-                          <div class="footer-menu f-right ">
-                              <ul>                             
-                                  <li><a href="# ">Политика конфиденциальности</a></li>
-                                  <li><a href="# ">Пользовательское соглашение</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-             </div>
-         </div>
-     </div>
+            <div class="container ">
+                <div class="footer-border ">
+                    <div class="row d-flex align-items-center justify-content-between ">
+                        <div class="col-lg-6 ">
+                            <div class="footer-copy-right ">
+                                <p>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    <!--Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart " aria-hidden="true "></i> by <a href="https://colorlib.com
+                                            " target="_blank ">Colorlib</a>-->
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->© 2022 "BenchMark Consulting "</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 ">
+                            <div class="footer-menu f-right ">
+                                <ul>
+                                    <li><a href="# ">Политика конфиденциальности</a></li>
+                                    <li><a href="# ">Пользовательское соглашение</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Footer End-->
     </footer>
-    <button class="open-button " onclick="openForm() ">Чат</button>
 
-<div class="chat-popup " id="myForm ">
-  <form action="../action_page.php " class="form-container ">
-    <h1>Чат</h1>
+    <!-- JS here -->
 
-    <label for="msg "><b>Сообщение</b></label>
-    <textarea placeholder="Тип сообщения.. " name="msg " required></textarea>
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js "></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js "></script>
+    <script src="./assets/js/popper.min.js "></script>
+    <script src="./assets/js/bootstrap.min.js "></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js "></script>
 
-    <button type="submit " class="btn ">Отправить</button>
-    <button type="button " class="btn cancel " onclick="closeForm() ">Закрыть</button>
-  </form>
-</div>
-    
-     <!-- JS here -->
-     
-         <!-- All JS Custom Plugins Link Here here -->
-         <script src="./assets/js/vendor/modernizr-3.5.0.min.js "></script>
-         <!-- Jquery, Popper, Bootstrap -->
-         <script src="./assets/js/vendor/jquery-1.12.4.min.js "></script>
-         <script src="./assets/js/popper.min.js "></script>
-         <script src="./assets/js/bootstrap.min.js "></script>
-         <!-- Jquery Mobile Menu -->
-         <script src="./assets/js/jquery.slicknav.min.js "></script>
- 
-         <!-- Jquery Slick , Owl-Carousel Plugins -->
-         <script src="./assets/js/owl.carousel.min.js "></script>
-         <script src="./assets/js/slick.min.js "></script>
-         <!-- Date Picker -->
-         <script src="./assets/js/gijgo.min.js "></script>
-         <!-- One Page, Animated-HeadLin -->
-         <script src="./assets/js/wow.min.js "></script>
-         <script src="./assets/js/animated.headline.js "></script>
-         <script src="./assets/js/jquery.magnific-popup.js "></script>
- 
-         <!-- Breaking New Pluging -->
-         <script src="./assets/js/jquery.ticker.js "></script>
-         <script src="./assets/js/site.js "></script>
- 
-         <!-- Scrollup, nice-select, sticky -->
-         <script src="./assets/js/jquery.scrollUp.min.js "></script>
-         <script src="./assets/js/jquery.nice-select.min.js "></script>
-         <script src="./assets/js/jquery.sticky.js "></script>
-         
-         <!-- contact js -->
-         <script src="./assets/js/contact.js "></script>
-         <script src="./assets/js/jquery.form.js "></script>
-         <script src="./assets/js/jquery.validate.min.js "></script>
-         <script src="./assets/js/mail-script.js "></script>
-         <script src="./assets/js/jquery.ajaxchimp.min.js "></script>
-         
-         <!-- Jquery Plugins, main Jquery -->	
-         <script src="./assets/js/plugins.js "></script>
-         <script src="./assets/js/main.js "></script>
-         <script>
-            function openForm() {
-              document.getElementById("myForm ").style.display = "block ";
-            }
-            
-            function closeForm() {
-              document.getElementById("myForm ").style.display = "none ";
-            }
-            </script>
-        
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js "></script>
+    <script src="./assets/js/slick.min.js "></script>
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js "></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js "></script>
+    <script src="./assets/js/animated.headline.js "></script>
+    <script src="./assets/js/jquery.magnific-popup.js "></script>
 
-     </body>
- </html>
+    <!-- Breaking New Pluging -->
+    <script src="./assets/js/jquery.ticker.js "></script>
+    <script src="./assets/js/site.js "></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="./assets/js/jquery.scrollUp.min.js "></script>
+    <script src="./assets/js/jquery.nice-select.min.js "></script>
+    <script src="./assets/js/jquery.sticky.js "></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js "></script>
+    <script src="./assets/js/jquery.form.js "></script>
+    <script src="./assets/js/jquery.validate.min.js "></script>
+    <script src="./assets/js/mail-script.js "></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js "></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js "></script>
+    <script src="./assets/js/main.js "></script>
+
+</body>
+
+</html>

@@ -2673,13 +2673,13 @@ hr {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .main-header .main-menu ul li a {
-        padding: 39px 15px
+        padding: 20px 15px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .main-header .main-menu ul li a {
-        padding: 20px 15px
+        padding: 20px 4px
     }
 }
 
@@ -2798,7 +2798,7 @@ hr {
 
 .slicknav_menu {
     background: transparent;
-    margin-top: -6px !important
+    margin-top: -20px !important
 }
 
 .mobile_menu {
@@ -6809,6 +6809,7 @@ ul#statistika li {
 .logo {
     margin-top: 20px;
 }
+
 .searchButton {
     width: 40px;
     border: 1px solid #fc3f00;
@@ -6818,19 +6819,99 @@ ul#statistika li {
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
-    }
-    .searchTerm:focus{
-        color: #380136;
-    }
-    .search {
-        width: 100%;
-        position: relative;
-        display: flex;
-        }
+}
+
+.searchTerm:focus {
+    color: #380136;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
 .searchTerm {
-        border: 3px solid #fc3f00;
-        border-right: none;
-        padding: 5px;
-        border-radius: 5px 0 0 5px;
-        outline: none;
-        }
+    border: 3px solid #fc3f00;
+    border-right: none;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+@media (min-width: 750px) and (max-width: 1115px) {
+    .name_service {
+        font-size: 90%;
+    }
+    .regportals_text {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1115px) {
+    .regportals_text {
+        padding-left: 20px;
+    }
+    nav #navigation {
+        font-size: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .regportals_text {
+        padding-left: 50px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .name_service {
+        font-size: 90%;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 400px) {
+    .name_service {
+        font-size: 80%;
+    }
+}
+
+.Search-news {
+    color: black;
+}
+
+.Search-news:hover {
+    color: rgb(65, 62, 55);
+}
+
+.subscribe {
+    justify-content: space-around;
+}
+
+.header-area .slicknav_btn {
+    top: -51px;
+    right: 50px;
+}
+
+.row .align-items-center {
+    flex-wrap: wrap;
+}
+
+.what-cap-link {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.what-cap-link:hover {
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(85, 76, 76);
+}
+
+.footer-area .footer-tittle ul li a {
+    color: #d6dadf;
+}
+
+ul {
+    text-align: left;
+}

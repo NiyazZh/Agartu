@@ -24,7 +24,13 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="../assets3/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../assets3/owlcarousel/assets/owl.theme.default.min.css" />
 
+    <!-- javascript -->
+    <script src="../assets3/vendors/jquery.min.js"></script>
+    <script src="../assets3/owlcarousel/owl.carousel.js"></script>
     <style>
         #carouselExampleControls2 {
             margin-left: 300px;
@@ -40,8 +46,8 @@
         }
         
         .trand-right-img img {
-            width: 130px;
-            height: 130px !important;
+            width: 110px;
+            height: 110px !important;
         }
         
         .regportals_text {
@@ -63,6 +69,34 @@
         .regportals_carousel_text {
             padding-top: 20px;
             padding-bottom: 20px;
+        }
+        
+        .brd {
+            border: 1px double #a1a1a1;
+            /* Параметры границы */
+            padding: 5px;
+            /* Поля вокруг текста */
+        }
+        
+        .col-5 .brd {
+            margin: auto;
+        }
+        
+        .border-color {
+            background: #fdfcfc;
+            box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+            padding: 10px;
+        }
+        
+        .border-color:hover {
+            background: #fdfcfc;
+            box-shadow: 0 0 10px #876666a6;
+            padding: 10px;
+        }
+        
+        .btn {
+            padding: 20px 30px;
+            background: #3c7edd;
         }
     </style>
 </head>
@@ -111,10 +145,10 @@
                 </div>
                 <div class="header-bottom header-relative">
                     <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
+                        <div class="row align-items-center" style="flex-wrap:nowrap">
+                            <div class="col-xl-11 col-lg-11 col-md-11 header-flex">
                                 <!-- sticky -->
-                                <div class="sticky-logo">
+                                <div class="sticky-logo info-open">
                                     <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
                                 </div>
                                 <!-- Main-menu -->
@@ -123,11 +157,11 @@
                                         <ul id="navigation">
                                             <li><a href="index.html">Главная</a></li>
                                             <li><a href="about.html">О Agartu</a></li>
-                                            <li><a href="latest_news.html">Новости</a></li>
+                                            <li><a href="news-list.html">Новости</a></li>
                                             <li><a href="comunit.html">Сообщества</a></li>
                                             <li><a href="blog.html">Обсуждения</a></li>
                                             <li><a href="regseti.html">Региональные сети</a></li>
-                                            <li><a href="vak.html">Вакансии</a></li>
+                                            <li><a href="vak.html">Работа</a></li>
                                             <li><a href="#">3lvl</a>
                                                 <ul class="submenu">
                                                     <li><a href="elements.html">Element</a></li>
@@ -139,24 +173,30 @@
                                                     </li>
                                                 </ul>
                                             </li>
+
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
-                            <div class="col-xl-2 col-lg-2 col-md-4">
-                                <div class="header-right-btn f-right d-none d-lg-block">
-                                    <i class="fas fa-search special-tag"></i>
-                                    <div class="search-box">
-                                        <form action="#">
-                                            <input type="text" placeholder="Search">
-
-                                        </form>
-                                    </div>
-                                </div>
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <a href="Search.html" class="Search-news header-right-btn f-right "><i class="fas fa-search"></i></a>
                             </div>
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-md-none"></div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-md-none">
+                                <div class="slicknav_menu">
+                                    <a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"></a>
+                                    <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+                                        <li><a href="index.html" role="menuitem" tabindex="-1">Главная</a></li>
+                                        <li><a href="about.html" role="menuitem" tabindex="-1">О Agartu</a></li>
+                                        <li><a href="news-list.html" role="menuitem" tabindex="-1">Новости</a></li>
+                                        <li><a href="comunit.html" role="menuitem" tabindex="-1">Сообщества</a></li>
+                                        <li><a href="blog.html" role="menuitem" tabindex="-1">Обсуждения</a></li>
+                                        <li><a href="regseti.html" role="menuitem" tabindex="-1">Региональные сети</a></li>
+                                        <li><a href="vak.html" role="menuitem" tabindex="-1">Работа</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -175,32 +215,33 @@
                         <h3>Региональные сети Казахстана</h3>
                         <div class="pol"></div>
                     </div>
-                    <div class="row">
-
-                        <div class="col">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="trand-right-img">
-                                        <img src="assets/img/regportals/logo_eop.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="row regportals_text">
-                                        <div class="col">
-                                            <h5 class="name_service">Единый Образовательный портал</h4>
+                    <div class="row" style="justify-content: space-between;">
+                        <div class="col-5 border-color rounded">
+                            <div class="col ">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="trand-right-img">
+                                            <a href="https://otanbilim.kz/"><img src="assets/img/regportals/logo_eop.png" alt=""></a>
                                         </div>
-                                        <div class="w-100"></div>
-                                        <div class="col"><a href="https://otanbilim.kz/" class="text-warning stretched-link">Перейти на сайт</a></div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row regportals_text">
+                                            <div class="col">
+                                                <h5 class="name_service">Единый Образовательный портал</h4>
+                                            </div>
+                                            <div class="w-100"></div>
+                                            <div class="col"><a href="https://otanbilim.kz/" class="btn">Перейти на сайт</a></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col-5 border-color rounded">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="trand-right-img">
-                                        <img src="assets/img/regportals/arms_of_Astana.svg.png" alt="">
+                                        <a href="http://astana.agartu.kz/"><img src="assets/img/regportals/arms_of_Astana.svg.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -209,17 +250,21 @@
                                             <h5 class="name_service">СОЦИАЛЬНО-ДЕЛОВАЯ СЕТЬ Города Астана</h4>
                                         </div>
                                         <div class="w-100"></div>
-                                        <div class="col"><a href="http://astana.agartu.kz/" class="text-warning stretched-link">Перейти на сайт</a></div>
+                                        <div class="col"><a href="http://astana.agartu.kz/" class="btn">Перейти на сайт</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="w-100 regportals_indent"></div>
-                        <div class="col">
+
+
+
+
+                        <div class="col-5 border-color rounded">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="trand-right-img">
-                                        <img src="assets/img/regportals/arms_of_Almaty.svg.png" alt="">
+                                        <a href="http://almaty.agartu.kz/"><img src="assets/img/regportals/arms_of_Almaty.svg.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -228,17 +273,17 @@
                                             <h5 class="name_service">СОЦИАЛЬНАЯ СЕТЬ АЛМАТИНСКОЙ ОБЛАСТИ</h4>
                                         </div>
                                         <div class="w-100"></div>
-                                        <div class="col"><a href="http://almaty.agartu.kz/" class="text-warning stretched-link">Перейти на сайт</a></div>
+                                        <div class="col"><a href="http://almaty.agartu.kz/" class="btn">Перейти на сайт</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col-5 border-color rounded">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="trand-right-img">
-                                        <img src="assets/img/regportals/South_Kazakhstan_province_seal.png" alt="">
+                                        <a href="http://ontustik.agartu.kz/"><img src="assets/img/regportals/South_Kazakhstan_province_seal.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -247,18 +292,18 @@
                                             <h5 class="name_service">СОЦИАЛЬНАЯ СЕТЬ ЮЖНО-КАЗАХСТАНСКАЯ ОБЛАСТЬ</h4>
                                         </div>
                                         <div class="w-100"></div>
-                                        <div class="col"><a href="http://ontustik.agartu.kz/" class="text-warning stretched-link">Перейти на сайт</a></div>
+                                        <div class="col"><a href="http://ontustik.agartu.kz/" class="btn">Перейти на сайт</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="w-100 regportals_indent"></div>
-                        <div class="col">
+                        <div class="col-5 border-color rounded">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="trand-right-img">
-                                        <img src="assets/img/regportals/_logotibi.jpg" alt="">
+                                        <a href="http://mangystau.agartu.kz/"><img src="assets/img/regportals/_logotibi.jpg" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -267,17 +312,17 @@
                                             <h5 class="name_service">СОЦИАЛЬНАЯ СЕТЬ МАНГИСТАУСКАЯ ОБЛАСТЬ</h4>
                                         </div>
                                         <div class="w-100"></div>
-                                        <div class="col"><a href="http://mangystau.agartu.kz/" class="text-warning stretched-link">Перейти на сайт</a></div>
+                                        <div class="col"><a href="http://mangystau.agartu.kz/" class="btn">Перейти на сайт</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col-5 border-color rounded">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="trand-right-img">
-                                        <img src="assets/img/regportals/Logo_Kostanay_Province.png" alt="">
+                                        <a href="http://kostanay.agartu.kz/"><img src="assets/img/regportals/Logo_Kostanay_Province.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -286,18 +331,18 @@
                                             <h5 class="name_service">СОЦИАЛЬНАЯ СЕТЬ КОСТАНАЙСКАЯ ОБЛАСТЬ</h4>
                                         </div>
                                         <div class="w-100"></div>
-                                        <div class="col"><a href="http://kostanay.agartu.kz/" class="text-warning stretched-link">Перейти на сайт</a></div>
+                                        <div class="col"><a href="http://kostanay.agartu.kz/" class="btn">Перейти на сайт</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="w-100 regportals_indent"></div>
-                        <div class="col">
+                        <div class="col-5 border-color roundedl">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="trand-right-img">
-                                        <img src="assets/img/regportals/of_Karagandy_Province.svg.png" alt="">
+                                        <a href="http://karaganda.agartu.kz/"><img src="assets/img/regportals/of_Karagandy_Province.svg.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -306,17 +351,17 @@
                                             <h5 class="name_service">СОЦИАЛЬНАЯ СЕТЬ КАРАГАНДИНСКАЯ ОБЛАСТЬ</h4>
                                         </div>
                                         <div class="w-100"></div>
-                                        <div class="col"><a href="http://karaganda.agartu.kz/" class="text-warning stretched-link">Перейти на сайт</a></div>
+                                        <div class="col"><a href="http://karaganda.agartu.kz/" class="btn">Перейти на сайт</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col-5 border-color rounded">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="trand-right-img">
-                                        <img src="assets/img/regportals/of_East_Kazakhstan_Province.svg.png" alt="">
+                                        <a href="http://vko.agartu.kz/"><img src="assets/img/regportals/of_East_Kazakhstan_Province.svg.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -325,18 +370,18 @@
                                             <h5 class="name_service">СОЦИАЛЬНАЯ СЕТЬ ВОСТОЧНО-КАЗАХСТАНСКАЯ ОБЛАСТЬ</h4>
                                         </div>
                                         <div class="w-100"></div>
-                                        <div class="col"><a href="http://vko.agartu.kz/" class="text-warning stretched-link">Перейти на сайт</a></div>
+                                        <div class="col"><a href="http://vko.agartu.kz/" class="btn">Перейти на сайт</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="w-100 regportals_indent"></div>
-                        <div class="col">
+                        <div class="col-5 border-color rounded">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="trand-right-img">
-                                        <img src="assets/img/regportals/North_Kazakhstan_province_seal.png" alt="">
+                                        <a href="http://sko.agartu.kz/"><img src="assets/img/regportals/North_Kazakhstan_province_seal.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -345,17 +390,17 @@
                                             <h5 class="name_service">СОЦИАЛЬНО-ДЕЛОВАЯ СЕТЬ СЕВЕРО КАЗАХСТАНСКОЙ ОБЛАСТИ</h4>
                                         </div>
                                         <div class="w-100"></div>
-                                        <div class="col"><a href="http://sko.agartu.kz/" class="text-warning stretched-link">Перейти на сайт</a></div>
+                                        <div class="col"><a href="http://sko.agartu.kz/" class="btn">Перейти на сайт</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col-5 border-color rounded">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="trand-right-img">
-                                        <img src="assets/img/regportals/of_Atyrau.svg.png" alt="">
+                                        <a href="http://atyrau.agartu.kz/"><img src="assets/img/regportals/of_Atyrau.svg.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -364,18 +409,18 @@
                                             <h5 class="name_service">СОЦИАЛЬНАЯ СЕТЬ АТЫРАУСКОЙ ОБЛАСТИ</h4>
                                         </div>
                                         <div class="w-100"></div>
-                                        <div class="col"><a href="http://atyrau.agartu.kz/" class="text-warning stretched-link">Перейти на сайт</a></div>
+                                        <div class="col"><a href="http://atyrau.agartu.kz/" class="btn">Перейти на сайт</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="w-100 regportals_indent"></div>
-                        <div class="col">
+                        <div class="col-5 border-color rounded">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="trand-right-img">
-                                        <img src="assets/img/regportals/Aktyubinsk-obl-coat-of-arms.png" alt="">
+                                        <a href="http://aktobe.agartu.kz/"><img src="assets/img/regportals/Aktyubinsk-obl-coat-of-arms.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -384,17 +429,17 @@
                                             <h5 class="name_service">СОЦИАЛЬНАЯ СЕТЬ АКТЮБИНСКОЙ ОБЛАСТИ</h4>
                                         </div>
                                         <div class="w-100"></div>
-                                        <div class="col"><a href="http://aktobe.agartu.kz/" class="text-warning stretched-link">Перейти на сайт</a></div>
+                                        <div class="col"><a href="http://aktobe.agartu.kz/" class="btn">Перейти на сайт</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col-5 border-color rounded">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="trand-right-img">
-                                        <img src="assets/img/regportals/Coat_of_Arms_of_Aqmola_Province.png" alt="">
+                                        <a href="http://akmo.agartu.kz/"><img src="assets/img/regportals/Coat_of_Arms_of_Aqmola_Province.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -403,18 +448,18 @@
                                             <h5 class="name_service">СОЦИАЛЬНО-ДЕЛОВАЯ СЕТЬ АКМОЛИНСКОЙ ОБЛАСТИ</h4>
                                         </div>
                                         <div class="w-100"></div>
-                                        <div class="col"><a href="http://akmo.agartu.kz/" class="text-warning stretched-link">Перейти на сайт</a></div>
+                                        <div class="col"><a href="http://akmo.agartu.kz/" class="btn">Перейти на сайт</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="w-100 regportals_indent"></div>
-                        <div class="col">
+                        <div class="col-5 border-color rounded">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="trand-right-img">
-                                        <img src="assets/img/regportals/Coat_of_Arms_Batys_Oblysy.png" alt="">
+                                        <a href="http://bko.agartu.kz/"><img src="assets/img/regportals/Coat_of_Arms_Batys_Oblysy.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -423,17 +468,17 @@
                                             <h5 class="name_service">СОЦИАЛЬНАЯ СЕТЬ ЗАПАДНО-КАЗАХСТАНСКОЙ ОБЛАСТИ</h4>
                                         </div>
                                         <div class="w-100"></div>
-                                        <div class="col"><a href="http://bko.agartu.kz/" class="text-warning stretched-link">Перейти на сайт</a></div>
+                                        <div class="col"><a href="http://bko.agartu.kz/" class="btn">Перейти на сайт</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col-5 border-color rounded">
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="trand-right-img">
-                                        <img src="assets/img/regportals/Logo_Pavlodar_region.png" alt="">
+                                        <a href="http://pavlodar.agartu.kz/"><img src="assets/img/regportals/Logo_Pavlodar_region.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -442,178 +487,28 @@
                                             <h5 class="name_service">СОЦИАЛЬНАЯ СЕТЬ ПАВЛОДАРСКОЙ ОБЛАСТ</h4>
                                         </div>
                                         <div class="w-100"></div>
-                                        <div class="col"><a href="http://pavlodar.agartu.kz/" class="text-warning stretched-link">Перейти на сайт</a></div>
+                                        <div class="col"><a href="http://pavlodar.agartu.kz/" class="btn">Перейти на сайт</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="regportals_useful">
-            <div class="recent-articles">
-                <div class="container">
-                    <div class="recent-wrapper">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="pol3"></div>
-                                <div class="section-tittle mb-30 regportals_carousel_text">
-                                    <h3>Полезное</h3>
-                                </div>
-                                <div class="recent-active dot-style d-flex dot-style slick-initialized slick-slider slick-dotted">
-                                    <div class="slick-list draggable">
-                                        <div class="slick-track" style="opacity: 1; width: 6800px; transform: translate3d(-2400px, 0px, 0px);">
-                                            <div class="single-recent mb-100 slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/4.jpg" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="http://security.kdt.kz/" tabindex="-1">Будь в безопасности с ВМС СМБР!</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/2.jpg" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="http://vacancy.kdt.kz/" tabindex="-1">Найди работу своей мечты с ВМС Вакансии</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/3.jpg" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="http://estol.kdt.kz/" tabindex="-1">Ешь не думая с Е-столовой!</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/7.jpg" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="https://agartu.kz/zayavka" tabindex="-1">Подавай заявки куда угодно!</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/1.png" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="https://elib.kdt.kz/" tabindex="-1">Учись с умом с Е-библиотекой</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/6.jpg" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="https://study.kdt.kz/" tabindex="-1">С нашими сервисами учиться проще!</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide slick-current slick-active" data-slick-index="3" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/5.jpg" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="https://exams.kdt.kz/" tabindex="0">Проверь свои знания с BMC Exams!</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide slick-active" data-slick-index="4" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide04" aria-describedby="slick-slide-control04" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/4.jpg" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="http://security.kdt.kz/" tabindex="0">Будь в безопасности с ВМС СМБР!</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide slick-active" data-slick-index="5" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide05" aria-describedby="slick-slide-control05" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/2.jpg" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="http://vacancy.kdt.kz/" tabindex="0">Найди работу своей мечты с ВМС Вакансии</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide06" aria-describedby="slick-slide-control06" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/3.jpg" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="http://estol.kdt.kz/" tabindex="-1">Ешь не думая с Е-столовой!</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/7.jpg" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="https://agartu.kz/zayavka" tabindex="-1">Подавай заявки куда угодно!</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide slick-cloned" data-slick-index="8" aria-hidden="true" tabindex="-1" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/1.png" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="https://elib.kdt.kz/" tabindex="-1">Учись с умом с Е-библиотекой</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" tabindex="-1" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/6.jpg" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="https://study.kdt.kz/" tabindex="-1">С нашими сервисами учиться проще!</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" tabindex="-1" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/5.jpg" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="https://exams.kdt.kz/" tabindex="-1">Проверь свои знания с BMC Exams!</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" tabindex="-1" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/4.jpg" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="http://security.kdt.kz/" tabindex="-1">Будь в безопасности с ВМС СМБР!</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide slick-cloned" data-slick-index="12" aria-hidden="true" tabindex="-1" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/2.jpg" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="http://vacancy.kdt.kz/" tabindex="-1">Найди работу своей мечты с ВМС Вакансии</a></h4>
-                                                </div>
-                                            </div>
-                                            <div class="single-recent mb-100 slick-slide slick-cloned" data-slick-index="13" aria-hidden="true" tabindex="-1" style="width: 370px;">
-                                                <div class="what-img">
-                                                    <img src="assets/img/useful/3.jpg" alt="">
-                                                </div>
-                                                <div class="what-cap">
-                                                    <h4><a href="http://estol.kdt.kz/" tabindex="-1">Ешь не думая с Е-столовой!</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
+                    <div class="pagination-area pt-85" style="text-align: center;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="single-wrap d-flex justify-content-center">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-start">
+                                                <li class="page-item"><a class="page-link" href="#"><span class="flaticon-arrow roted"></span></a></li>
+                                                <li class="page-item active"><a class="page-link" href="">01</a></li>
+                                                <li class="page-item"><a class="page-link" href="regseti2">02</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                                <li class="page-item"><a class="page-link" href="regseti2.html"><span class="flaticon-arrow right-arrow"></span></a></li>
+                                            </ul>
+                                        </nav>
                                     </div>
-
-                                    <ul class="slick-dots" style="display: block;" role="tablist">
-                                        <li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 3" tabindex="-1">1</button></li>
-                                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 3" tabindex="-1">2</button></li>
-                                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 3" tabindex="-1">3</button></li>
-                                        <li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 3" tabindex="0" aria-selected="true">4</button></li>
-                                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control04" aria-controls="slick-slide04" aria-label="5 of 3" tabindex="-1">5</button></li>
-                                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control05" aria-controls="slick-slide05" aria-label="6 of 3" tabindex="-1">6</button></li>
-                                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control06" aria-controls="slick-slide06" aria-label="7 of 3" tabindex="-1">7</button></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -625,67 +520,144 @@
     <!-- ================ contact section end ================= -->
 
     <footer>
-        <!-- Footer Start-->
-        <div class="footer-area footer-padding fix">
+        <div class="recent-articles">
             <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-5 col-lg-5 col-md-7 col-sm-12">
-                        <div class="single-footer-caption">
-                            <div class="single-footer-caption">
-                                <!-- logo -->
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                <div class="recent-wrapper">
+                    <!-- section Tittle -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-tittle mb-30">
+                                <h3>Полезное</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="recent-active dot-style d-flex dot-style">
+                                <div class="single-recent mb-100">
+                                    <div class="what-img">
+                                        <img src="assets/img/useful/7.jpg" alt="">
+                                    </div>
+                                    <div class="what-cap">
+                                        <h4><a href="https://agartu.kz/zayavka">Подавай заявки куда угодно!</a></h4>
+                                    </div>
                                 </div>
-                                <div class="footer-tittle">
-                                    <div class="footer-pera">
+                                <div class="single-recent mb-100">
+                                    <div class="what-img">
+                                        <img src="assets/img/useful/1.png" alt="">
+                                    </div>
+                                    <div class="what-cap">
+                                        <h4><a href="https://elib.kdt.kz/">Учись с умом с Е-библиотекой</a></h4>
+                                    </div>
+                                </div>
+                                <div class="single-recent mb-100">
+                                    <div class="what-img">
+                                        <img src="assets/img/useful/6.jpg" alt="">
+                                    </div>
+                                    <div class="what-cap">
+                                        <h4><a href="https://study.kdt.kz/">С нашими сервисами учиться проще!</a></h4>
+                                    </div>
+                                </div>
+                                <div class="single-recent mb-100">
+                                    <div class="what-img">
+                                        <img src="assets/img/useful/5.jpg" alt="">
+                                    </div>
+                                    <div class="what-cap">
+                                        <h4><a href="https://exams.kdt.kz/">Проверь свои знания с BMC Exams!</a></h4>
+                                    </div>
+                                </div>
+
+                                <div class="single-recent mb-100">
+                                    <div class="what-img">
+                                        <img src="assets/img/useful/4.jpg" alt="">
+                                    </div>
+                                    <div class="what-cap">
+                                        <h4><a href="http://security.kdt.kz/">Будь в безопасности с ВМС СМБР!</a></h4>
+                                    </div>
+                                </div>
+                                <div class="single-recent mb-100">
+                                    <div class="what-img">
+                                        <img src="assets/img/useful/2.jpg" alt="">
+                                    </div>
+                                    <div class="what-cap">
+                                        <h4><a href="http://vacancy.kdt.kz/">Найди работу своей мечты с ВМС Вакансии</a></h4>
+                                    </div>
+                                </div>
+                                <div class="single-recent mb-100">
+                                    <div class="what-img">
+                                        <img src="assets/img/useful/3.jpg" alt="">
+                                    </div>
+                                    <div class="what-cap">
+                                        <h4><a href="http://estol.kdt.kz/">Ешь не думая с Е-столовой!</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Start-->
+        <div class="footer-area footer-padding fix ">
+            <div class="container ">
+                <div class="row d-flex justify-content-between ">
+                    <div class="col-xl-4 col-lg-5 col-md-7 col-sm-12 ">
+                        <div class="single-footer-caption ">
+                            <div class="single-footer-caption ">
+                                <!-- logo -->
+                                <div class="footer-logo ">
+                                    <a href="index.html "><img src="assets/img/logo/logo2_footer.png " alt=" "></a>
+                                </div>
+                                <div class="footer-tittle ">
+                                    <div class="footer-pera ">
                                         <p>Значимость этих проблем настолько очевидна, что консультация с широким активом представляет собой интересный эксперимент проверки новых предложений. Товарищи! укрепление и развитие структуры играет важную роль в
                                             формировании позиций, занимаемых участниками в отношении поставленных задач.</p>
                                     </div>
                                 </div>
                                 <!-- social -->
-                                <div class="footer-social">
-                                    <a href="#"><i class="fab fa-telegram"></i></a>
-                                    <a href="#"><i class="fab fa-vk"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                    <a href="#"><i class="fa fa-rss"></i></a>
-                                    <!--<a class="footer__link desktop" target="_blank" href="https://t.me/tcdaily">
-                                     <span>Мы в <span class="telegram__icon"><img class="tg__png" src="assets/img/logo/telegram.png" title="telegram icons" alt="telegram"></span> Telegram</span>
+                                <div class="footer-social ">
+                                    <a href="# "><i class="fab fa-telegram "></i></a>
+                                    <a href="# "><i class="fab fa-vk "></i></a>
+                                    <a href="# "><i class="fab fa-twitter "></i></a>
+                                    <a href="# "><i class="fab fa-facebook "></i></a>
+                                    <a href="# "><i class="fab fa-youtube "></i></a>
+                                    <a href="# "><i class="fa fa-rss "></i></a>
+                                    <!--<a class="footer__link desktop " target="_blank " href="https://t.me/tcdaily ">
+                                     <span>Мы в <span class="telegram__icon "><img class="tg__png " src="assets/img/logo/telegram.png " title="telegram icons " alt="telegram "></span> Telegram</span>
                                  </a> <br>
-                                 <a class="footer__link desktop" target="_blank" href="https://vk.com/trafficcardinal">
-                                     <span>Мы в <span class="telegram__icon"><img src="/frontend/images/svg/vk-footer.svg" alt="vk"></span> VK</span>
+                                 <a class="footer__link desktop " target="_blank " href="https://vk.com/trafficcardinal ">
+                                     <span>Мы в <span class="telegram__icon "><img src="/frontend/images/svg/vk-footer.svg " alt="vk "></span> VK</span>
                                  </a>-->
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4  col-sm-6">
-                        <div class="single-footer-caption mt-60">
-                            <div class="footer-tittle">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
+                        <div class="single-footer-caption mt-60 ">
+                            <div class="footer-tittle ">
                                 <h4>Статистика платформы</h4>
                                 <!-- Form -->
-                                <div class="footer-form">
-                                    <div id="mc_embed_signup">
-                                        <ul id="statistika">
-                                            <li class="stat">За месяц: <span>137197</span></li>
-                                            <li class="stat">За неделю: <span>51269</span></li>
-                                            <li class="stat">Вчера: <span>8575</span></li>
-                                            <li class="stat">Сегодня: <span>1066</span></li>
-                                            <li class="stat">Онлайн: <span>234</span></li>
+                                <div class="footer-form ">
+                                    <div id="mc_embed_signup ">
+                                        <ul id="statistika ">
+                                            <li class="stat ">За месяц: <span>137197</span></li>
+                                            <li class="stat ">За неделю: <span>51269</span></li>
+                                            <li class="stat ">Вчера: <span>8575</span></li>
+                                            <li class="stat ">Сегодня: <span>1066</span></li>
+                                            <li class="stat ">Онлайн: <span>234</span></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
-                        <div class="single-footer-caption mb-50 mt-60">
-                            <div class="footer-tittle">
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 ">
+                        <div class="single-footer-caption mb-50 mt-60 ">
+                            <div class="footer-tittle ">
                                 <h4>Статистика сайта</h4>
-                                <div class="footer-form">
-                                    <div id="mc_embed_signup">
-                                        <ul id="statistika">
+                                <div class="footer-form ">
+                                    <div id="mc_embed_signup ">
+                                        <ul id="statistika ">
                                             <li>За месяц: <span>308</span></li>
                                             <li>За неделю: <span>97</span></li>
                                             <li>Вчера: <span>8</span></li>
@@ -697,27 +669,65 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 ">
+                        <div class="single-footer-caption mb-50 mt-60 ">
+                            <nav>
+                                <div class="footer-tittle footer-tittle-navigation ">
+                                    <h4>Меню</h4>
+                                    <ul class="footer_navigation ">
+                                        <li><a class="footer_navigation_text " href="index.html ">Главная</a></li>
+                                        <li><a class="footer_navigation_text " href="about.html ">О Agartu</a></li>
+                                        <li><a class="footer_navigation_text " href="latest_news.html ">Новости</a></li>
+                                        <li><a class="footer_navigation_text " href="comunit.html ">Сообщества</a></li>
+                                        <li><a class="footer_navigation_text " href="blog.html ">Обсуждения</a></li>
+                                        <li><a class="footer_navigation_text " href="regseti.html ">Региональные сети</a></li>
+                                        <!-- <li><a class="footer_navigation_text " href="obrport.html ">Образовательные порталы</a></li> -->
+                                        <li><a class="footer_navigation_text " href="vak.html ">Вакансии</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 ">
+                        <div class="single-footer-caption mb-50 mt-60 ">
+                            <nav>
+                                <div class="footer-tittle footer-tittle-navigation ">
+                                    <h4>Дополнительное меню</h4>
+                                    <ul class="footer_navigation ">
+                                        <li>
+                                            <a class="footer_navigation_text " href=" "></a>
+                                        </li>
+                                        <li>
+                                            <a class="footer_navigation_text " href=" "></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- footer-bottom aera -->
-        <div class="footer-bottom-area">
-            <div class="container">
-                <div class="footer-border">
-                    <div class="row d-flex align-items-center justify-content-between">
-                        <div class="col-lg-6">
-                            <div class="footer-copy-right">
+        <div class="footer-bottom-area ">
+            <div class="container ">
+                <div class="footer-border ">
+                    <div class="row d-flex align-items-center justify-content-between ">
+                        <div class="col-lg-6 ">
+                            <div class="footer-copy-right ">
                                 <p>
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                    <!--Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->© 2022 "BenchMark Consulting"</p>
+                                    <!--Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart " aria-hidden="true "></i> by <a href="https://colorlib.com
+                                        " target="_blank ">Colorlib</a>-->
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->© 2022 "BenchMark Consulting "</p>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="footer-menu f-right">
+                        <div class="col-lg-6 ">
+                            <div class="footer-menu f-right ">
                                 <ul>
-                                    <li><a href="#">Политика конфиденциальности</a></li>
-                                    <li><a href="#">Пользовательское соглашение</a></li>
+                                    <li><a href="# ">Политика конфиденциальности</a></li>
+                                    <li><a href="# ">Пользовательское соглашение</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -729,6 +739,7 @@
     </footer>
 
     <!-- JS here -->
+
     <!-- All JS Custom Plugins Link Here here -->
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->
