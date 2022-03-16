@@ -147,7 +147,7 @@
     opacity: 0.9
 }
 
-::placeholder {
+ ::placeholder {
     color: #838383
 }
 
@@ -6857,23 +6857,24 @@ ul#statistika li {
     }
 }
 
-@media (min-width: 768px) and (max-width: 990px) {
+
+/* @media (min-width: 768px) and (max-width: 990px) {
     .regportals_text {
-        padding-left: 50px;
+    padding-left: 50px;
     }
-}
+    }
 
-@media (min-width: 400px) and (max-width: 768px) {
+    @media (min-width: 400px) and (max-width: 768px) {
     .name_service {
-        font-size: 90%;
+    font-size: 90%;
     }
-}
+    }
 
-@media (min-width: 200px) and (max-width: 400px) {
+    @media (min-width: 200px) and (max-width: 400px) {
     .name_service {
-        font-size: 80%;
+    font-size: 80%;
     }
-}
+    } */
 
 .Search-news {
     color: black;
@@ -6900,6 +6901,7 @@ ul#statistika li {
     font-weight: bold;
     font-size: 18px;
     color: black;
+    line-height: 25px;
 }
 
 .what-cap-link:hover {
@@ -6914,4 +6916,271 @@ ul#statistika li {
 
 ul {
     text-align: left;
+}
+
+
+/* баннер */
+
+#carouselExampleControls3 {
+    display: none;
+}
+
+@media (min-width: 0px) and (max-width: 991px) {
+    .carousel122 {
+        display: none;
+    }
+    #carouselExampleControls {
+        display: none;
+    }
+    #carouselExampleControls3 {
+        display: block;
+        padding-bottom: 20px;
+    }
+    .mb-90 {
+        margin-bottom: 0px;
+    }
+    .ticker {
+        width: 510px;
+    }
+    .ticker-wrapper.has-js {
+        width: 510px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 770px) {
+    .trending-animated {
+        display: none;
+    }
+    .what-cap-link {
+        font-size: 16px;
+    }
+}
+
+.btn_search {
+    min-width: 100px;
+    padding: 18px 44px;
+}
+
+
+/* about */
+
+@media (min-width: 990px) and (max-width: 1115px) {}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .ticker-wrapper.has-js {
+        width: 580px;
+    }
+    .ticker {
+        width: 580px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .ticker-wrapper.has-js {
+        width: 580px;
+    }
+    .ticker {
+        width: 580px;
+    }
+}
+
+
+/* Региональные сети  */
+
+@media (min-width: 400px) and (max-width: 1115px) {
+    .regportals_text {
+        justify-content: center;
+    }
+}
+
+.regseti-row-content {
+    justify-content: center;
+}
+
+.regseti-img-content {
+    max-width: max-content;
+}
+
+.regseti-btn-content {
+    max-width: max-content;
+}
+
+
+/* Вакансия */
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .btn-vacancy {
+        font-size: 10px!important;
+        padding: 25px 10px;
+        text-transform: unset;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 400px) {
+    .btn-vacancy {
+        font-size: 8px!important;
+        padding: 25px 10px;
+        text-transform: unset;
+    }
+    .link_to_vacancy {
+        font-size: larger;
+    }
+}
+
+
+/* резюме */
+
+@media (min-width: 200px) and (max-width: 575px) {
+    .news-image {
+        width: 60%!important;
+        margin: 0px auto 0px auto;
+        display: block;
+    }
+}
+
+.statistika li {
+    display: inline-block;
+    font-size: 10px;
+    color: #fff;
+    background: #5a5a5a;
+    padding: 5px;
+    margin-right: 3px;
+    margin-bottom: 3px!;
+}
+
+.count {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 29px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+/* job */
+
+@media (min-width: 200px) and (max-width: 420px) {
+    .logo-img {
+        width: 160%;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 445px) {
+    .job_item_text {
+        display: grid;
+    }
+}
+
+
+/* latest_news */
+
+@media (min-width: 200px) and (max-width: 420px) {
+    .comment {
+        line-height: 19px;
+    }
+    .desc .d-flex .justify-content-between {
+        flex-direction: column;
+    }
+}
+
+
+/* vacancy */
+
+@media (min-width: 200px) and (max-width: 325px) {
+    .link_to_vacancy {
+        font-size: large;
+    }
+}
+
+
+/* blog*/
+
+.blog-image-container .blog-image {
+    width: 100%;
+    margin: 0px auto 0px auto;
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    .discussions-btn {
+        display: grid;
+        justify-content: center;
+    }
+    .blog-image-container .blog-image {
+        width: 140%!important;
+    }
+}
+
+
+/* details */
+
+@media (min-width: 990px) and (max-width: 1115px) {
+    .btn-discussions {
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .btn-discussions {
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .btn-discussions {
+        display: grid;
+    }
+    .btn-discussions-1 {
+        padding: 20px 15px!important;
+        margin-bottom: 10px;
+    }
+    .btn-discussions-2 {
+        padding: 20px 15px!important;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* comunit */
+
+@media (min-width: 200px) and (max-width: 767px) {
+    .list-switch-comunit {
+        display: none;
+    }
+}
+
+
+/* news-KZ */
+
+
+/* .blog-image-container .blog-image {
+    width: 100%;
+    margin: 0px auto 0px auto;
+} */
+
+@media (min-width: 200px) and (max-width: 767px) {
+    .news-image2 {
+        width: 125%!important;
+    }
+}
+
+
+/* news-list */
+
+.news-list-image {
+    width: 100%!important;
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    .news-list-image {
+        width: 105%!important;
+    }
+}
+/*  Search*/
+@media (min-width: 200px) and (max-width: 767px) {
+    .input-append{
+        display: grid;
+    }
+    .btn_search {
+        padding: 16px 25px;
+    }
 }

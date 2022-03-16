@@ -4,26 +4,27 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Agartu</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/ticker-style.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/slicknav.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="../assets3/owlcarousel/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="../assets3/owlcarousel/assets/owl.theme.default.min.css" />
@@ -31,103 +32,297 @@
     <!-- javascript -->
     <script src="../assets3/vendors/jquery.min.js"></script>
     <script src="../assets3/owlcarousel/owl.carousel.js"></script>
-
     <style>
+        #carouselExampleControls1 {
+            margin-left: 88px;
+            margin-right: 88px;
+            margin-bottom: 25px;
+        }
+        
         #carouselExampleControls2 {
             margin-left: 300px;
-            margin-top: -90px;
+            margin-top: -110px;
         }
         
-        .pol {
-            border-bottom: 1px solid rgb(77, 87, 218);
+        .whats-news-area .single-follow .follow-us {
+            border: none;
+            padding-top: 0px;
+            padding-bottom: 15px;
+            padding-left: 13px;
+            padding-right: 13px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            /* width: 49%; */
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
         }
         
-        .contact-section {
-            padding: 30px 0 30px;
+        .big_news_text,
+        .communities_block_text {
+            position: inherit;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 8px;
+            background: rgb(58, 88, 156);
         }
         
-        .vacancies_link {
-            margin: 0px 36%;
-            font-size: 20px;
-            text-transform: none;
-            text-decoration: none;
-            padding-top: 30px;
-        }
-        
-        .vacancies_link a {
-            color: #428bca;
-        }
-        
-        .vacancies_link a:hover {
-            color: #003e74;
-        }
-        
-        .embed-responsive {
-            margin: 0 auto;
-        }
-        
-        .vacancy_menu_text {
-            display: block !important;
-        }
-        
-        .pol2 {
-            border-bottom: 1px solid rgb(110, 239, 243);
+        .col {
             padding-bottom: 10px;
         }
         
-        .pol3 {
-            padding-top: 10px;
-            border-bottom: 1px solid rgb(110, 239, 243);
+        .discussions_block {
+            border-bottom: 1px solid #ccc;
         }
         
-        .vacancy_menu {
+        .discussions_block a {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            color: #02afff;
+        }
+        
+        .blog-info-link {
+            padding-bottom: 10px;
+        }
+        
+        .tab_news_block_all a,
+        .communities_block_all a,
+        .discussions_block_all a {
+            background-color: #02afff;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-size: 12px;
+            display: inline-block;
+        }
+        
+        .recent-articles {
+            padding-top: 20px;
+        }
+        
+        .footer-copy-right a {
+            color: #838383;
+        }
+        
+        .footer-bottom-area .footer-copy-right p a {
+            color: #838383
+        }
+        
+        .trand-right-cap h6 {
+            color: #838383;
+        }
+        
+        .follow__us {
+            text-align: center;
+        }
+        
+        .center {
+            text-align: center;
+            position: relative;
+            right: 12%;
+        }
+        
+        .btn-index-news {
+            background-color: #2791d7;
+        }
+        
+        .row .align-items-center {
+            flex-wrap: wrap;
             margin: auto;
         }
         
-        .vacancy_Collapse {
-            padding-top: 10px;
+        .submenu2 {
+            width: 226px!important;
         }
         
-        .link_to_vacancy {
-            font-size: x-large;
-            color: black;
+        #item-0-0 {
+            background: url("assets/img/test/depositphotos2.png");
         }
         
-        .link_to_vacancy:hover {
-            color: rgb(66, 140, 224);
+        #item-0-1 {
+            background: url("assets/img/news_social/medical.png");
         }
         
-        .link_to_vacancy_div {
-            padding-top: 10px;
-            text-align: center !important;
+        #item-0-2 {
+            background: url("assets/img/news_social/sport.png");
         }
         
-        .regportals_main {
-            padding-top: 50px;
+        #item-0-3 {
+            background: url("assets/img/news_social/culture.png");
         }
         
-        .name_vacancy {
-            padding-top: 10px;
-            text-align: center !important;
+        #item-0-4 {
+            background: url("assets/img/news_social/fashion.png");
         }
         
-        .news-image {
-            width: 100%;
-            border-radius: 5px;
+        #item-0-5 {
+            background: url("assets/img/news_social/hobby.png");
         }
         
-        .job-title-text {
-            margin-top: 20px;
+        #item-0-6 {
+            background: url("assets/img/news_social/creativity.png");
         }
         
-        .btn-submit-job {
-            background-color: #3c7edd;
-            padding: 22px 22px;
-            margin: auto;
+        #item-1-0 {
+            background: url("assets/img/news_social/science.png");
         }
         
-        .btn-submit-job:hover {
-            color: black;
+        #item-1-1 {
+            background: url("assets/img/news_social/Industry2.png");
+        }
+        
+        #item-1-2 {
+            background: url("assets/img/news_social/tourism.png");
+        }
+        
+        #item-1-3 {
+            background: url("assets/img/news_social/catering.png");
+        }
+        
+        #item-1-4 {
+            background: url("assets/img/news_social/entertainments2.png");
+        }
+        
+        #item-1-5 {
+            background: url("assets/img/news_social/trading2.png");
+        }
+        
+        #item-1-6 {
+            background: url("assets/img/news_social/transport.png");
+        }
+        
+        #item-1-7 {
+            background: url("assets/img/news_social/finance2.png");
+        }
+        
+        .btn-index-block-news {
+            background: #3c7edd;
+            padding: 18px 24px;
+            position: relative;
+            left: 50%;
+            top: 78%;
+            transform: translate(-50%, 0);
+        }
+        
+        .btn-index-block-news-2 {
+            background: #3c7edd;
+            padding: 18px 24px;
+            position: relative;
+            left: 50%;
+            top: 82%;
+            transform: translate(-50%, 0);
+        }
+        
+        .btn-index-block-news:hover {
+            color: #fff;
+        }
+        
+        .btn-index-block-news-2:hover {
+            color: #fff;
+        }
+        /* .btn-index-block-news-0-0 {
+            position: relative;
+            left: 50%;
+            top: 82%;
+            transform: translate(-50%, 0);
+            background: #3c7edd;
+            padding: 18px 24px;
+        }
+        
+        .btn-index-block-news-0-1 {
+            position: relative;
+            left: 50%;
+            top: 82%;
+            transform: translate(-50%, 0);
+            padding: 18px 15px;
+        }
+        
+        .btn-index-block-news-0-2 {
+            position: relative;
+            left: 50%;
+            top: 78%;
+            transform: translate(-50%, 0);
+            padding: 18px 15px;
+        }
+        
+        .btn-index-block-news-0-3 {
+            position: relative;
+            left: 50%;
+            top: 78%;
+            transform: translate(-50%, 0);
+            padding: 18px 15px;
+        }
+        
+        .btn-index-block-news-0-4 {
+            position: relative;
+            left: 50%;
+            top: 78%;
+            transform: translate(-50%, 0);
+            padding: 18px 15px;
+        }
+        
+        .btn-index-block-news-0-5 {
+            position: relative;
+            left: 50%;
+            top: 78%;
+            transform: translate(-50%, 0);
+            padding: 18px 15px;
+        }
+        
+        .btn-index-block-news-0-6 {
+            position: relative;
+            left: 50%;
+            top: 78%;
+            transform: translate(-50%, 0);
+            padding: 18px 15px;
+        }
+        
+        .btn-index-block-news-1-1 {
+            position: relative;
+            left: 50%;
+            top: 72%;
+            transform: translate(-50%, 0);
+            padding: 18px 15px;
+        }
+        
+        .btn-index-block-news-1-2 {
+            position: relative;
+            left: 50%;
+            top: 72%;
+            transform: translate(-50%, 0);
+            padding: 18px 15px;
+        }
+        
+        .btn-index-block-news-1-3 {
+            position: relative;
+            left: 50%;
+            top: 72%;
+            transform: translate(-50%, 0);
+            padding: 18px 15px;
+        }
+        
+        .btn-index-block-news-1-4 {
+            position: relative;
+            left: 50%;
+            top: 72%;
+            transform: translate(-50%, 0);
+            padding: 18px 15px;
+        }
+        
+        .btn-index-block-news-1-5 {
+            position: relative;
+            left: 50%;
+            top: 72%;
+            transform: translate(-50%, 0);
+            padding: 18px 15px;
+        } */
+        
+        .btn-all-news a:hover {
+            color: #fff;
         }
     </style>
 </head>
@@ -187,7 +382,7 @@
                                         <ul id="navigation">
                                             <li><a href="index.html">Главная</a></li>
                                             <li><a href="about.html">О Agartu</a></li>
-                                            <li><a href="">Новости</a>
+                                            <li><a>Новости</a>
                                                 <ul class="submenu submenu2">
                                                     <li><a href="news-spheres.html">Новости по сферам</a></li>
                                                     <li><a href="news-KZ.html">Новости Казахстана</a></li>
@@ -249,150 +444,60 @@
                             <div class="col-xl-1 col-lg-1 col-md-1">
                                 <a href="Search.html" class="Search-news header-right-btn"><i class="fas fa-search"></i></a>
                             </div>
+
                         </div>
+                        <!-- Mobile Menu -->
+
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Header End -->
     </header>
-    <!-- ================ contact section start ================= -->
-    <section class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
+    <main>
+        <div class="trending-area fix">
+            <div class="container">
+
+                <div class="col-lg-12">
+
                     <div class="row ">
-                        <div class="col-lg-3 col-md-3 col-sm-4 news-author-list-item-image">
-                            <div class="news-image-container">
-                                <img class="news-image" src="assets/img/post/post_2.png" alt=" ">
-                            </div>
+                        <div class="col-md-12">
+                            <h6 class="mt-20 mb-20" style="text-align:center;">Новости в социальной сфере</h6>
                         </div>
-                        <div class="col-lg-9 col-md-9 col-sm-8 news-author-list-item-text">
-                            <h4 class="job-title-text">Бухгалтер, бухгалтер в одном лице</h4>
-                            <div class="row">
-                                <p class="col job-text ">Имя</p>
-                                <p class="col job-text">Марина, 33 года</p>
-                                <div class="w-100"></div>
-                                <p class="col job-text">Контакты</p>
-                                <p class="col job-text">
-                                    Доступны бесплатно после регистрации или входа</p>
-                            </div>
+                        <div class="col-md-6 border" id="item-0-0" style="height: 230px;"> <a class="btn btn-index-block-news-2 " href="news-education.html">Новости о образовании</a></div>
+                        <div class="col-md-6 border" id="item-0-1" style="height: 230px;"> <a class="btn btn-index-block-news-2 " href="news-list.html">Новости о медицина</a></div>
+                        <div class="col-md-5 border" id="item-0-2" style="height: 180px;"> <a class="btn btn-index-block-news " href="news-list.html">Новости о спорт</a></div>
+                        <div class="col-md-4 border" id="item-0-3" style="height: 180px;"> <a class="btn btn-index-block-news " href="news-list.html">Новости о культуре</a></div>
+                        <div class="col-md-3 border" id="item-0-4" style="height: 180px;"> <a class="btn btn-index-block-news " href="news-list.html">Новости о моде</a></div>
+                        <div class="col-md-4 border" id="item-0-5" style="height: 180px;"> <a class="btn btn-index-block-news " href="news-list.html">Новости о хобби</a></div>
+                        <div class="col-md-4 border" id="item-0-6" style="height: 180px;"> <a class="btn btn-index-block-news " href="news-list.html">Новости о творчество</a></div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-12">
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <h6 class="mt-20 mb-20" style="text-align:center;">Новости в деловой сфере</h6>
                         </div>
-                        <div class="col-12 news-author-list-item-text  ">
-                            <h4 class="job-title-text">Общая информация</h4>
-                            <hr>
-
-                            <div class="col-12 row pb-20">
-                                <p class="col-4 job-text ">Город проживания</p>
-                                <p class="col job-text">Аксай</p>
-                                <div class="w-100"></div>
-                                <p class="col-4 job-text">Заработная плата</p>
-                                <p class="col job-text">По договоренности</p>
-                                <div class="w-100"></div>
-
-                                <p class="col-4 job-text">График работы</p>
-                                <p class="col job-text">Полный рабочий день</p>
-                                <div class="w-100"></div>
-                                <p class="col-4 job-text">Образование</p>
-                                <p class="col job-text">Среднее специальное</p>
-
-                                <div class="w-100"></div>
-                                <p class="col-4 job-text">Опыт работы</p>
-                                <p class="col job-text">18 лет 6 месяцев</p>
-                                <div class="w-100"></div>
-                                <p class="col-4 job-text">Пол</p>
-                                <p class="col job-text">Мужской</p>
-                                <div class="w-100"></div>
-                                <p class="col-4 job-text">Возраст</p>
-                                <p class="col job-text">38 лет (1 мая 1983)</p>
-                                <div class="w-100"></div>
-                            </div>
-                            <h4>Опыт работы</h4>
-                            <hr>
-                            <div class="col-12 row pb-20">
-                                <p class="col-4 job-text ">Период работы</p>
-                                <p class="col job-text">февраль 2020 — март 2021 (1 год 2 месяца)</p>
-                                <div class="w-100"></div>
-                                <p class="col-4 job-text">Должность</p>
-                                <p class="col job-text">По договоренности</p>
-                                <div class="w-100"></div>
-
-                                <p class="col-lg-4 col-sm-4 job-text">Материальный координатор (отдел транспорта и логистики):</p>
-                                <p class="col-lg-8 col-sm-8 job-text">Полный рабочий день</p>
-                                <div class="w-100"></div>
-                                <p class="col-4 job-text">Компания</p>
-                                <p class="col job-text">ТОО Access and Coating Group</p>
-                                <div class="w-100"></div>
-                                <p class="col-4 job-text">Обязанности</p>
-                                <p class="col job-text">
-                                    Осуществление руководства по приему, хранению и отпуску товарно-материальных ценностей на складе, работы по размещению с учетом наиболее рационального использования складских площадей, облегчения и ускорения поиска и отпуска, а также сохранности товарно-материальных
-                                    ценностей. Обеспечение сохранности складируемых товарно-материальных ценностей, соблюдение режимов хранения, ведения учета складских операций;соблюдение правил оформления и сдачи приходно-расходных документов, составление
-                                    установленной отчетности.</p>
-                                <div class="w-100"></div>
-                            </div>
-                            <hr>
-                            <div class="col-12 row">
-                                <p class="col-4 job-text ">Период работы</p>
-                                <p class="col job-text">январь 2019 — октябрь 2019 (10 месяцев)</p>
-                                <div class="w-100"></div>
-
-                                <p class="col-4 job-text">Должность</p>
-                                <p class="col job-text"> Ведущий инженер по комплектации объектов. (отдел транспорта и логистики)</p>
-                                <div class="w-100"></div>
-
-                                <p class="col-4 job-text">Компания</p>
-                                <p class="col job-text">ТОО "МунайГазКурылыс"</p>
-                                <div class="w-100"></div>
-
-                                <p class="col-4 job-text">Обязанности</p>
-                                <p class="col job-text">
-                                    Комплектация строительных объектов всеми необходимыми материалами, запасными частями и оборудованием. Заключение договоров, поставки ТМЦ, координация работы складов, экпедиторов и автотранспорта, логистические процессы. Руководство погрузочно-разгрузочными
-                                    работами. Составление заявок в соответствии с процедурами ТШО.
-                                </p>
-                                <div class="w-100"></div>
-                            </div>
-                            <h4 class="job-title-text">Образование</h4>
-                            <hr>
-                            <div class="col-12 row pb-20">
-                                <p class="col-4 job-text ">Образование</p>
-                                <p class="col job-text"> Среднее специальное</p>
-                                <div class="w-100"></div>
-                                <p class="col-4 job-text">Окончание</p>
-                                <p class="col job-text">2001 год</p>
-                                <div class="w-100"></div>
-
-                                <p class="col-4 job-text">Учебное заведение</p>
-                                <p class="col job-text"> Самарский машиностроительный колледж</p>
-                                <div class="w-100"></div>
-                                <p class="col-lg-4 col-sm-4 job-text">Специальность:</p>
-                                <p class="col-lg-8 col-sm-8 job-text">(Эксплуатация автомобильного парка)</p>
-                            </div>
-                            <h4 class="job-title-text">Дополнительная информация</h4>
-                            <hr>
-                            <div class="col-12 row pb-20">
-                                <p class="col-4 job-text ">Иностранные языки</p>
-                                <p class="col job-text">Английский (Базовый)</p>
-                                <div class="w-100"></div>
-                                <p class="col-4 job-text">Водительские права</p>
-                                <p class="col job-text"> Категории B, C</p>
-                                <div class="w-100"></div>
-
-                                <p class="col-4 job-text">Владение компьютером</p>
-                                <p class="col job-text">Уверенный пользователь</p>
-                                <div class="w-100"></div>
-                                <p class="col-4 job-text">Навыки и умения</p>
-                                <p class="col job-text">ТОО Access and Coating Group</p>
-                                <div class="w-100"></div>
-                                <p class="col-4 job-text">Обязанности</p>
-                                <p class="col job-text"> Умение работать на ответственных должностях.</p>
-                                <div class="w-100"></div>
-                            </div>
-                        </div>
-                        <a class="btn btn-submit-job" href="">Отправить вакансию</a>
+                        <div class="col-md-7 border" id="item-0-0" style="height: 230px;"> <a class="btn btn-index-block-news-2 " href="news-list.html">Новости о наука</a></div>
+                        <div class="col-md-5 border" id="item-1-1" style="height: 230px;"> <a class="btn btn-index-block-news-2 " href="news-list.html">Новости о индустрия</a></div>
+                        <div class="col-md-4 border" id="item-1-2" style="height: 180px;"> <a class="btn btn-index-block-news " href="news-list.html">Новости о туризм</a></div>
+                        <div class="col-md-4 border" id="item-1-3" style="height: 180px;"> <a class="btn btn-index-block-news " href="news-list.html">Новости о общепит</a></div>
+                        <div class="col-md-4 border" id="item-1-4" style="height: 180px;"> <a class="btn btn-index-block-news " href="news-list.html">Новости о развлечения</a></div>
+                        <div class="col-md-4 border" id="item-1-5" style="height: 180px;"> <a class="btn btn-index-block-news " href="news-list.html">Новости о торговля</a></div>
+                        <div class="col-md-4 border" id="item-1-6" style="height: 180px;"> <a class="btn btn-index-block-news " href="news-list.html">Новости о транспорт</a></div>
+                        <div class="col-md-4 border" id="item-1-7" style="height: 180px;"> <a class="btn btn-index-block-news " href="news-list.html">Новости о финансы</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row ">
+                        <div class="col pt-20 btn-all-news" style="text-align: center;"> <a class="btn " href="news-list.html" style="">Все новости</a></div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
     <footer>
         <div class="recent-articles ">
             <div class="container ">
@@ -460,6 +565,7 @@
                                     </div>
                                     <div class="item ">
                                         <div class="what-img ">
+
                                             <img src="assets/img/useful/3.jpg " alt=" ">
                                         </div>
                                         <div class="what-cap ">
@@ -467,19 +573,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <script>
-                                    $(document).ready(function() {
-                                        var owl = $(".owl-carousel ");
-                                        owl.owlCarousel({
-                                            items: 5,
-                                            loop: true,
-                                            margin: 10,
-                                            autoplay: true,
-                                            autoplayTimeout: 3000,
-                                            autoplayHoverPause: false
-                                        });
-                                    });
-                                </script>
                             </div>
                         </div>
                     </section>
@@ -511,52 +604,11 @@
                                     <a href="# "><i class="fab fa-facebook "></i></a>
                                     <a href="# "><i class="fab fa-youtube "></i></a>
                                     <a href="# "><i class="fa fa-rss "></i></a>
-                                    <!--<a class="footer__link desktop " target="_blank " href="https://t.me/tcdaily ">
-                                     <span>Мы в <span class="telegram__icon "><img class="tg__png " src="assets/img/logo/telegram.png " title="telegram icons " alt="telegram "></span> Telegram</span>
-                                 </a> <br>
-                                 <a class="footer__link desktop " target="_blank " href="https://vk.com/trafficcardinal ">
-                                     <span>Мы в <span class="telegram__icon "><img src="/frontend/images/svg/vk-footer.svg " alt="vk "></span> VK</span>
-                                 </a>-->
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
-                        <div class="single-footer-caption mt-60 ">
-                            <div class="footer-tittle ">
-                                <h4>Статистика платформы</h4>
-                                <div class="footer-form ">
-                                    <div id="mc_embed_signup ">
-                                        <ul id="statistika ">
-                                            <li class="stat ">За месяц: <span>137197</span></li>
-                                            <li class="stat ">За неделю: <span>51269</span></li>
-                                            <li class="stat ">Вчера: <span>8575</span></li>
-                                            <li class="stat ">Сегодня: <span>1066</span></li>
-                                            <li class="stat ">Онлайн: <span>234</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 ">
-                        <div class="single-footer-caption mb-50 mt-60 ">
-                            <div class="footer-tittle ">
-                                <h4>Статистика сайта</h4>
-                                <div class="footer-form ">
-                                    <div id="mc_embed_signup ">
-                                        <ul id="statistika ">
-                                            <li>За месяц: <span>308</span></li>
-                                            <li>За неделю: <span>97</span></li>
-                                            <li>Вчера: <span>8</span></li>
-                                            <li>Сегодня: <span>2</span></li>
-                                            <li>Онлайн: <span>1</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 ">
                         <div class="single-footer-caption mb-50 mt-60 ">
                             <nav>
@@ -594,6 +646,7 @@
                                 </div>
                             </nav>
                         </div>
+
                     </div>
                     <div class="col-sm-6 col-lg-3 ">
                         <p class="count mt-60 "><span>Статистика сайта</span></p>
@@ -623,11 +676,7 @@
                     <div class="row d-flex align-items-center justify-content-between ">
                         <div class="col-lg-6 ">
                             <div class="footer-copy-right ">
-                                <p>
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                    <!--Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart " aria-hidden="true "></i> by <a href="https://colorlib.com
-                                                " target="_blank ">Colorlib</a>-->
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->© 2022 "BenchMark Consulting "</p>
+                                <p>© 2022 "BenchMark Consulting "</p>
                             </div>
                         </div>
                         <div class="col-lg-6 ">
@@ -644,9 +693,7 @@
         </div>
         <!-- Footer End-->
     </footer>
-
     <!-- JS here -->
-
     <!-- All JS Custom Plugins Link Here here -->
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js "></script>
     <!-- Jquery, Popper, Bootstrap -->

@@ -207,7 +207,7 @@
             padding: 5px;
             border: none;
             display: inline-block;
-            margin-left: 20px;
+            margin-left: 10px;
             -webkit-border-radius: 2px;
             -moz-border-radius: 2px;
             border-radius: 2px;
@@ -219,6 +219,23 @@
         .my-wrapper a {
             text-decoration: none;
         }
+        
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .col-md-3 {
+            max-width: 100%;
+        }
+        
+        .h5 {
+            color: #fff;
+        }
+        
+        .main-header .main-menu ul li a {
+            padding: 39px 8px;
+        }
     </style>
 </head>
 
@@ -227,7 +244,6 @@
         <!-- Header Start -->
         <div class="header-area">
             <div class="main-header ">
-
                 <div class="header-mid d-none d-md-block">
                     <div class="container">
                         <div class="row d-flex align-items-center">
@@ -237,6 +253,7 @@
                                     <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
                                 </div>
                             </div>
+
                             <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -262,10 +279,14 @@
                 <div class="header-bottom header-relative">
                     <div class="container">
                         <div class="row align-items-center" style="flex-wrap:nowrap">
-                            <div class="col-xl-11 col-lg-11 col-md-11 header-flex">
+                            <div class="col-xl-10 col-lg- col-md-10 header-flex">
                                 <!-- sticky -->
                                 <div class="sticky-logo info-open">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                    <img src="assets/img/logo/logo.png" alt="" style="
+                                    display: block;
+                                    max-width: 160%;
+                                    height: auto;
+                                ">
                                 </div>
                                 <!-- Main-menu -->
                                 <div class="main-menu d-none d-md-block">
@@ -273,48 +294,70 @@
                                         <ul id="navigation">
                                             <li><a href="index.html">Главная</a></li>
                                             <li><a href="about.html">О Agartu</a></li>
-                                            <li><a href="news-list.html">Новости</a></li>
+                                            <li><a href="">Новости</a>
+                                                <ul class="submenu submenu2">
+                                                    <li><a href="news-spheres.html">Новости по сферам</a></li>
+                                                    <li><a href="news-KZ.html">Новости Казахстана</a></li>
+                                                    <li><a href="news-world.html">Новости Мира</a></li>
+                                                </ul>
+                                            </li>
                                             <li><a href="comunit.html">Сообщества</a></li>
                                             <li><a href="blog.html">Обсуждения</a></li>
                                             <li><a href="regseti.html">Региональные сети</a></li>
-                                            <li><a href="vak.html">Работа</a></li>
+                                            <li><a class="footer_navigation_text " href="https://otanbilim.kz/" target="_blank">Образовательные порталы</a></li>
+                                            <li><a href="#">Работа</a>
+                                                <ul class="submenu">
+                                                    <li><a href="vak.html">Вакансии</a></li>
+                                                    <li>
+                                                        <a href="vak.html"></a><a href="job.html">Работа</a></li>
+                                                </ul>
+                                            </li>
                                             <li><a href="#">3lvl</a>
                                                 <ul class="submenu">
                                                     <li><a href="elements.html">Element</a></li>
                                                     <li><a href="#">Blog</a>
-                                                        <ul class="submenu">
+                                                        <ul class="submenu" style="top: 10px;left: 100%;">
                                                             <li><a href="elements.html">Element</a></li>
                                                             <li><a href="blog.html">Blog</a></li>
                                                         </ul>
                                                     </li>
+                                                    <li><a href="elements.html">Element</a></li>
+                                                    <li><a href="elements.html">Element</a></li>
+                                                    <li><a href="#">Blog</a>
+                                                        <ul class="submenu" style="top: 10px;left: 100%;">
+                                                            <li><a href="elements.html">Element</a></li>
+                                                            <li><a href="blog.html">Blog</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="elements.html">Element</a></li>
+
                                                 </ul>
                                             </li>
-
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
                             <div class="col-xl-1 col-lg-1 col-md-1">
-                                <a href="Search.html" class="Search-news header-right-btn f-right "><i class="fas fa-search"></i></a>
+                                <div class="mobile_menu d-block d-md-none" style="margin-top: 56px !important;">
+                                    <div class="slicknav_menu" style="margin-top: 40px !important;">
+                                        <a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"></a>
+                                        <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+                                            <li><a href="index.html" role="menuitem" tabindex="-1">Главная</a></li>
+                                            <li><a href="about.html" role="menuitem" tabindex="-1">О Agartu</a></li>
+                                            <li><a href="news-list.html" role="menuitem" tabindex="-1">Новости</a></li>
+                                            <li><a href="comunit.html" role="menuitem" tabindex="-1">Сообщества</a></li>
+                                            <li><a href="blog.html" role="menuitem" tabindex="-1">Обсуждения</a></li>
+                                            <li><a href="regseti.html" role="menuitem" tabindex="-1">Региональные сети</a></li>
+                                            <li><a href="vak.html" role="menuitem" tabindex="-1">Работа</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-1 col-lg-1 col-md-1">
+                                <a href="Search.html" class="Search-news header-right-btn"><i class="fas fa-search"></i></a>
                             </div>
                         </div>
                         <!-- Mobile Menu -->
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-md-none">
-                                <div class="slicknav_menu">
-                                    <a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"></a>
-                                    <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
-                                        <li><a href="index.html" role="menuitem" tabindex="-1">Главная</a></li>
-                                        <li><a href="about.html" role="menuitem" tabindex="-1">О Agartu</a></li>
-                                        <li><a href="news-list.html" role="menuitem" tabindex="-1">Новости</a></li>
-                                        <li><a href="comunit.html" role="menuitem" tabindex="-1">Сообщества</a></li>
-                                        <li><a href="blog.html" role="menuitem" tabindex="-1">Обсуждения</a></li>
-                                        <li><a href="regseti.html" role="menuitem" tabindex="-1">Региональные сети</a></li>
-                                        <li><a href="vak.html" role="menuitem" tabindex="-1">Работа</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -324,206 +367,178 @@
     <div class="my-wrapper">
         <div class="container-fluid ">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="wr_block">
-                        <div class="my-block-left">
-                            <div class="title">
-                                <div class="new-title">
-                                    Клуб аудиторов г. Астана
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                        <div class='cn'>
-                            <div class='image' style='position:relative; text-align:center; vertical-align:top;'>
-                                <img src='assets/img/logo/logo.jpg' />
-                            </div>
-                        </div>
-                        <div class="com_des">
-                            <script type="text/javascript">
-                                function showhidedescr() {
-                                    if ($('#cutdescr').css('display') == 'none') {
-                                        $('#cutdescr').css('display', 'block');
-                                        $('#fulldescr').css('display', 'none');
-                                    } else {
-                                        $('#cutdescr').css('display', 'none');
-                                        $('#fulldescr').css('display', 'block');
-                                    }
-                                }
-                            </script>
-
-                            <div class="col-md-12">
-                                <div>
-                                    <div>
-                                        <div>
-                                            <!--<h1 style="font-size:20px; color:#000; text-align:left; vertical-align: top; margin: 12px 0;">Клуб аудиторов г. Астана</h1>-->
-
-                                            <!--<div style="display:inline-block; vertical-align: top;">
-						</div>-->
-
-
-
-                                        </div>
-                                    </div>
-
-                                    <script type='text/javascript'>
-                                        $(document).on('click', '#enterCommunity', '', function() {
-                                            ioCallEntity({
-                                                entity: 'io.model.social.community.addSelf',
-                                                resultType: 'json',
-                                                params: {
-                                                    pkid: '1544789146869111',
-                                                },
-                                                success: function(data) {
-                                                    var obj;
-                                                    try {
-                                                        obj = $.parseJSON(data);
-                                                    } catch (ex) {
-                                                        obj = null;
-                                                    }
-                                                    //console.log(data);
-                                                    if (obj) {
-                                                        // в obj.res лежит результат модели
-                                                        // obj.content содержит данные модели выведенные через echo
-                                                        // obj.res.error_code содержит ошибку модели
-                                                        //console.log(obj.res.error_code);
-                                                        //console.log(obj.content);
-                                                        $('#enterCommunity').html('');
-
-                                                        $('#enterCommunity').attr('id', 'logoutCommunity');
-                                                    }
-                                                }
-                                            })
-                                        });
-                                        $(document).on('click', '#logoutCommunity', '', function() {
-                                            ioCallEntity({
-                                                entity: 'io.model.social.community.deleteSelf',
-                                                resultType: 'json',
-                                                params: {
-                                                    pkid: '1544789146869111',
-                                                },
-                                                success: function(data) {
-                                                    var obj;
-                                                    try {
-                                                        obj = $.parseJSON(data);
-                                                    } catch (ex) {
-                                                        obj = null;
-                                                    }
-                                                    //console.log(data);
-                                                    if (obj) {
-                                                        // в obj.res лежит результат модели
-                                                        // obj.content содержит данные модели выведенные через echo
-                                                        // obj.res.error_code содержит ошибку модели
-                                                        //console.log(obj.res.error_code);
-                                                        //console.log(obj.content);
-                                                        $('#logoutCommunity').html('');
-                                                        $('#logoutCommunity').attr('id', 'enterCommunity');
-                                                    }
-                                                }
-                                            })
-                                        });
-                                    </script>
-                                    <!-- <h2 style="margin: 0px;"><span><a style="display:none;" href="javascript://" onclick="showhidedescr()">подробное описание</a></span></h2> -->
-                                    <p id="cutdescr" style="display:none;">Приветствуем Вас в нашем клубе! Будем очень рады помочь новым участникам клуба и поддержать старожилов...</p>
-                                    <p id="fulldescr" style="display:block;">Приветствуем Вас в нашем клубе! Будем очень рады помочь новым участникам клуба и поддержать старожилов</p>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="seti">
-                                    <script type="text/javascript">
-                                        (function() {
-                                            if (window.pluso)
-                                                if (typeof window.pluso.start == "function") return;
-                                            if (window.ifpluso == undefined) {
-                                                window.ifpluso = 1;
-                                                var d = document,
-                                                    s = d.createElement('script'),
-                                                    g = 'getElementsByTagName';
-                                                s.type = 'text/javascript';
-                                                s.charset = 'UTF-8';
-                                                s.async = true;
-                                                s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
-                                                var h = d[g]('body')[0];
-                                                h.appendChild(s);
-                                            }
-                                        })();
-                                    </script>
-                                    <div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,nocounter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email"></div>
-                                </div>
-                            </div>
-                            <div style='clear:both;'></div>
-                        </div>
-                    </div>
-                    <div class="wr_block">
-                        <div class="bot_menu">
-                            <ul>
-                                <li><a href="http://audit.kdt.kz">Назад</a></li>
-                            </ul>
-                        </div>
-                        <div class="lang">
-                            <a href="?lang=kz">kaz</a>
-                            <a href="?lang=ru">rus</a>
-                            <a href="?lang=en">eng</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="wr_block">
-                        <div class="sobit-news">
-                            <div class="right2 grt">
-                                <div class="new-none">
-                                    <div class="title-a">
-                                        <h5>Новости</h5>
-                                        <a href="/news" class="all-news">Все новости</a>
-                                    </div>
-                                    <div class="new-wrap-obsugdeniy flex">
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-
-
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-md-12">
-                        <!--Начало правой левой колонки-->
+                <div class="row_left" style="width: 30%; height: auto; display: block;">
+                    <div class="col-md-3" style="display: inline-block; width: 100%;">
                         <div class="wr_block">
-                            <div class="uchastniki">
-                                <div class="title-b">
-                                    <h5>Участники</h5>
+                            <div class="my-block-left">
+                                <div class="title">
+                                    <div class="new-title">
+                                        Клуб аудиторов г. Астана
+                                    </div>
+                                    <div class="clear"></div>
                                 </div>
-                                <div class="wrap-uchast">
-                                    <div class="slider2">
-                                        <div class="slide">
-                                            <img src="//cdn1.kdt.kz/files/avatar/88/cf/b2/88cfb21c0766a1815f3ef88d8641c437_small.jpg">
-                                            <p>dujsekeev.nursultan</p>
+                            </div>
+                            <div class='cn'>
+                                <div class='image' style='position:relative; text-align:center; vertical-align:top;'>
+                                    <img src='assets/img/logo/logo.jpg' />
+                                </div>
+                            </div>
+                            <div class="com_des">
+                                <script type="text/javascript">
+                                    function showhidedescr() {
+                                        if ($('#cutdescr').css('display') == 'none') {
+                                            $('#cutdescr').css('display', 'block');
+                                            $('#fulldescr').css('display', 'none');
+                                        } else {
+                                            $('#cutdescr').css('display', 'none');
+                                            $('#fulldescr').css('display', 'block');
+                                        }
+                                    }
+                                </script>
+                                <div class="col-md-12">
+                                    <div>
+                                        <script type='text/javascript'>
+                                            $(document).on('click', '#enterCommunity', '', function() {
+                                                ioCallEntity({
+                                                    entity: 'io.model.social.community.addSelf',
+                                                    resultType: 'json',
+                                                    params: {
+                                                        pkid: '1544789146869111',
+                                                    },
+                                                    success: function(data) {
+                                                        var obj;
+                                                        try {
+                                                            obj = $.parseJSON(data);
+                                                        } catch (ex) {
+                                                            obj = null;
+                                                        }
+                                                        if (obj) {
+                                                            $('#enterCommunity').html('');
+                                                            $('#enterCommunity').attr('id', 'logoutCommunity');
+                                                        }
+                                                    }
+                                                })
+                                            });
+                                            $(document).on('click', '#logoutCommunity', '', function() {
+                                                ioCallEntity({
+                                                    entity: 'io.model.social.community.deleteSelf',
+                                                    resultType: 'json',
+                                                    params: {
+                                                        pkid: '1544789146869111',
+                                                    },
+                                                    success: function(data) {
+                                                        var obj;
+                                                        try {
+                                                            obj = $.parseJSON(data);
+                                                        } catch (ex) {
+                                                            obj = null;
+                                                        }
+                                                        if (obj) {
+                                                            $('#logoutCommunity').html('');
+                                                            $('#logoutCommunity').attr('id', 'enterCommunity');
+                                                        }
+                                                    }
+                                                })
+                                            });
+                                        </script>
+                                        <!-- <h2 style="margin: 0px;"><span><a style="display:none;" href="javascript://" onclick="showhidedescr()">подробное описание</a></span></h2> -->
+                                        <p id="cutdescr" style="display:none;">Приветствуем Вас в нашем клубе! Будем очень рады помочь новым участникам клуба и поддержать старожилов...</p>
+                                        <p id="fulldescr" style="display:block;">Приветствуем Вас в нашем клубе! Будем очень рады помочь новым участникам клуба и поддержать старожилов</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="seti">
+                                        <script type="text/javascript">
+                                            (function() {
+                                                if (window.pluso)
+                                                    if (typeof window.pluso.start == "function") return;
+                                                if (window.ifpluso == undefined) {
+                                                    window.ifpluso = 1;
+                                                    var d = document,
+                                                        s = d.createElement('script'),
+                                                        g = 'getElementsByTagName';
+                                                    s.type = 'text/javascript';
+                                                    s.charset = 'UTF-8';
+                                                    s.async = true;
+                                                    s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
+                                                    var h = d[g]('body')[0];
+                                                    h.appendChild(s);
+                                                }
+                                            })();
+                                        </script>
+                                        <div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,nocounter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email"></div>
+                                    </div>
+                                </div>
+                                <div style='clear:both;'></div>
+                            </div>
+                        </div>
+                        <div class="wr_block">
+                            <div class="bot_menu">
+                                <ul>
+                                    <li><a href="http://audit.kdt.kz">Назад</a></li>
+                                </ul>
+                            </div>
+                            <div class="lang">
+                                <a href="?lang=kz">kaz</a>
+                                <a href="?lang=ru">rus</a>
+                                <a href="?lang=en">eng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row_center" style="width: 40%; display: block; height: auto;">
+                    <div class="col-md-12" style="display: inline-block; width: 100%;">
+                        <div class="wr_block">
+                            <div class="sobit-news">
+                                <div class="right2 grt">
+                                    <div class="new-none">
+                                        <div class="title-a">
+                                            <h5 style="color: #fff;">Новости</h5>
+                                            <a href="/news" class="all-news">Все новости</a>
+                                        </div>
+                                        <div class="new-wrap-obsugdeniy flex">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--Конец правой левой колонки-->
                     </div>
                 </div>
-                <div class="wr_block">
-                    <div class="my-block-right">
-                        <div class="obshenie">
-                            <div class="title-a">
-
-                                <h5>Обсуждения</h5>
-                                <a href="/discussions" class="sozdanie-tem">Все обсуждения</a>
+                <div class="row_right" style="width: 30%; height: auto; display: block;">
+                    <div class="col-md-3" style="display: inline-block; width: 100%;">
+                        <div class="row">
+                            <div class="col-md-12" style="padding-right: 5px; padding-left: 5px;">
+                                <!--Начало правой левой колонки-->
+                                <div class="wr_block">
+                                    <div class="uchastniki">
+                                        <div class="title-b">
+                                            <h5>Участники</h5>
+                                        </div>
+                                        <div class="wrap-uchast">
+                                            <div class="slider2">
+                                                <div class="slide">
+                                                    <img src="//cdn1.kdt.kz/files/avatar/88/cf/b2/88cfb21c0766a1815f3ef88d8641c437_small.jpg">
+                                                    <p>dujsekeev.nursultan</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Конец правой левой колонки-->
                             </div>
-                            <div class='news_p com_des'>
-                                <i></i>
+                        </div>
+                        <div class="wr_block">
+                            <div class="my-block-right">
+                                <div class="obshenie">
+                                    <div class="title-a">
+
+                                        <h5 style="color: #fff;">Обсуждения</h5>
+                                        <a href="/discussions" class="sozdanie-tem">Все обсуждения</a>
+                                    </div>
+                                    <div class='news_p com_des'>
+                                        <i></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -535,77 +550,79 @@
         <div class="recent-articles ">
             <div class="container ">
                 <div class="recent-wrapper ">
-                    <!-- section Tittle -->
-                    <div class="row ">
-                        <div class="col-lg-12 ">
-                            <div class="section-tittle mb-30 ">
-                                <h3>Полезное</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col-12 ">
-                            <div class="recent-active dot-style d-flex dot-style ">
-                                <div class="single-recent mb-100 ">
-                                    <div class="what-img ">
-                                        <img src="assets/img/useful/7.jpg " alt=" ">
-                                    </div>
-                                    <div class="what-cap ">
-                                        <h4><a href="https://agartu.kz/zayavka ">Подавай заявки куда угодно!</a></h4>
-                                    </div>
-                                </div>
-                                <div class="single-recent mb-100 ">
-                                    <div class="what-img ">
-                                        <img src="assets/img/useful/1.png " alt=" ">
-                                    </div>
-                                    <div class="what-cap ">
-                                        <h4><a href="https://elib.kdt.kz/ ">Учись с умом с Е-библиотекой</a></h4>
-                                    </div>
-                                </div>
-                                <div class="single-recent mb-100 ">
-                                    <div class="what-img ">
-                                        <img src="assets/img/useful/6.jpg " alt=" ">
-                                    </div>
-                                    <div class="what-cap ">
-                                        <h4><a href="https://study.kdt.kz/ ">С нашими сервисами учиться проще!</a></h4>
-                                    </div>
-                                </div>
-                                <div class="single-recent mb-100 ">
-                                    <div class="what-img ">
-                                        <img src="assets/img/useful/5.jpg " alt=" ">
-                                    </div>
-                                    <div class="what-cap ">
-                                        <h4><a href="https://exams.kdt.kz/ ">Проверь свои знания с BMC Exams!</a></h4>
-                                    </div>
-                                </div>
-
-                                <div class="single-recent mb-100 ">
-                                    <div class="what-img ">
-                                        <img src="assets/img/useful/4.jpg " alt=" ">
-                                    </div>
-                                    <div class="what-cap ">
-                                        <h4><a href="http://security.kdt.kz/ ">Будь в безопасности с ВМС СМБР!</a></h4>
-                                    </div>
-                                </div>
-                                <div class="single-recent mb-100 ">
-                                    <div class="what-img ">
-                                        <img src="assets/img/useful/2.jpg " alt=" ">
-                                    </div>
-                                    <div class="what-cap ">
-                                        <h4><a href="http://vacancy.kdt.kz/ ">Найди работу своей мечты с ВМС Вакансии</a></h4>
-                                    </div>
-                                </div>
-                                <div class="single-recent mb-100 ">
-                                    <div class="what-img ">
-                                        <img src="assets/img/useful/3.jpg " alt=" ">
-                                    </div>
-                                    <div class="what-cap ">
-                                        <h4><a href="http://estol.kdt.kz/ ">Ешь не думая с Е-столовой!</a></h4>
-                                    </div>
+                    <section id="deos ">
+                        <!-- section Tittle -->
+                        <div class="row ">
+                            <div class="col-lg-12 ">
+                                <div class="section-tittle mb-40 ">
+                                    <h3>Полезное</h3>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="row ">
+                            <div class="col-12 ">
+                                <div class="owl-carousel owl-theme ">
+                                    <div class="item ">
+                                        <div class="what-img ">
+                                            <img src="assets/img/useful/7.jpg " alt=" ">
+                                        </div>
+                                        <div class="what-cap ">
+                                            <p><a class="what-cap-link " href="https://agartu.kz/zayavka ">Подавай заявки куда угодно!</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="what-img ">
+                                            <img src="assets/img/useful/1.png " alt=" ">
+                                        </div>
+                                        <div class="what-cap ">
+                                            <p><a class="what-cap-link " href="https://elib.kdt.kz/ ">Учись с умом с Е-библиотекой</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="what-img ">
+                                            <img src="assets/img/useful/6.jpg " alt=" ">
+                                        </div>
+                                        <div class="what-cap ">
+                                            <p><a class="what-cap-link " href="https://study.kdt.kz/ ">С нашими сервисами учиться проще!</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="what-img ">
+                                            <img src="assets/img/useful/5.jpg " alt=" ">
+                                        </div>
+                                        <div class="what-cap ">
+                                            <p><a class="what-cap-link " href="https://exams.kdt.kz/ ">Проверь свои знания с BMC Exams!</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="what-img ">
+                                            <img src="assets/img/useful/4.jpg " alt=" ">
+                                        </div>
+                                        <div class="what-cap ">
+                                            <p><a class="what-cap-link " href="http://security.kdt.kz/ ">Будь в безопасности с ВМС СМБР!</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="what-img ">
+                                            <img src="assets/img/useful/2.jpg " alt=" ">
+                                        </div>
+                                        <div class="what-cap ">
+                                            <p><a class="what-cap-link " href="http://vacancy.kdt.kz/ ">Найди работу своей мечты с ВМС Вакансии</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="what-img ">
+                                            <img src="assets/img/useful/3.jpg " alt=" ">
+                                        </div>
+                                        <div class="what-cap ">
+                                            <p><a class="what-cap-link " href="http://estol.kdt.kz/ ">Ешь не думая с Е-столовой!</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -634,43 +651,7 @@
                                     <a href="# "><i class="fab fa-facebook "></i></a>
                                     <a href="# "><i class="fab fa-youtube "></i></a>
                                     <a href="# "><i class="fa fa-rss "></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
-                        <div class="single-footer-caption mt-60 ">
-                            <div class="footer-tittle ">
-                                <h4>Статистика платформы</h4>
-                                <!-- Form -->
-                                <div class="footer-form ">
-                                    <div id="mc_embed_signup ">
-                                        <ul id="statistika ">
-                                            <li class="stat ">За месяц: <span>137197</span></li>
-                                            <li class="stat ">За неделю: <span>51269</span></li>
-                                            <li class="stat ">Вчера: <span>8575</span></li>
-                                            <li class="stat ">Сегодня: <span>1066</span></li>
-                                            <li class="stat ">Онлайн: <span>234</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 ">
-                        <div class="single-footer-caption mb-50 mt-60 ">
-                            <div class="footer-tittle ">
-                                <h4>Статистика сайта</h4>
-                                <div class="footer-form ">
-                                    <div id="mc_embed_signup ">
-                                        <ul id="statistika ">
-                                            <li>За месяц: <span>308</span></li>
-                                            <li>За неделю: <span>97</span></li>
-                                            <li>Вчера: <span>8</span></li>
-                                            <li>Сегодня: <span>2</span></li>
-                                            <li>Онлайн: <span>1</span></li>
-                                        </ul>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -687,8 +668,9 @@
                                         <li><a class="footer_navigation_text " href="comunit.html ">Сообщества</a></li>
                                         <li><a class="footer_navigation_text " href="blog.html ">Обсуждения</a></li>
                                         <li><a class="footer_navigation_text " href="regseti.html ">Региональные сети</a></li>
-                                        <!-- <li><a class="footer_navigation_text " href="obrport.html ">Образовательные порталы</a></li> -->
+                                        <li><a class="footer_navigation_text " href="https://otanbilim.kz/" target="_blank">Образовательные порталы</a></li>
                                         <li><a class="footer_navigation_text " href="vak.html ">Вакансии</a></li>
+                                        <li><a class="footer_navigation_text " href="job.html ">Работа</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -712,6 +694,24 @@
                             </nav>
                         </div>
                     </div>
+                    <div class="col-sm-6 col-lg-3 ">
+                        <p class="count mt-60 "><span>Статистика сайта</span></p>
+                        <ul class="statistika ">
+                            <li>За месяц<span>: 130</span></li>
+                            <li>За неделю<span>: 17</span></li>
+                            <li>Вчера<span>: 4</span></li>
+                            <li>Сегодня<span>: 4</span></li>
+                            <li>Онлайн<span>: 0</span></li>
+                        </ul>
+                        <p class="count mt-60 "><span>Статистика платформы</span></p>
+                        <ul class="statistika ">
+                            <li>За месяц<span>: 135204</span></li>
+                            <li>За неделю<span>: 19218</span></li>
+                            <li>Вчера<span>: 4268</span></li>
+                            <li>Сегодня<span>: 2604</span></li>
+                            <li>Онлайн<span>: 187</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -722,11 +722,7 @@
                     <div class="row d-flex align-items-center justify-content-between ">
                         <div class="col-lg-6 ">
                             <div class="footer-copy-right ">
-                                <p>
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                    <!--Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart " aria-hidden="true "></i> by <a href="https://colorlib.com
-                                            " target="_blank ">Colorlib</a>-->
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->© 2022 "BenchMark Consulting "</p>
+                                <p>© 2022 "BenchMark Consulting "</p>
                             </div>
                         </div>
                         <div class="col-lg-6 ">

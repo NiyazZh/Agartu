@@ -2,7 +2,10 @@
 <html class="no-js" lang="zxx">
 
 <head>
-
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Agartu</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
@@ -35,6 +38,20 @@
             margin-top: -90px;
         }
         
+        #carouselExampleControls3 {
+            display: none;
+        }
+        
+        @media (min-width: 0px) and (max-width: 991px) {
+            #carouselExampleControls3 {
+                display: block;
+                padding-bottom: 20px;
+            }
+            .mb-90 {
+                margin-bottom: 0px;
+            }
+        }
+        
         .news-author-list {
             padding-top: 20px;
             grid-gap: 20px;
@@ -42,12 +59,15 @@
         
         .news-author-list-item {
             display: flex;
-            grid-gap: 15px;
-            padding-bottom: 10px;
         }
         
         .blog-info-link {
             color: black;
+        }
+        
+        .blog-info-link li {
+            float: left;
+            font-size: 13px;
         }
         
         .news-image {
@@ -55,9 +75,13 @@
         }
         
         .border-color {
+            border: 1px solid #dee2e6!important;
             background: #fbf9ff;
             padding: 10px;
-            border-radius: 10px;
+        }
+        
+        .border-color:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
         
         .btn-news-detail-container {
@@ -92,11 +116,6 @@
             color: #506172;
         }
         
-        .blog-info-link .btn-news-detail {
-            color: #f89e53;
-            font-size: 15px;
-        }
-        
         .nav-item-color:hover {
             color: #2a84dd;
         }
@@ -105,9 +124,32 @@
             border-bottom: 1px solid #f0e9ff;
         }
         
-        .btn-comunit {
-            float: right;
-            padding: 14px 35px;
+        .news-image2 {
+            width: 100%;
+        }
+        
+        .news-image {
+            width: 120%;
+        }
+        
+        .blog-info-link .btn-news-detail {
+            color: #f89e53;
+            font-size: 15px;
+        }
+        
+        .tannounce {
+            line-height: 25px;
+            margin-bottom: 5px;
+        }
+        
+        @media (min-width: 0px) and (max-width: 991px) {
+            #carouselExampleControls {
+                display: none;
+            }
+            #carouselExampleControls3 {
+                display: block;
+                padding-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -245,477 +287,340 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <br>
-                        <div class="wrap">
-                            <div class="search">
-                                <input type="text" class="searchTerm" placeholder="Найти" style="width: 400px;">
-                                <button type="submit" class="searchButton">
-                              <i class="fa fa-search"></i>
-                              </button>
-                            </div>
-                        </div>
-                        <br>
+
                         <div class="news-author-list">
-
-                            <div class="row discussions-btn">
-                                <div class="col">
-                                    <h4>Все обсуждения</h4>
-                                </div>
-                                <div class="col">
-                                    <span href="#" class="btn btn-comunit">Создать обсуждение</span>
-                                </div>
+                            <div class="text-center mt-20 mb-40">
+                                <h3>Новости мира</h3>
                             </div>
-                            <br>
-
                             <div class="tab-content" id="nav-tabContent">
                                 <!-- Все -->
-                                <div class="row tab-pane fade show active" id="nav-all-news" role="tabpanel" aria-labelledby="nav-all-news">
+                                <div class="tab-pane fade show active" id="nav-all-news" role="tabpanel" aria-labelledby="nav-all-news">
                                     <div class="news-author-list-item border-color mb-30">
                                         <div class="col-3 -author-list-item-image">
-                                            <div class="blog-image-container">
-                                                <img class="blog-image" src="assets/img/blog/blog_4.png " alt=" ">
+                                            <div class="news-image-container">
+                                                <img class="news-image2" src="assets/img/blog/blog_4.png " alt=" ">
                                             </div>
                                         </div>
-
                                         <div class="col-9 -author-list-item-text  ">
-                                            <h5>Образование в эпоху перемен</h5>
+                                            <h3>Окунаются в мир книг.</h3>
                                             <p>Образование</p>
-                                            <p class="tannounce"> Недавно в столице на площадке Международного финансового центра «Астана» прошел многодневный финансовый форум.
+                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
                                             </p>
                                             <ul class="blog-info-link ">
                                                 <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
                                                 <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
                                                 <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
-                                                <li><a class="btn-news-detail" href="details.html">Перейти</a></li>
+                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="news-author-list-item border-color mb-30">
-                                        <div class="news-author-list-item-image">
+
+                                        <div class="col-3 -author-list-item-image">
                                             <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png" alt=" ">
+                                                <img class="news-image2" src="assets/img/blog/blog_4.png " alt=" ">
                                             </div>
                                         </div>
-                                        <div class="news-author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Культура</p>
-                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
-                                            </p>
-                                            <ul class="blog-info-link ">
-                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Travel, Lifestyle</a></li>
-                                                <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Комментарии</a></li>
-                                            </ul>
-                                            <div class="btn-news-detail-container text-center">
-                                                <a class=" btn-news-detail " href="latest_news.html">подробнее</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="news-author-list-item border-color mb-30">
-                                        <div class="news-author-list-item-image">
-                                            <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png" alt=" ">
-                                            </div>
-                                        </div>
-                                        <div class="news-author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Культура</p>
-                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
-                                            </p>
-                                            <ul class="blog-info-link ">
-                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Travel, Lifestyle</a></li>
-                                                <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Комментарии</a></li>
-                                            </ul>
-                                            <div class="btn-news-detail-container text-center">
-                                                <a class=" btn-news-detail " href="latest_news.html">подробнее</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="news-author-list-item border-color mb-30">
-                                        <div class="news-author-list-item-image">
-                                            <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png" alt=" ">
-                                            </div>
-                                        </div>
-                                        <div class="news-author-list-item-text  ">
+                                        <div class="col-9 -author-list-item-text  ">
                                             <h3>Окунаются в мир книг.</h3>
                                             <p>Спорт</p>
                                             <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
                                             </p>
                                             <ul class="blog-info-link ">
                                                 <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Travel, Lifestyle</a></li>
+                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
                                                 <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Комментарии</a></li>
+                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
+                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
                                             </ul>
-                                            <div class="btn-news-detail-container text-center">
-                                                <a class=" btn-news-detail " href="latest_news.html">подробнее</a>
-                                            </div>
                                         </div>
                                     </div>
                                     <div class="news-author-list-item border-color mb-30">
-                                        <div class="news-author-list-item-image">
+
+                                        <div class="col-3 -author-list-item-image">
                                             <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png" alt=" ">
+                                                <img class="news-image2" src="assets/img/blog/blog_4.png " alt=" ">
                                             </div>
                                         </div>
-                                        <div class="news-author-list-item-text  ">
+                                        <div class="col-9 -author-list-item-text  ">
                                             <h3>Окунаются в мир книг.</h3>
-                                            <p>Туризм</p>
+                                            <p>Культура</p>
                                             <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
                                             </p>
                                             <ul class="blog-info-link ">
                                                 <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Travel, Lifestyle</a></li>
+                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
                                                 <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Комментарии</a></li>
+                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
+                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
                                             </ul>
-                                            <div class="btn-news-detail-container text-center">
-                                                <a class=" btn-news-detail " href="latest_news.html">подробнее</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!-- Образование -->
-                                <div class="tab-pane fade show" id="nav-education" role="tabpanel" aria-labelledby="nav-education">
-                                    <div class="news-author-list-item border-color mb-30">
-                                        <div class="news-author-list-item-image">
-                                            <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png" alt=" ">
-                                            </div>
-                                        </div>
-
-                                        <div class="news-author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Образование</p>
-                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
-                                            </p>
-                                            <ul class="blog-info-link ">
-                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Travel, Lifestyle</a></li>
-                                                <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Комментарии</a></li>
-                                            </ul>
-                                            <div class="btn-news-detail-container text-center">
-                                                <a class=" btn-news-detail " href="latest_news.html">подробнее</a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Культура -->
-                                <div class="tab-pane fade show" id="nav-culture" role="tabpanel" aria-labelledby="nav-education">
-                                    <div class="news-author-list-item border-color mb-30">
-                                        <div class="news-author-list-item-image">
-                                            <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png" alt=" ">
-                                            </div>
-                                        </div>
-
-                                        <div class="news-author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Культура</p>
-                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
-                                            </p>
-                                            <ul class="blog-info-link ">
-                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Travel, Lifestyle</a></li>
-                                                <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Комментарии</a></li>
-                                            </ul>
-                                            <div class="btn-news-detail-container text-center">
-                                                <a class=" btn-news-detail " href="latest_news.html">подробнее</a>
-                                            </div>
-                                        </div>
+                                <!-- Образование -->
+                                <div class="tab-pane fade show" id="nav-subcategory1" role="tabpanel" aria-labelledby="nav-subcategory1">
+                                    <div class="text-center mb-20">
+                                        <h5>Новости образования</h5>
                                     </div>
                                     <div class="news-author-list-item border-color mb-30">
-                                        <div class="news-author-list-item-image">
+                                        <div class="col-2 -author-list-item-image">
                                             <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png" alt=" ">
+                                                <img class="news-image" src="assets/img/blog/blog_4.png " alt=" ">
                                             </div>
                                         </div>
-
-                                        <div class="news-author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Культура</p>
+                                        <div class="col-10 -author-list-item-text  ">
+                                            <h5>Окунаются в мир книг.</h5>
                                             <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
                                             </p>
                                             <ul class="blog-info-link ">
                                                 <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Travel, Lifestyle</a></li>
+                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
                                                 <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Комментарии</a></li>
+                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
+                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
                                             </ul>
-                                            <div class="btn-news-detail-container text-center">
-                                                <a class=" btn-news-detail " href="latest_news.html">подробнее</a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Спорт -->
-                                <div class="tab-pane fade show" id="nav-sport" role="tabpanel" aria-labelledby="nav-sport">
+                                <div class="tab-pane fade show" id="nav-subcategory2" role="tabpanel" aria-labelledby="nav-subcategory2">
+                                    <div class="text-center mb-20">
+                                        <h5>Новости спорта</h5>
+                                    </div>
                                     <div class="news-author-list-item border-color mb-30">
-                                        <div class="news-author-list-item-image">
+                                        <div class="col-2 -author-list-item-image">
                                             <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png" alt=" ">
+                                                <img class="news-image" src="assets/img/blog/blog_4.png " alt=" ">
                                             </div>
                                         </div>
-
-                                        <div class="news-author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Спорт</p>
+                                        <div class="col-10 -author-list-item-text  ">
+                                            <h5>Окунаются в мир спорта.</h5>
                                             <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
                                             </p>
                                             <ul class="blog-info-link ">
                                                 <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Travel, Lifestyle</a></li>
+                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
                                                 <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Комментарии</a></li>
+                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
+                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
                                             </ul>
-                                            <div class="btn-news-detail-container text-center">
-                                                <a class=" btn-news-detail " href="latest_news.html">подробнее</a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- Туризм -->
-                                <div class="tab-pane fade show" id="nav-tourism" role="tabpanel" aria-labelledby="nav-tourism">
+                                <!-- Культура -->
+                                <div class="tab-pane fade show" id="nav-subcategory3" role="tabpanel" aria-labelledby="nav-subcategory3">
+                                    <div class="text-center mb-20">
+                                        <h5>Новости Культуры</h5>
+                                    </div>
                                     <div class="news-author-list-item border-color mb-30">
-                                        <div class="news-author-list-item-image">
+                                        <div class="col-2 -author-list-item-image">
                                             <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png" alt=" ">
+                                                <img class="news-image" src="assets/img/blog/blog_4.png " alt=" ">
                                             </div>
                                         </div>
-
-                                        <div class="news-author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Туризм</p>
+                                        <div class="col-10 -author-list-item-text  ">
+                                            <h5>Окунаются в мир культуры.</h5>
                                             <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
                                             </p>
                                             <ul class="blog-info-link ">
                                                 <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Travel, Lifestyle</a></li>
+                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
                                                 <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Комментарии</a></li>
+                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
+                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
                                             </ul>
-                                            <div class="btn-news-detail-container text-center">
-                                                <a class=" btn-news-detail " href="latest_news.html">подробнее</a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Увлечения -->
-                                <div class="tab-pane fade show" id="nav-hobbies" role="tabpanel" aria-labelledby="nav-hobbies">
-                                    <div class="news-author-list-item border-color mb-30">
-                                        <div class="news-author-list-item-image">
-                                            <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png" alt=" ">
-                                            </div>
-                                        </div>
-
-                                        <div class="news-author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Увлечения</p>
-                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
-                                            </p>
-                                            <ul class="blog-info-link ">
-                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Travel, Lifestyle</a></li>
-                                                <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Комментарии</a></li>
-                                            </ul>
-                                            <div class="btn-news-detail-container text-center">
-                                                <a class=" btn-news-detail " href="latest_news.html">подробнее</a>
-                                            </div>
-                                        </div>
+                                <!-- Медицина -->
+                                <div class="tab-pane fade show" id="nav-subcategory4" role="tabpanel" aria-labelledby="nav-subcategory4">
+                                    <div class="text-center mb-20">
+                                        <h5>Новости медицины</h5>
                                     </div>
-                                </div>
-                                <!-- Технологии -->
-                                <div class="tab-pane fade show" id="nav-technology" role="tabpanel" aria-labelledby="nav-technology">
                                     <div class="news-author-list-item border-color mb-30">
-                                        <div class="news-author-list-item-image">
+                                        <div class="col-2 -author-list-item-image">
                                             <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png" alt=" ">
+                                                <img class="news-image" src="assets/img/blog/blog_4.png " alt=" ">
                                             </div>
                                         </div>
-
-                                        <div class="news-author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Технологии</p>
+                                        <div class="col-10 -author-list-item-text  ">
+                                            <h5>Окунаются в мир Ммедицины.</h5>
                                             <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
                                             </p>
                                             <ul class="blog-info-link ">
                                                 <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Travel, Lifestyle</a></li>
+                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
                                                 <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Комментарии</a></li>
+                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
+                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
                                             </ul>
-                                            <div class="btn-news-detail-container text-center">
-                                                <a class=" btn-news-detail " href="latest_news.html">подробнее</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Мода -->
-                                <div class="tab-pane fade show" id="nav-fashion" role="tabpanel" aria-labelledby="nav-fashion">
-                                    <div class="news-author-list-item border-color mb-30">
-                                        <div class="news-author-list-item-image">
-                                            <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png" alt=" ">
-                                            </div>
-                                        </div>
-
-                                        <div class="news-author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Мода</p>
-                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
-                                            </p>
-                                            <ul class="blog-info-link ">
-                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Travel, Lifestyle</a></li>
-                                                <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Комментарии</a></li>
-                                            </ul>
-                                            <div class="btn-news-detail-container text-center">
-                                                <a class=" btn-news-detail " href="latest_news.html">подробнее</a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Хобби -->
-                                <div class="tab-pane fade show" id="nav-hobby" role="tabpanel" aria-labelledby="nav-hobby">
+                                <div class="tab-pane fade show" id="nav-subcategory5" role="tabpanel" aria-labelledby="nav-subcategory5">
+                                    <div class="text-center mb-20">
+                                        <h5>Новости хобби</h5>
+                                    </div>
                                     <div class="news-author-list-item border-color mb-30">
-                                        <div class="news-author-list-item-image">
+                                        <div class="col-2 -author-list-item-image">
                                             <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png" alt=" ">
+                                                <img class="news-image" src="assets/img/blog/blog_4.png " alt=" ">
                                             </div>
                                         </div>
-
-                                        <div class="news-author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Хобби</p>
+                                        <div class="col-10 -author-list-item-text  ">
+                                            <h5>Окунаются в мир хобби.</h5>
                                             <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
                                             </p>
                                             <ul class="blog-info-link ">
                                                 <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Travel, Lifestyle</a></li>
+                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
                                                 <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Комментарии</a></li>
+                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
+                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
                                             </ul>
-                                            <div class="btn-news-detail-container text-center">
-                                                <a class=" btn-news-detail " href="latest_news.html">подробнее</a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Творчество -->
-                                <div class="tab-pane fade show" id="nav-creation" role="tabpanel" aria-labelledby="nav-creation">
+                                <!-- Культура -->
+                                <div class="tab-pane fade show" id="nav-subcategory6" role="tabpanel" aria-labelledby="nav-subcategory6">
+                                    <div class="text-center mb-20">
+                                        <h5>Новости Культуры</h5>
+                                    </div>
                                     <div class="news-author-list-item border-color mb-30">
-                                        <div class="news-author-list-item-image">
+                                        <div class="col-2 -author-list-item-image">
                                             <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png" alt=" ">
+                                                <img class="news-image" src="assets/img/blog/blog_4.png " alt=" ">
                                             </div>
                                         </div>
-
-                                        <div class="news-author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Творчество</p>
+                                        <div class="col-10 -author-list-item-text  ">
+                                            <h5>Окунаются в мир книг.</h5>
                                             <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
                                             </p>
                                             <ul class="blog-info-link ">
                                                 <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Travel, Lifestyle</a></li>
+                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
                                                 <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Комментарии</a></li>
+                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
+                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
                                             </ul>
-                                            <div class="btn-news-detail-container text-center">
-                                                <a class=" btn-news-detail " href="latest_news.html">подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Культура -->
+                                <div class="tab-pane fade show" id="nav-subcategory7" role="tabpanel" aria-labelledby="nav-subcategory7">
+                                    <div class="text-center mb-20">
+                                        <h5>Новости Культуры</h5>
+                                    </div>
+                                    <div class="news-author-list-item border-color mb-30">
+                                        <div class="col-2 -author-list-item-image">
+                                            <div class="news-image-container">
+                                                <img class="news-image" src="assets/img/blog/blog_4.png " alt=" ">
                                             </div>
+                                        </div>
+                                        <div class="col-10 -author-list-item-text  ">
+                                            <h5>Окунаются в мир книг.</h5>
+                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
+                                            </p>
+                                            <ul class="blog-info-link ">
+                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
+                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
+                                                <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
+                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
+                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
-
                     </div>
-
                     <div class="col-lg-4 ">
                         <div class="properties__button mt-30">
                             <!--Nav Button  -->
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist" style="display: flex; flex-direction: column; background-color: #fbf9ff;">
-                                    <a class="nav-item nav-item-color nav-link active" id="nav-all-news-tab" data-toggle="tab" href="#nav-all-news" role="tab" aria-controls="nav-all-news" aria-selected="true">все Обсуждения</a>
+                                    <a class="nav-item nav-item-color nav-link active" id="nav-all-news-tab" data-toggle="tab" href="#nav-all-news" role="tab" aria-controls="nav-all-news" aria-selected="true">все новости</a>
                                     <div class="pol"></div>
-                                    <a class="nav-item nav-item-color nav-link" id="nav-education-tab" data-toggle="tab" href="#nav-education" role="tab" aria-controls="nav-education" aria-selected="false">Образование</a>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory1-tab" data-toggle="tab" href="#nav-subcategory1" role="tab" aria-controls="nav-subcategory1" aria-selected="false">Образование</a>
                                     <div class="pol"></div>
-                                    <a class="nav-item nav-item-color nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-culture" role="tab" aria-controls="nav-culture" aria-selected="false">Культура</a>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory2-tab" data-toggle="tab" href="#nav-subcategory2" role="tab" aria-controls="nav-subcategory2" aria-selected="false">Спорт</a>
                                     <div class="pol"></div>
-                                    <a class="nav-item nav-item-color nav-link" id="nav-sport-tab" data-toggle="tab" href="#nav-sport" role="tab" aria-controls="nav-sport" aria-selected="false">Спорт</a>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory3-tab" data-toggle="tab" href="#nav-subcategory3" role="tab" aria-controls="nav-subcategory3" aria-selected="false">Культура</a>
                                     <div class="pol"></div>
-                                    <a class="nav-item nav-item-color nav-link" id="nav-tourism-tab" data-toggle="tab" href="#nav-tourism" role="tab" aria-controls="nav-tourism" aria-selected="false">Туризм</a>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory4-tab" data-toggle="tab" href="#nav-subcategory4" role="tab" aria-controls="nav-subcategory4" aria-selected="false">Медицина</a>
                                     <div class="pol"></div>
-                                    <a class="nav-item nav-item-color nav-link" id="nav-hobbies-tab" data-toggle="tab" href="#nav-hobbies" role="tab" aria-controls="nav-hobbies" aria-selected="false">Увлечения</a>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory5-tab" data-toggle="tab" href="#nav-subcategory5" role="tab" aria-controls="nav-subcategory5" aria-selected="false">Хобби</a>
                                     <div class="pol"></div>
-                                    <a class="nav-item nav-item-color nav-link" id="nav-technology-tab" data-toggle="tab" href="#nav-technology" role="tab" aria-controls="nav-technology" aria-selected="false">Технологии</a>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory6-tab" data-toggle="tab" href="#nav-subcategory6" role="tab" aria-controls="nav-subcategory6" aria-selected="false">Творчество</a>
                                     <div class="pol"></div>
-                                    <a class="nav-item nav-item-color nav-link" id="nav-fashion-tab" data-toggle="tab" href="#nav-fashion" role="tab" aria-controls="nav-fashion" aria-selected="false">Мода</a>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory7-tab" data-toggle="tab" href="#nav-subcategory7" role="tab" aria-controls="nav-subcategory7" aria-selected="false">Мода</a>
                                     <div class="pol"></div>
-                                    <a class="nav-item nav-item-color nav-link" id="nav-hobby-tab" data-toggle="tab" href="#nav-hobby" role="tab" aria-controls="nav-hobby" aria-selected="false">Хобби</a>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory8-tab" data-toggle="tab" href="#nav-subcategory8" role="tab" aria-controls="nav-subcategory8" aria-selected="false">Индустрия</a>
                                     <div class="pol"></div>
-                                    <a class="nav-item nav-item-color nav-link" id="nav-creation-tab" data-toggle="tab" href="#nav-creation" role="tab" aria-controls="nav-creation" aria-selected="false">Творчество</a>
-
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory9-tab" data-toggle="tab" href="#nav-subcategory9" role="tab" aria-controls="nav-subcategory9" aria-selected="false">Наука </a>
+                                    <div class="pol"></div>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory10-tab" data-toggle="tab" href="#nav-subcategory10" role="tab" aria-controls="nav-subcategory10" aria-selected="false">Общепит</a>
+                                    <div class="pol"></div>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory11-tab" data-toggle="tab" href="#nav-subcategory11" role="tab" aria-controls="nav-subcategory11" aria-selected="false">Развлечения</a>
+                                    <div class="pol"></div>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory12-tab" data-toggle="tab" href="#nav-subcategory12" role="tab" aria-controls="nav-subcategory12" aria-selected="false">Торговля</a>
+                                    <div class="pol"></div>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory13-tab" data-toggle="tab" href="#nav-subcategory13" role="tab" aria-controls="nav-subcategory13" aria-selected="false">Транспорт</a>
+                                    <div class="pol"></div>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory14-tab" data-toggle="tab" href="#nav-subcategory14" role="tab" aria-controls="nav-subcategory14" aria-selected="false">Финансы</a>
+                                    <div class="pol"></div>
+                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory15-tab" data-toggle="tab" href="#nav-subcategory15" role="tab" aria-controls="nav-subcategory15" aria-selected="false">Туризм</a>
+                                    <div class="pol"></div>
                                 </div>
                             </nav>
                             <!--End Nav Button  -->
                         </div>
+
                         <!-- Section Tittle -->
-                        <div class="section-tittle mb-40">
+                        <div class="section-tittle mb-40 ">
                             <h3>Подписывайтесь на нас</h3>
                         </div>
                         <!-- Flow Socail -->
-                        <div class="single-follow mb-45">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="https://vk.com/bmc_sales"><img src="assets/img/vk.png" /></a>
+                        <div class="single-follow mb-45 ">
+                            <div class="row subscribe ">
+                                <div class=" ">
+                                    <a href="https://vk.com/bmc_sales "><img src="assets/img/news/icon-vk.png " /></a>
                                 </div>
 
-                                <div class="col">
-                                    <a href="https://twitter.com/bmcsales2"><img src="assets/img/1491579583-yumminkysocialmedia02_83111.png" /></a>
+                                <div class=" ">
+                                    <a href="https://twitter.com/bmcsales2 "><img src="assets/img/news/icon-tw.png " /></a>
                                 </div>
 
-                                <div class="col">
-                                    <a href="https://www.facebook.com/benchmarkconsultingltd/"><img src="assets/img/Facebook_icon-icons.com_66805.png" /></a>
+                                <div class=" ">
+                                    <a href="https://www.facebook.com/benchmarkconsultingltd/ "><img src="assets/img/news/icon-fb.png " /></a>
                                 </div>
 
-                                <div class="col">
-                                    <a href="https://www.youtube.com/user/bmcsales1"><img src="assets/img/1491579609-yumminkysocialmedia08_83079.png" /></a>
+                                <div class=" ">
+                                    <a href="https://www.youtube.com/user/bmcsales1 "><img src="assets/img/news/icon-yo.png " /></a>
                                 </div>
                             </div>
                         </div>
                         <!-- New Poster -->
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <a href="https://mektepforma.kz/"><img class="d-block w-100" src="assets/img/news/news_card.png" alt=""></a>
+                        <div id="carouselExampleControls " class="carousel slide carousel1 carousel122" data-ride="carousel ">
+                            <div class="carousel-inner ">
+                                <div class="carousel-item active ">
+                                    <a href="https://mektepforma.kz/ "><img class="d-block w-100 " src="assets/img/news/news_card.png " alt=" "></a>
                                 </div>
-                                <div class="carousel-item">
-                                    <a href="https://t.me/kdtkzchat"><img class="d-block w-100" src="assets/img/news/news_card2.png" alt=""></a>
+                                <div class="carousel-item ">
+                                    <a href="https://t.me/kdtkzchat "><img class="d-block w-100 " src="assets/img/news/news_card2.png " alt=" "></a>
                                 </div>
-                                <div class="carousel-item">
-                                    <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi"><img class="d-block w-100" src="assets/img/news/news_card3.png" alt=""></a>
+                                <div class="carousel-item ">
+                                    <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi "><img class="d-block w-100 " src="assets/img/news/news_card3.png " alt=" "></a>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                <span class="sr-only">Previous</span>
+                            <a class="carousel-control-prev " href="#carouselExampleControls " role="button " data-slide="prev ">
+                                <span class="sr-only ">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                <span class="sr-only">Next</span>
+                            <a class="carousel-control-next " href="#carouselExampleControls " role="button " data-slide="next ">
+                                <span class="sr-only ">Next</span>
                             </a>
                         </div>
                     </div>
@@ -838,6 +743,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </section>
