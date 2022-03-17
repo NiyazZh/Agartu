@@ -83,11 +83,15 @@
         padding: 20px 30px;
         background-color: #3c7edd;
     }
-    /* @media screen and (min-width: 768px) and (max-width: 991px) { .logo{margin: 0 auto;max-width:100%;}} */
+    .btn-delete {
+        color: red;
+    }
+    .btn-answer {
+        color: rgb(35 147 218);
+    }
 </style>
 
 <body>
-
     <!-- Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -266,7 +270,7 @@
                                         <div class="article-author ">Просмотров 15</div>
                                     </div>
                                     <div class="col-sm-3 ">
-                                        <div class="article-date ">Комментариев 5</div>
+                                        <div class="article-date ">Ответов: 5</div>
                                     </div>
                                 </div>
                             </div>
@@ -310,8 +314,13 @@
                                                             </h5>
                                                             <p class="date ">4 декабря 2017 года в 3:12 вечера</p>
                                                         </div>
-                                                        <div class="отвечать-btn ">
-                                                            <a href="# " class="btn-отвечать text-uppercase ">отвечать</a>
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="answer-btn">
+                                                                <a href=" # " class="btn-delete " style="font-size: 16px; ">удалить</a>
+                                                            </div>
+                                                            <div class="answer-btn" style="padding-left: 10px;">
+                                                                <a href="# " class="btn-answer  " style="font-size: 16px; ">ответить</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -335,8 +344,13 @@
                                                             </h5>
                                                             <p class="date ">4 декабря 2017 года в 3:12 вечера </p>
                                                         </div>
-                                                        <div class="отвечать-btn ">
-                                                            <a href="# " class="btn-отвечать text-uppercase ">отвечать</a>
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="answer-btn">
+                                                                <a href=" # " class="btn-delete " style="font-size: 16px; ">удалить</a>
+                                                            </div>
+                                                            <div class="answer-btn" style="padding-left: 10px;">
+                                                                <a href="# " class="btn-answer  " style="font-size: 16px; ">ответить</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -360,8 +374,13 @@
                                                             </h5>
                                                             <p class="date ">4 декабря 2017 года в 3:12 вечера </p>
                                                         </div>
-                                                        <div class="отвечать-btn ">
-                                                            <a href="# " class="btn-отвечать text-uppercase ">отвечать</a>
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="answer-btn">
+                                                                <a href=" # " class="btn-delete " style="font-size: 16px; ">удалить</a>
+                                                            </div>
+                                                            <div class="answer-btn" style="padding-left: 10px;">
+                                                                <a href="# " class="btn-answer  " style="font-size: 16px; ">ответить</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -371,7 +390,7 @@
                                 </div>
                                 <div class="col ">
                                     <div class="comment-form2 ">
-                                        <h4>Оставьте комментарий</h4>
+                                        <h4>Добавить ответ</h4>
                                         <form class="form-contact comment_form mt-20 " action=" # " id="commentForm ">
                                             <div class="row ">
                                                 <div class="col-lg-10 ">
