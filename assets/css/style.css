@@ -4464,7 +4464,7 @@ hr {
 
 .blog-info-link li {
     float: left;
-    font-size: 14px
+    font-size: 13px
 }
 
 .blog-info-link li a {
@@ -6884,10 +6884,6 @@ ul#statistika li {
     color: rgb(65, 62, 55);
 }
 
-.subscribe {
-    justify-content: space-around;
-}
-
 .header-area .slicknav_btn {
     top: -51px;
     right: 50px;
@@ -7096,7 +7092,7 @@ ul {
 /* blog*/
 
 .blog-image-container .blog-image {
-    width: 100%;
+    width: 105%;
     margin: 0px auto 0px auto;
 }
 
@@ -7183,4 +7179,15 @@ ul {
     .btn_search {
         padding: 16px 25px;
     }
+}
+/* header */
+#carouselExampleControls2 {
+    margin-left: 300px;
+    margin-top: -110px;
+    padding-left: 10px;
+}
+
+/* Подписывайтесь на нас */
+.subscribe {
+    justify-content: space-around;
 }
