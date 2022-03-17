@@ -6857,25 +6857,6 @@ ul#statistika li {
     }
 }
 
-
-/* @media (min-width: 768px) and (max-width: 990px) {
-    .regportals_text {
-    padding-left: 50px;
-    }
-    }
-
-    @media (min-width: 400px) and (max-width: 768px) {
-    .name_service {
-    font-size: 90%;
-    }
-    }
-
-    @media (min-width: 200px) and (max-width: 400px) {
-    .name_service {
-    font-size: 80%;
-    }
-    } */
-
 .Search-news {
     color: black;
 }
@@ -7144,21 +7125,11 @@ ul {
     }
 }
 
-
-/* news-KZ */
-
-
-/* .blog-image-container .blog-image {
-    width: 100%;
-    margin: 0px auto 0px auto;
-} */
-
 @media (min-width: 200px) and (max-width: 767px) {
     .news-image2 {
         width: 125%!important;
     }
 }
-
 
 /* news-list */
 
