@@ -7172,12 +7172,9 @@ ul {
     }
 }
 /*  Search*/
-@media (min-width: 200px) and (max-width: 767px) {
+@media (min-width: 200px) and (max-width: 991px) {
     .input-append{
-        display: grid;
-    }
-    .btn_search {
-        padding: 16px 25px;
+        text-align: center;
     }
 }
 /* header */
