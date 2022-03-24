@@ -46,13 +46,12 @@
     }
     
     .comment-text {
-        color: #506172;
+        color: black;
+        /* color: #506172; */
     }
     
     .comment-form2 {
-        border-top: 1px solid #eee;
         padding-top: 30px;
-        margin-top: 30px;
     }
     
     .comments-area2 {
@@ -60,6 +59,7 @@
         border-top: 1px solid #eee;
         padding: 45px 0;
         margin-top: 50px;
+        border-bottom: 1px solid #eee;
     }
     
     .comments-area3 .comment-list2 {
@@ -76,7 +76,7 @@
     }
     
     .comment-list2 {
-        padding-bottom: 30px;
+        padding-bottom: 10px;
     }
     
     .btn-discussions-2 {
@@ -89,11 +89,39 @@
     .btn-answer {
         color: rgb(35 147 218);
     }
+    .about-pera1{
+        color: black;
+    }
+    .date-details{
+        font-size: 14px;
+        color: #999999;
+        margin-bottom: 0;
+    }
+    .single-comment2{
+        padding: 10px 0  0 50px;
+    }
+    .link-show-more{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: #3c7edd;
+        font-size: 18px!important;
+        display: flex;
+        justify-content: center;
+    }
+    .comments-area2{
+        border-top: 1px solid #eee;
+        padding: 20px 0;
+        margin-top: 20px
+    }
+    .comments-area2 h4 {
+        margin-bottom: 25px;
+        font-size: 18px
+    }
 </style>
 
 <body>
     <!-- Preloader Start -->
-    <div id="preloader-active">
+    <!-- <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
@@ -102,7 +130,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Preloader Start -->
     <header>
         <!-- Header Start -->
@@ -164,12 +192,12 @@
                                             <li><a href="comunit.html">Сообщества</a></li>
                                             <li><a href="blog.html">Обсуждения</a></li>
                                             <li><a href="regseti.html">Региональные сети</a></li>
-                                            <li><a class="footer_navigation_text " href="https://otanbilim.kz/" target="_blank">Образовательные порталы</a></li>
+                                            <li><a class="footer_navigation_text " href="https://otanbilim.kz/" target="_blank">Otanbilim.kz</a></li>
                                             <li><a href="#">Работа</a>
                                                 <ul class="submenu">
                                                     <li><a href="vak.html">Вакансии</a></li>
                                                     <li>
-                                                        <a href="vak.html"></a><a href="job.html">Работа</a></li>
+                                                       <a href="job.html">Резюме</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">3lvl</a>
@@ -241,20 +269,18 @@
                                 <button type="submit" class="btn btn-discussions-1">Удалить обсуждение</button>
                                 <button type="submit" class="btn btn-discussions-2">Изменить обсуждение</button>
                             </div>
-
+<!-- 
                             <div class="about-img ">
                                 <img src="assets/img/trending/trending_top.jpg " alt=" ">
-                            </div>
+                            </div> -->
 
-
-                            <div class="about-prea mt-20 ">
+                        
+                            
+                            <div class="about-prea">
+                                <img src="assets/img/trending/trending_top.jpg " style="width: 36%; float: left;margin: 11px 10px 6px 0;" alt=" ">
                                 <p class="about-pera1 mb-25 ">
                                     Сокращение школьных домашних заданий вынесено на всенародное обсуждение педагогов и родителей. Об этом в ходе правительственного часа в Мажилисе на тему "О ходе реализации Государственной программы развития образования и науки Республики Казахстан на
-                                    2016–2019 годы " сообщил министр образования и науки РК Ерлан Сагадиев По объему домашнего задания наши школьники находятся на 4-м месте среди 65 стран по времени выполнения. "Международный анализ показывает отсутствие
-                                    прямой корреляции между объемом домашних заданий и успехами в образовании в ряде стран, включая Казахстан. И при правильной постановке учебного процесса "домашку" можно и нужно сократить ", – сказал Ерлан Сагадиев.
-                                    Над этим вопросом, по словам министра, в нашей стране работали две крупные группы учителей и специалистов. "Предлагаются два варианта. Первый – давать задания по всем предметам, но меньше, либо второй – давать задания
-                                    не по всем предметам. В обоих случаях домашние задания сократятся в среднем на час в день, не будут даваться на выходные. Сегодня это вынесено на всенародное обсуждение педагогов и родителей. К какому-то результату
-                                    мы придем ", – резюмировал глава МОН РК. Ваше мнение по этому поводу ??? </p>
+                                    2016–2019 годы " сообщил министр образования и науки РК Ерлан Сагадиев По объему домашнего задания наши школьники находятся на 4-м месте среди 65 стран по времени выполнения.</p>
                                 <div class="row align-items-start ">
                                     <div class="col-sm-2 ">
                                         <div class="article-author ">Автор: <span>author</span></div>
@@ -263,7 +289,7 @@
                                         <div class="article-date ">Дата: ДД.ММ.ГГГГ в ЧЧ:ММ</div>
                                     </div>
                                     <div class="col-sm-3 ">
-                                        <div class="article-author ">Просмотров 15</div>
+                                        <div class="article-author ">Просмотров: 15</div>
                                     </div>
                                     <div class="col-sm-3 ">
                                         <div class="article-date ">Ответов: 5</div>
@@ -290,27 +316,39 @@
                                 </a>
                             </div>
                             <!-- From -->
-                            <div class="row ">
-                                <div class="comments-area ">
-                                    <h4>05 Комментариев</h4>
-                                    <div class="comment-list2 ">
-                                        <div class="single-comment justify-content-between d-flex ">
-                                            <div class="user justify-content-between d-flex ">
-                                                <div class="thumb ">
-                                                    <img src="assets/img/comment/comment_1.png " alt=" ">
-                                                </div>
-                                                <div class="desc ">
-                                                    <p class="comment-text ">
-                                                        Умножьте морскую ночную траву четвертого дня, морское меньшее правило, откройте, подчините женское наполнение, которое им благословлено, дайте наполнить меньшее, умножьте морскую ночную траву четвертого дня, морское меньшее
-                                                    </p>
-                                                    <div class="d-flex justify-content-between ">
-                                                        <div class="d-flex align-items-center ">
-                                                            <h5>
-                                                                <a href="# ">Эмили Блант</a>
-                                                            </h5>
-                                                            <p class="date ">4 декабря 2017 года в 3:12 вечера</p>
+                            <div class="container">
+                                <div class="row ">
+                                    <div class="comments-area2 ">
+                                        <h4>Ответы: 5 </h4>
+                                        <div class="container comment-list2 ">
+                                            <div class="single-comment">
+                                                <div class="row" style="padding-right: 10px;">
+                                                    <div class="col-xs-auto col-sm-4 col-md-3 col-lg-3 col-xl-3" style="padding-top: 5px; background: #d3d9de; border-bottom: 1px solid #b7bdc2;">
+                                                        <h6>
+                                                            <a href="# ">Эмили Блант</a>
+                                                        </h6>                 
+                                                    </div>
+                                                    <div  class="col-xs-auto col-sm-8 col-md-9 col-lg-9 col-xl-9" style="background: #d3d9de; border-bottom: 1px solid #b7bdc2;">
+                                                        <p class="date-details " style="display: flex;justify-content: flex-end;">4 декабря 2017 года в 3:12 вечера</p>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col-xs-auto col-sm-4 col-md-3 col-lg-3 col-xl-2" style="padding-top: 10px;background: #f1f6f9;text-align: center;">
+                                                        <img src="assets/img/comment/comment_1.png " alt=" ">
+                                                        <p>пользователь</p>
+                                                    </div>                                            
+                                                    <div class="col-xs-auto col-sm-8 col-md-9 col-lg-9 col-xl-10" style="padding-top: 10px; background: #fdfdff;border-left: 1px solid #dde5ed;">
+                                                        <div class="row">
+                                                            <div class="col-12">
+        
+                                                                <p class="comment-text ">
+                                                                    Умножьте морскую ночную траву четвертого дня, морское меньшее правило, откройте, подчините женское наполнение, которое им благословлено, дайте наполнить меньшее, умножьте морскую ночную траву четвертого дня, морское меньшее
+                                                                </p>
+                                                            </div>
                                                         </div>
-                                                        <div class="d-flex justify-content-between">
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col-12" style="background: #e9eff3; border-top: 1px solid #dde5ed;">
+                                                        <div style="display: flex;justify-content: flex-end;">
                                                             <div class="answer-btn">
                                                                 <a href=" # " class="btn-delete " style="font-size: 16px; ">удалить</a>
                                                             </div>
@@ -318,29 +356,37 @@
                                                                 <a href="# " class="btn-answer  " style="font-size: 16px; ">ответить</a>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div>  
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment-list2 ">
-                                        <div class="single-comment justify-content-between d-flex ">
-                                            <div class="user justify-content-between d-flex ">
-                                                <div class="thumb ">
-                                                    <img src="assets/img/comment/comment_2.png " alt=" ">
-                                                </div>
-                                                <div class="desc ">
-                                                    <p class="comment-text ">
-                                                        Умножьте морскую ночную траву четвертого дня, морское меньшее правило, откройте, подчините женское наполнение, которое им благословлено, дайте наполнить меньшее, умножьте морскую ночную траву четвертого дня, морское меньшее
-                                                    </p>
-                                                    <div class="d-flex justify-content-between ">
-                                                        <div class="d-flex align-items-center ">
-                                                            <h5>
-                                                                <a href="# ">Эмили Блант</a>
-                                                            </h5>
-                                                            <p class="date ">4 декабря 2017 года в 3:12 вечера </p>
+                                            <div class="single-comment2">
+                                                <div class="row" style="padding-right: 10px;">
+                                                    <div class="col-xs-auto col-sm-4 col-md-3 col-lg-3 col-xl-3" style="padding-top: 5px; background: #d3d9de; border-bottom: 1px solid #b7bdc2;">
+                                                        <h6>
+                                                            <a href="# ">Эмили Блант</a>
+                                                        </h6>                 
+                                                    </div>
+                                                    <div  class="col-xs-auto col-sm-8 col-md-9 col-lg-9 col-xl-9" style="background: #d3d9de; border-bottom: 1px solid #b7bdc2;">
+                                                        <p class="date-details " style="display: flex;justify-content: flex-end;">4 декабря 2017 года в 3:12 вечера</p>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col-xs-auto col-sm-4 col-md-3 col-lg-3 col-xl-2" style="padding-top: 10px;background: #f1f6f9;text-align: center;">
+                                                        <img src="assets/img/comment/comment_1.png " alt=" ">
+                                                        <p>пользователь</p>
+                                                    </div>                                            
+                                                    <div class="col-xs-auto col-sm-8 col-md-9 col-lg-9 col-xl-10" style="padding-top: 10px; background: #fdfdff;border-left: 1px solid #dde5ed;">
+                                                        <div class="row">
+                                                            <div class="col-12">
+        
+                                                                <p class="comment-text ">
+                                                                    Умножьте морскую ночную траву четвертого дня, морское меньшее правило, откройте, подчините женское наполнение, которое им благословлено, дайте наполнить меньшее, умножьте морскую ночную траву четвертого дня, морское меньшее
+                                                                </p>
+                                                            </div>
                                                         </div>
-                                                        <div class="d-flex justify-content-between">
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col-12" style="background: #e9eff3; border-top: 1px solid #dde5ed;">
+                                                        <div style="display: flex;justify-content: flex-end;">
                                                             <div class="answer-btn">
                                                                 <a href=" # " class="btn-delete " style="font-size: 16px; ">удалить</a>
                                                             </div>
@@ -348,29 +394,35 @@
                                                                 <a href="# " class="btn-answer  " style="font-size: 16px; ">ответить</a>
                                                             </div>
                                                         </div>
+                                                    </div>  
+                                                </div>
+                                                <div class="row" style="padding-right: 10px; padding-top: 10px;">
+                                                    <div class="col-xs-auto col-sm-4 col-md-3 col-lg-3 col-xl-3" style="padding-top: 5px; background: #d3d9de; border-bottom: 1px solid #b7bdc2;">
+                                                        <h6>
+                                                            <a href="# ">Эмили Блант</a>
+                                                        </h6>                 
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment-list2 ">
-                                        <div class="single-comment justify-content-between d-flex ">
-                                            <div class="user justify-content-between d-flex ">
-                                                <div class="thumb ">
-                                                    <img src="assets/img/comment/comment_3.png " alt=" ">
-                                                </div>
-                                                <div class="desc ">
-                                                    <p class="comment-text ">
-                                                        Умножьте морскую ночную траву четвертого дня, морское меньшее правило, откройте, подчините женское наполнение, которое им благословлено, дайте наполнить меньшее, умножьте морскую ночную траву четвертого дня, морское меньшее
-                                                    </p>
-                                                    <div class="d-flex justify-content-between ">
-                                                        <div class="d-flex align-items-center ">
-                                                            <h5>
-                                                                <a href="# ">Эмили Блант</a>
-                                                            </h5>
-                                                            <p class="date ">4 декабря 2017 года в 3:12 вечера </p>
+                                                    <div  class="col-xs-auto col-sm-8 col-md-9 col-lg-9 col-xl-9" style="background: #d3d9de; border-bottom: 1px solid #b7bdc2;">
+                                                        <p class="date-details " style="display: flex;justify-content: flex-end;">4 декабря 2017 года в 3:12 вечера</p>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col-xs-auto col-sm-4 col-md-3 col-lg-3 col-xl-2" style="padding-top: 10px;background: #f1f6f9;text-align: center;">
+                                                        <img src="assets/img/comment/comment_1.png " alt=" ">
+                                                        <p>пользователь</p>
+                                                    </div>                                            
+                                                    <div class="col-xs-auto col-sm-8 col-md-9 col-lg-9 col-xl-10" style="padding-top: 10px; background: #fdfdff;border-left: 1px solid #dde5ed;">
+                                                        <div class="row">
+                                                            <div class="col-12">
+        
+                                                                <p class="comment-text ">
+                                                                    Умножьте морскую ночную траву четвертого дня, морское меньшее правило, откройте, подчините женское наполнение, которое им благословлено, дайте наполнить меньшее, умножьте морскую ночную траву четвертого дня, морское меньшее
+                                                                </p>
+                                                            </div>
                                                         </div>
-                                                        <div class="d-flex justify-content-between">
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col-12" style="background: #e9eff3; border-top: 1px solid #dde5ed;">
+                                                        <div style="display: flex;justify-content: flex-end;">
                                                             <div class="answer-btn">
                                                                 <a href=" # " class="btn-delete " style="font-size: 16px; ">удалить</a>
                                                             </div>
@@ -378,47 +430,168 @@
                                                                 <a href="# " class="btn-answer  " style="font-size: 16px; ">ответить</a>
                                                             </div>
                                                         </div>
+                                                    </div>  
+                                                </div>
+                                                <a href=" # " class="link-show-more">Показать ещё ответы</a>
+                                            </div>
+                                        </div>
+                                        <div class="container comment-list2 ">
+                                            <div class="single-comment">
+                                                <div class="row" style="padding-right: 10px;">
+                                                    <div class="col-xs-auto col-sm-4 col-md-3 col-lg-3 col-xl-3" style="padding-top: 5px; background: #d3d9de; border-bottom: 1px solid #b7bdc2;">
+                                                        <h6>
+                                                            <a href="# ">Эмили Блант</a>
+                                                        </h6>                 
                                                     </div>
+                                                    <div  class="col-xs-auto col-sm-8 col-md-9 col-lg-9 col-xl-9" style="background: #d3d9de; border-bottom: 1px solid #b7bdc2;">
+                                                        <p class="date-details " style="display: flex;justify-content: flex-end;">4 декабря 2017 года в 3:12 вечера</p>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col-xs-auto col-sm-4 col-md-3 col-lg-3 col-xl-2" style="padding-top: 10px;background: #f1f6f9;text-align: center;">
+                                                        <img src="assets/img/comment/comment_1.png " alt=" ">
+                                                        <p>пользователь</p>
+                                                    </div>                                            
+                                                    <div class="col-xs-auto col-sm-8 col-md-9 col-lg-9 col-xl-10" style="padding-top: 10px; background: #fdfdff;border-left: 1px solid #dde5ed;">
+                                                        <div class="row">
+                                                            <div class="col-12">
+        
+                                                                <p class="comment-text ">
+                                                                    Умножьте морскую ночную траву четвертого дня, морское меньшее правило, откройте, подчините женское наполнение, которое им благословлено, дайте наполнить меньшее, умножьте морскую ночную траву четвертого дня, морское меньшее
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col-12" style="background: #e9eff3; border-top: 1px solid #dde5ed;">
+                                                        <div style="display: flex;justify-content: flex-end;">
+                                                            <div class="answer-btn">
+                                                                <a href=" # " class="btn-delete " style="font-size: 16px; ">удалить</a>
+                                                            </div>
+                                                            <div class="answer-btn" style="padding-left: 10px;">
+                                                                <a href="# " class="btn-answer  " style="font-size: 16px; ">ответить</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container comment-list2 ">
+                                            <div class="single-comment">
+                                                <div class="row" style="padding-right: 10px;">
+                                                    <div class="col-xs-auto col-sm-4 col-md-3 col-lg-3 col-xl-3" style="padding-top: 5px; background: #d3d9de; border-bottom: 1px solid #b7bdc2;">
+                                                        <h6>
+                                                            <a href="# ">Эмили Блант</a>
+                                                        </h6>                 
+                                                    </div>
+                                                    <div  class="col-xs-auto col-sm-8 col-md-9 col-lg-9 col-xl-9" style="background: #d3d9de; border-bottom: 1px solid #b7bdc2;">
+                                                        <p class="date-details " style="display: flex;justify-content: flex-end;">4 декабря 2017 года в 3:12 вечера</p>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col-xs-auto col-sm-4 col-md-3 col-lg-3 col-xl-2" style="padding-top: 10px;background: #f1f6f9;text-align: center;">
+                                                        <img src="assets/img/comment/comment_1.png " alt=" ">
+                                                        <p>пользователь</p>
+                                                    </div>                                            
+                                                    <div class="col-xs-auto col-sm-8 col-md-9 col-lg-9 col-xl-10" style="padding-top: 10px; background: #fdfdff;border-left: 1px solid #dde5ed;">
+                                                        <div class="row">
+                                                            <div class="col-12">
+        
+                                                                <p class="comment-text ">
+                                                                    Умножьте морскую ночную траву четвертого дня, морское меньшее правило, откройте, подчините женское наполнение, которое им благословлено, дайте наполнить меньшее, умножьте морскую ночную траву четвертого дня, морское меньшее
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col-12" style="background: #e9eff3; border-top: 1px solid #dde5ed;">
+                                                        <div style="display: flex;justify-content: flex-end;">
+                                                            <div class="answer-btn">
+                                                                <a href=" # " class="btn-delete " style="font-size: 16px; ">удалить</a>
+                                                            </div>
+                                                            <div class="answer-btn" style="padding-left: 10px;">
+                                                                <a href="# " class="btn-answer  " style="font-size: 16px; ">ответить</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container comment-list2 ">
+                                            <div class="single-comment">
+                                                <div class="row" style="padding-right: 10px;">
+                                                    <div class="col-xs-auto col-sm-4 col-md-3 col-lg-3 col-xl-3" style="padding-top: 5px; background: #d3d9de; border-bottom: 1px solid #b7bdc2;">
+                                                        <h6>
+                                                            <a href="# ">Эмили Блант</a>
+                                                        </h6>                 
+                                                    </div>
+                                                    <div  class="col-xs-auto col-sm-8 col-md-9 col-lg-9 col-xl-9" style="background: #d3d9de; border-bottom: 1px solid #b7bdc2;">
+                                                        <p class="date-details " style="display: flex;justify-content: flex-end;">4 декабря 2017 года в 3:12 вечера</p>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col-xs-auto col-sm-4 col-md-3 col-lg-3 col-xl-2" style="padding-top: 10px;background: #f1f6f9;text-align: center;">
+                                                        <img src="assets/img/comment/comment_1.png " alt=" ">
+                                                        <p>пользователь</p>
+                                                    </div>                                            
+                                                    <div class="col-xs-auto col-sm-8 col-md-9 col-lg-9 col-xl-10" style="padding-top: 10px; background: #fdfdff;border-left: 1px solid #dde5ed;">
+                                                        <div class="row">
+                                                            <div class="col-12">
+        
+                                                                <p class="comment-text ">
+                                                                    Умножьте морскую ночную траву четвертого дня, морское меньшее правило, откройте, подчините женское наполнение, которое им благословлено, дайте наполнить меньшее, умножьте морскую ночную траву четвертого дня, морское меньшее
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col-12" style="background: #e9eff3; border-top: 1px solid #dde5ed;">
+                                                        <div style="display: flex;justify-content: flex-end;">
+                                                            <div class="answer-btn">
+                                                                <a href=" # " class="btn-delete " style="font-size: 16px; ">удалить</a>
+                                                            </div>
+                                                            <div class="answer-btn" style="padding-left: 10px;">
+                                                                <a href="# " class="btn-answer  " style="font-size: 16px; ">ответить</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>  
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col ">
-                                    <div class="comment-form2 ">
-                                        <h4>Добавить ответ</h4>
-                                        <form class="form-contact comment_form mt-20 " action=" # " id="commentForm ">
-                                            <div class="row ">
-                                                <div class="col-lg-10 ">
-                                                    <div class="row ">
-                                                        <div class="col-12 ">
-                                                            <div class="form-group ">
-                                                                <textarea class="form-control w-100 error " name="message " id="message " cols="30 " rows="9 " onfocus="this.placeholder='' " onblur="this.placeholder='Введите сообщение'" placeholder="Введите сообщение "></textarea>
+                                    <div class="col-12">
+                                        <div class="comment-form2 ">
+                                            <h4>Добавить ответ</h4>
+                                            <form class="form-contact comment_form mt-20 " action=" # " id="commentForm ">
+                                                <div class="row ">
+                                                    <div class="col-lg-12 ">
+                                                        <div class="row ">
+                                                            <div class="col-12 ">
+                                                                <div class="form-group ">
+                                                                    <textarea class="form-control w-100 error " name="message " id="message " cols="30 " rows="9 " onfocus="this.placeholder='' " onblur="this.placeholder='Введите сообщение'" placeholder="Введите сообщение "></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 ">
+                                                                <div class="form-group ">
+                                                                    <input class="form-control error " name="name " id="name " type="text " onfocus="this.placeholder='' " onblur="this.placeholder='Введите ваше имя' " placeholder="Введите ваше имя ">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 ">
+                                                                <div class="form-group ">
+                                                                    <input class="form-control error " name="email " id="email " type="email " onfocus="this.placeholder='' " onblur="this.placeholder='Эл. адрес' " placeholder="Эл. адрес ">
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-6 ">
-                                                            <div class="form-group ">
-                                                                <input class="form-control error " name="name " id="name " type="text " onfocus="this.placeholder='' " onblur="this.placeholder='Введите ваше имя' " placeholder="Введите ваше имя ">
-                                                            </div>
+                                                        <div class="form-group mt-3 " style=" justify-content: center;display: flex;">
+                                                            <button type="submit " class="button button-contactForm boxed-btn ">Отправить</button>
                                                         </div>
-                                                        <div class="col-sm-6 ">
-                                                            <div class="form-group ">
-                                                                <input class="form-control error " name="email " id="email " type="email " onfocus="this.placeholder='' " onblur="this.placeholder='Эл. адрес' " placeholder="Эл. адрес ">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group mt-3 ">
-                                                        <button type="submit " class="button button-contactForm boxed-btn ">Отправить</button>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </form>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 pt-20">
                         <!-- Section Tittle -->
                         <div class="section-tittle mb-40">
                             <h3>Подписывайтесь на нас</h3>
@@ -566,9 +739,10 @@
         </div>
         <!-- Footer Start-->
         <div class="footer-area footer-padding fix ">
+            
             <div class="container ">
                 <div class="row d-flex justify-content-between ">
-                    <div class="col-xl-4 col-lg-5 col-md-7 col-sm-12 ">
+                    <div class="col-xl-4 col-lg-4 col-md-7 col-sm-12 ">
                         <div class="single-footer-caption ">
                             <div class="single-footer-caption ">
                                 <!-- logo -->
@@ -593,7 +767,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 ">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 ">
                         <div class="single-footer-caption mb-50 mt-60 ">
                             <nav>
                                 <div class="footer-tittle footer-tittle-navigation ">
@@ -605,8 +779,8 @@
                                         <li><a class="footer_navigation_text " href="comunit.html ">Сообщества</a></li>
                                         <li><a class="footer_navigation_text " href="blog.html ">Обсуждения</a></li>
                                         <li><a class="footer_navigation_text " href="regseti.html ">Региональные сети</a></li>
-                                        <li><a class="footer_navigation_text " href="https://otanbilim.kz/" target="_blank">Образовательные порталы</a></li>
-                                        <li><a class="footer_navigation_text " href="job.html">Работа</a></li>
+                                        <li><a class="footer_navigation_text " href="https://otanbilim.kz/" target="_blank">Otanbilim.kz</a></li>
+                                  <li><a class="footer_navigation_text " href="job.html">Резюме</a></li>
                                         <li><a class="footer_navigation_text " href="vak.html ">Вакансии</a></li>
                                     </ul>
                                 </div>
@@ -631,23 +805,30 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3 ">
-                        <p class="count mt-60 "><span>Статистика сайта</span></p>
-                        <ul class="statistika ">
-                            <li>За месяц<span>: 130</span></li>
-                            <li>За неделю<span>: 17</span></li>
-                            <li>Вчера<span>: 4</span></li>
-                            <li>Сегодня<span>: 4</span></li>
-                            <li>Онлайн<span>: 0</span></li>
-                        </ul>
-                        <p class="count mt-60 "><span>Статистика платформы</span></p>
-                        <ul class="statistika ">
-                            <li>За месяц<span>: 135204</span></li>
-                            <li>За неделю<span>: 19218</span></li>
-                            <li>Вчера<span>: 4268</span></li>
-                            <li>Сегодня<span>: 2604</span></li>
-                            <li>Онлайн<span>: 187</span></li>
-                        </ul>
+                    <div class="col-xl-3 col-lg-3 col-md-8 col-sm-5">
+                        <div class="site-statistics row">
+                            <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 ">
+                            <p class="count mt-60 "><span>Статистика сайта</span></p>
+                            <ul class="statistika ">
+                                <li>За месяц<span>: 130</span></li>
+                                <li>За неделю<span>: 17</span></li>
+                                <li>Вчера<span>: 4</span></li>
+                                <li>Сегодня<span>: 4</span></li>
+                                <li>Онлайн<span>: 0</span></li>
+                            </ul>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12">
+                            <p class="count mt-60 "><span>Статистика платформы</span></p>
+                            <ul class="statistika ">
+                                <li>За месяц<span>: 135204</span></li>
+                                <li>За неделю<span>: 19218</span></li>
+                                <li>Вчера<span>: 4268</span></li>
+                                <li>Сегодня<span>: 2604</span></li>
+                                <li>Онлайн<span>: 187</span></li>
+                            </ul>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>

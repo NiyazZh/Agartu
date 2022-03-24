@@ -7027,7 +7027,7 @@ ul {
 
 .count {
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 29px;
     font-weight: 500;
     text-transform: capitalize;
@@ -7158,4 +7158,21 @@ ul {
 /* Подписывайтесь на нас */
 .subscribe {
     justify-content: space-around;
+}
+
+/* footer */
+@media (min-width: 200px) and (max-width: 991px) {
+    .site-statistics{
+        flex-wrap: nowrap;
+    }
+    /* .statistika {  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    } */
+}
+@media (min-width: 200px) and (max-width: 1199px) {
+    .footer-tittle .footer-tittle-navigation h4{
+        font-size: 18px;
+    }
 }
