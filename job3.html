@@ -7,18 +7,19 @@
     <title>Agartu</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/ticker-style.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/slicknav.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -31,101 +32,110 @@
     <script src="../assets3/vendors/jquery.min.js"></script>
     <script src="../assets3/owlcarousel/owl.carousel.js"></script>
 
-
     <style>
-        #carouselExampleControls3 {
-            display: none;
+        .pol {
+            border-bottom: 1px solid rgb(77, 87, 218);
         }
         
-        @media (min-width: 0px) and (max-width: 991px) {
-            #carouselExampleControls3 {
-                display: block;
-                padding-bottom: 20px;
-            }
-            .mb-90 {
-                margin-bottom: 0px;
-            }
+        .contact-section {
+            padding: 30px 0 30px;
         }
         
-        .news-author-list {
+        .vacancies_link {
+            margin: 0px 36%;
+            font-size: 20px;
+            text-transform: none;
+            text-decoration: none;
+            padding-top: 30px;
+            text-align: center;
+        }
+        
+        .vacancies_link a {
+            color: #428bca;
+        }
+        
+        .vacancies_link a:hover {
+            color: #003e74;
+        }
+        
+        .form-search {
             padding-top: 20px;
-            grid-gap: 20px;
         }
         
-        .news-author-list-item {
-            display: flex;
+        .btn_search {
+            min-width: 100px;
+            padding: 18px 44px;
         }
         
-        .blog-info-link {
-            color: black;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 1rem;
         }
         
-        .blog-info-link li {
-            float: left;
-            font-size: 13px;
+        .grid>div {
+            padding: 1.5rem;
+            border-radius: 1rem;
         }
         
-        .news-image {
-            width: 100%;
+        .trand-right-img-container img {
+            border-radius: 100%;
+            width: 128px;
+            height: 128px !important;
         }
         
-        .border-color {
-            border: 1px solid #dee2e6!important;
-            background: #fbf9ff;
-            padding: 10px;
+        .vacancies_item {
+            align-items: center;
         }
         
-        .border-color:hover {
+        .vacancies_item_text {
+            padding-top: 20px;
+        }
+        
+        .embed-responsive {
+            margin: 0 auto;
+        }
+        
+        .recent-articles {
+            padding-top: 20px;
+        }
+        
+        .border:hover {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
         
-        .btn-news-detail-container {
-            padding-top: 20px;
+        .text-link-vac {
+            color: #8f8f96;
         }
         
-        .btn-news-detail {
-            color: #f89e53;
-            text-transform: capitalize;
-            font-size: 18px;
+        .text-link-vac:hover {
+            color: #fc3f00;
         }
         
-        .btn-news-detail:hover {
-            color: #f85523;
-            text-transform: capitalize;
-            font-size: 18px;
-        }
-        
-        .nav-tabs2 {
-            margin-bottom: 31px;
-            padding-bottom: 0px;
-            color: #506172;
-            position: relative;
-            border: 0;
-            display: flex;
+        .job_item_text {
             justify-content: center;
-            background: #fbf9ff;
-            flex-direction: column;
         }
         
-        .nav-item-color {
-            color: #506172;
+        .job_item_text2 {
+            line-height: 0.7
         }
         
-        .nav-item-color:hover {
-            color: #2a84dd;
+        .job_item_text a h6:hover {
+            color: #fc3f00;
         }
         
-        .pol {
-            border-bottom: 1px solid #f0e9ff;
+        .list-switch {
+            cursor: pointer;
         }
         
-        .news-image {
-            width: 100%;
+        .list-switch :hover {
+            color: rgb(58, 50, 50);
         }
         
-        .blog-info-link .btn-news-detail {
-            color: #f89e53;
-            font-size: 15px;
+        .grid2 {
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 1rem;
         }
     </style>
 </head>
@@ -144,7 +154,6 @@
                                     <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
                                 </div>
                             </div>
-
                             <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -173,17 +182,14 @@
                             <div class="col-xl-10 col-lg- col-md-10 header-flex">
                                 <!-- sticky -->
                                 <div class="sticky-logo info-open">
-                                    <img src="assets/img/logo/logo.png" alt="" style="
-                                    display: block;
-                                    max-width: 160%;
-                                    height: auto;
-                                ">
+                                    <img src="assets/img/logo/logo.png" alt="" style="display: block;max-width: 160%;height: auto;">
                                 </div>
                                 <!-- Main-menu -->
                                 <div class="main-menu d-none d-md-block">
                                     <nav>
                                         <ul id="navigation">
                                             <li><a href="index.html">Главная</a></li>
+                                            <li><a href="about.html">О Agartu</a></li>
                                             <li><a href="">Новости</a>
                                                 <ul class="submenu submenu2">
                                                     <li><a href="news-spheres.html">Новости по сферам</a></li>
@@ -193,7 +199,6 @@
                                             </li>
                                             <li><a href="comunit.html">Сообщества</a></li>
                                             <li><a href="blog.html">Обсуждения</a></li>
-                                            <li><a href="about.html">О нас</a></li>
                                             <li><a href="regseti.html">Региональные сети</a></li>
                                             <li><a class="footer_navigation_text " href="https://otanbilim.kz/" target="_blank">Otanbilim.kz</a></li>
                                             <li><a href="#">Работа</a>
@@ -234,7 +239,7 @@
                                         <a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"></a>
                                         <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
                                             <li><a href="index.html" role="menuitem" tabindex="-1">Главная</a></li>
-                                            <li><a href="about.html" role="menuitem" tabindex="-1">О нас</a></li>
+                                            <li><a href="about.html" role="menuitem" tabindex="-1">О Agartu</a></li>
                                             <li><a href="news-list.html" role="menuitem" tabindex="-1">Новости</a></li>
                                             <li><a href="comunit.html" role="menuitem" tabindex="-1">Сообщества</a></li>
                                             <li><a href="blog.html" role="menuitem" tabindex="-1">Обсуждения</a></li>
@@ -257,215 +262,327 @@
         </div>
         <!-- Header End -->
     </header>
-    <main>
-        <!-- About US Start -->
-        <div class="about-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="breadcrumb-path">                                        
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                  <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                                  <li class="breadcrumb-item " aria-current="page">Новости</li>
-                                  <li class="breadcrumb-item"><a href="news-spheres.html">Новости По Сферам</a></li>
-                                  <li class="breadcrumb-item active" aria-current="page">Новости в сфере образование</li>
-                                </ol>
-                              </nav>
+    <section class="contact-section">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-path">                                        
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                              <li class="breadcrumb-item " aria-current="page">Работа</li>
+                              <li class="breadcrumb-item active" aria-current="page">Резюме</li>
+                            </ol>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 ">
+                    <!-- <div class="section-tittle mb-30">
+                        <h3>Резюме</h3>
+                        <div class="pol"></div>
+                    </div> -->
+                    <div class="row mt-20">
+                        <div class="col-12 wrap mr-50">
+                            <div class="search">
+                                <input type="text" class="searchTerm" placeholder="Найти" style="width: 100%;">
+                                <button type="submit" class="searchButton">
+                          <i class="fa fa-search"></i>
+                          </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacancies_item mt-30 ">
+                        <div class="grid " id="id2 ">
+                            <div class="col border ">
+                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
+                                    <div class="col ">
+                                        <div class="trand-right-img-container ">
+                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                        </div>
+                                    </div>
+                                    <div class="row job_item_text ">
+                                        <a class="job_item_text-h6 " href=" resume_details.html ">
+                                            <h6>Инженер. Менеджер</h6>
+                                        </a>
+                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
+                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col border ">
+                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
+                                    <div class="col ">
+                                        <div class="trand-right-img-container ">
+                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                        </div>
+                                    </div>
+                                    <div class="row job_item_text ">
+                                        <a class="job_item_text-h6 " href=" resume_details.html ">
+                                            <h6>Инженер. Менеджер</h6>
+                                        </a>
+                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
+                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col border ">
+                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
+                                    <div class="col ">
+                                        <div class="trand-right-img-container ">
+                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                        </div>
+                                    </div>
+                                    <div class="row job_item_text ">
+                                        <a class="job_item_text-h6 " href=" resume_details.html ">
+                                            <h6>Инженер. Менеджер</h6>
+                                        </a>
+                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
+                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col border ">
+                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
+                                    <div class="col ">
+                                        <div class="trand-right-img-container ">
+                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                        </div>
+                                    </div>
+                                    <div class="row job_item_text ">
+                                        <a class="job_item_text-h6 " href=" resume_details.html ">
+                                            <h6>Инженер. Менеджер</h6>
+                                        </a>
+                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
+                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col border ">
+                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
+                                    <div class="col ">
+                                        <div class="trand-right-img-container ">
+                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                        </div>
+                                    </div>
+                                    <div class="row job_item_text ">
+                                        <a class="job_item_text-h6 " href=" resume_details.html ">
+                                            <h6>Инженер. Менеджер</h6>
+                                        </a>
+                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
+                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col border ">
+                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
+                                    <div class="col ">
+                                        <div class="trand-right-img-container ">
+                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                        </div>
+                                    </div>
+                                    <div class="row job_item_text ">
+                                        <a class="job_item_text-h6 " href=" resume_details.html ">
+                                            <h6>Инженер. Менеджер</h6>
+                                        </a>
+                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
+                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col border ">
+                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
+                                    <div class="col ">
+                                        <div class="trand-right-img-container ">
+                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                        </div>
+                                    </div>
+                                    <div class="row job_item_text ">
+                                        <a class="job_item_text-h6 " href=" resume_details.html ">
+                                            <h6>Инженер. Менеджер</h6>
+                                        </a>
+                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
+                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col border ">
+                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
+                                    <div class="col ">
+                                        <div class="trand-right-img-container ">
+                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                        </div>
+                                    </div>
+                                    <div class="row job_item_text ">
+                                        <a class="job_item_text-h6 " href=" resume_details.html ">
+                                            <h6>Инженер. Менеджер</h6>
+                                        </a>
+                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
+                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col border ">
+                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
+                                    <div class="col ">
+                                        <div class="trand-right-img-container ">
+                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                        </div>
+                                    </div>
+                                    <div class="row job_item_text ">
+                                        <a class="job_item_text-h6 " href=" resume_details.html ">
+                                            <h6>Инженер. Менеджер</h6>
+                                        </a>
+                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
+                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col border ">
+                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
+                                    <div class="col ">
+                                        <div class="trand-right-img-container ">
+                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                        </div>
+                                    </div>
+                                    <div class="row job_item_text ">
+                                        <a class="job_item_text-h6 " href=" resume_details.html ">
+                                            <h6>Инженер. Менеджер</h6>
+                                        </a>
+                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
+                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col border ">
+                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
+                                    <div class="col ">
+                                        <div class="trand-right-img-container ">
+                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                        </div>
+                                    </div>
+                                    <div class="row job_item_text ">
+                                        <a class="job_item_text-h6 " href=" resume_details.html ">
+                                            <h6>Инженер. Менеджер</h6>
+                                        </a>
+                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
+                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col border ">
+                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
+                                    <div class="col ">
+                                        <div class="trand-right-img-container ">
+                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                        </div>
+                                    </div>
+                                    <div class="row job_item_text ">
+                                        <a class="job_item_text-h6 " href=" resume_details.html ">
+                                            <h6>Инженер. Менеджер</h6>
+                                        </a>
+                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
+                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col border ">
+                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
+                                    <div class="col ">
+                                        <div class="trand-right-img-container ">
+                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                        </div>
+                                    </div>
+                                    <div class="row job_item_text ">
+                                        <a class="job_item_text-h6 " href=" resume_details.html ">
+                                            <h6>Инженер. Менеджер</h6>
+                                        </a>
+                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
+                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col border ">
+                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
+                                    <div class="col ">
+                                        <div class="trand-right-img-container ">
+                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                        </div>
+                                    </div>
+                                    <div class="row job_item_text ">
+                                        <a class="job_item_text-h6 " href=" resume_details.html ">
+                                            <h6>Инженер. Менеджер</h6>
+                                        </a>
+                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
+                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col border ">
+                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
+                                    <div class="col ">
+                                        <div class="trand-right-img-container ">
+                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                        </div>
+                                    </div>
+                                    <div class="row job_item_text ">
+                                        <a class="job_item_text-h6 " href=" resume_details.html ">
+                                            <h6>Инженер. Менеджер</h6>
+                                        </a>
+                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
+                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="news-author-list">
-                            <div class="text-center mt-20 mb-50">
-                                <h3>Новости в сфере образование</h3>
-                            </div>
-                            <div class="tab-content" id="nav-tabContent">
-                                <!-- Все -->
-                                <div class="tab-pane fade show active" id="nav-all-news" role="tabpanel" aria-labelledby="nav-all-news">
-                                    <div class="news-author-list-item border-color mb-30">
+            </div>
 
-                                        <div class="col-3 -author-list-item-image">
-                                            <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png " alt=" ">
-                                            </div>
-                                        </div>
-                                        <div class="col-9 -author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Образование</p>
-                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
-                                            </p>
-                                            <ul class="blog-info-link ">
-                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
-                                                <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
-                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="news-author-list-item border-color mb-30">
-
-                                        <div class="col-3 -author-list-item-image">
-                                            <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png " alt=" ">
-                                            </div>
-                                        </div>
-                                        <div class="col-9 -author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Образование1</p>
-                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
-                                            </p>
-                                            <ul class="blog-info-link ">
-                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
-                                                <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
-                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="news-author-list-item border-color mb-30">
-
-                                        <div class="col-3 -author-list-item-image">
-                                            <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png " alt=" ">
-                                            </div>
-                                        </div>
-                                        <div class="col-9 -author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Образование2</p>
-                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
-                                            </p>
-                                            <ul class="blog-info-link ">
-                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
-                                                <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
-                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Образование -->
-                                <div class="tab-pane fade show" id="nav-subcategory1" role="tabpanel" aria-labelledby="nav-subcategory1">
-                                    <div class="news-author-list-item border-color mb-30">
-
-                                        <div class="col-3 -author-list-item-image">
-                                            <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png " alt=" ">
-                                            </div>
-                                        </div>
-                                        <div class="col-9 -author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>подкатегория1</p>
-                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
-                                            </p>
-                                            <ul class="blog-info-link ">
-                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
-                                                <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
-                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+            <div id="carouselExampleControls1 " class="carousel slide mt-40 " data-ride="carousel ">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active ">
+                        <a href="https://mektepforma.kz/ "><img class="d-block w-100 " src="assets/img/hero/header_card.png " alt=" "></a>
                     </div>
-
-                    <div class="col-lg-4 ">
-                        <div class="properties__button mt-30">
-                            <!--Nav Button  -->
-                            <nav>
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist" style="display: flex; flex-direction: column; background-color: #fbf9ff;">
-                                    <a class="nav-item nav-item-color nav-link active" id="nav-all-news-tab" data-toggle="tab" href="#nav-all-news" role="tab" aria-controls="nav-all-news" aria-selected="true">все новости</a>
-                                    <div class="pol"></div>
-                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory1-tab" data-toggle="tab" href="#nav-subcategory1" role="tab" aria-controls="nav-subcategory1" aria-selected="false">подкатегория 1</a>
-                                    <div class="pol"></div>
-                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory2-tab" data-toggle="tab" href="#nav-subcategory2" role="tab" aria-controls="nav-subcategory2" aria-selected="false">подкатегория 2</a>
-                                    <div class="pol"></div>
-                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory3-tab" data-toggle="tab" href="#nav-subcategory3" role="tab" aria-controls="nav-subcategory3" aria-selected="false">подкатегория 3</a>
-                                    <div class="pol"></div>
-                                </div>
-                            </nav>
-                            <!--End Nav Button  -->
-                        </div>
-
-                        <!-- Section Tittle -->
-                        <div class="section-tittle mb-40 ">
-                            <h3>Подписывайтесь на нас</h3>
-                        </div>
-                        <!-- Flow Socail -->
-                        <div class="single-follow mb-45 ">
-                            <div class="row subscribe ">
-                                <div class=" ">
-                                    <a href="https://vk.com/bmc_sales "><img src="assets/img/news/icon-vk.png " /></a>
-                                </div>
-
-                                <div class=" ">
-                                    <a href="https://twitter.com/bmcsales2 "><img src="assets/img/news/icon-tw.png " /></a>
-                                </div>
-
-                                <div class=" ">
-                                    <a href="https://www.facebook.com/benchmarkconsultingltd/ "><img src="assets/img/news/icon-fb.png " /></a>
-                                </div>
-
-                                <div class=" ">
-                                    <a href="https://www.youtube.com/user/bmcsales1 "><img src="assets/img/news/icon-yo.png " /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- New Poster -->
-                        <div id="carouselExampleControls " class="carousel slide carousel1 " data-ride="carousel ">
-                            <div class="carousel-inner ">
-                                <div class="carousel-item active ">
-                                    <a href="https://mektepforma.kz/ "><img class="d-block w-100 " src="assets/img/news/news_card.png " alt=" "></a>
-                                </div>
-                                <div class="carousel-item ">
-                                    <a href="https://t.me/kdtkzchat "><img class="d-block w-100 " src="assets/img/news/news_card2.png " alt=" "></a>
-                                </div>
-                                <div class="carousel-item ">
-                                    <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi "><img class="d-block w-100 " src="assets/img/news/news_card3.png " alt=" "></a>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev " href="#carouselExampleControls " role="button " data-slide="prev ">
-                                <span class="sr-only ">Previous</span>
-                            </a>
-                            <a class="carousel-control-next " href="#carouselExampleControls " role="button " data-slide="next ">
-                                <span class="sr-only ">Next</span>
-                            </a>
-                        </div>
+                    <div class="carousel-item ">
+                        <a href="https://t.me/kdtkzchat "><img class="d-block w-100 " src="assets/img/hero/header_card2.png " alt=" "></a>
+                    </div>
+                    <div class="carousel-item ">
+                        <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi "></a><img class="d-block w-100 " src="assets/img/hero/header_card3.png " alt=" "></a>
                     </div>
                 </div>
-                <div class="pagination-area mt-30 pb-40 text-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="single-wrap d-flex justify-content-center">
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination justify-content-start">
-                                            <li class="page-item"><a class="page-link" href="#"><span
-                                                        class="flaticon-arrow roted"></span></a></li>
-                                            <li class="page-item active"><a class="page-link" href="">01</a></li>
-                                            <li class="page-item"><a class="page-link" href="vak2.html">02</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">03</a></li>
-                                            <li class="page-item"><a class="page-link" href="vak2.html"><span
-                                                        class="flaticon-arrow right-arrow"></span></a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
+                <a class="carousel-control-prev " href="#carouselExampleControls " role="button " data-slide="prev ">
+                    <span class="sr-only ">Previous</span>
+                </a>
+                <a class="carousel-control-next " href="#carouselExampleControls " role="button " data-slide="next ">
+                    <span class="sr-only ">Next</span>
+                </a>
+            </div>
+            <div class="pagination-area mt-60 text-center ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-xl-12 ">
+                            <div class="single-wrap d-flex justify-content-center ">
+                                <nav aria-label="Page navigation example ">
+                                    <ul class="pagination justify-content-start ">
+                                        <li class="page-item "><a class="page-link " href="# "><span class="flaticon-arrow roted "></span></a></li>
+                                        <li class="page-item active "><a class="page-link " href=" ">01</a></li>
+                                        <li class="page-item "><a class="page-link " href="vak2.html ">02</a></li>
+                                        <li class="page-item "><a class="page-link " href="# ">03</a></li>
+                                        <li class="page-item "><a class="page-link " href="vak2.html "><span class="flaticon-arrow right-arrow "></span></a></li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About US End -->
-    </main>
+
+    </section>
+    <!-- ================ contact section end ================= -->
     <footer>
         <div class="recent-articles ">
             <div class="container ">
@@ -597,13 +714,13 @@
                                     <h4>Меню</h4>
                                     <ul class="footer_navigation ">
                                         <li><a class="footer_navigation_text " href="index.html ">Главная</a></li>
+                                        <li><a class="footer_navigation_text " href="about.html ">О Agartu</a></li>
                                         <li><a class="footer_navigation_text " href="latest_news.html ">Новости</a></li>
                                         <li><a class="footer_navigation_text " href="comunit.html ">Сообщества</a></li>
                                         <li><a class="footer_navigation_text " href="blog.html ">Обсуждения</a></li>
-                                        <li><a class="footer_navigation_text " href="about.html ">О нас</a></li>
                                         <li><a class="footer_navigation_text " href="regseti.html ">Региональные сети</a></li>
                                         <li><a class="footer_navigation_text " href="https://otanbilim.kz/" target="_blank">Otanbilim.kz</a></li>
-                                  <li><a class="footer_navigation_text " href="job.html">Резюме</a></li>
+                                        <li><a class="footer_navigation_text " href="job.html">Резюме</a></li>
                                         <li><a class="footer_navigation_text " href="vak.html ">Вакансии</a></li>
                                     </ul>
                                 </div>

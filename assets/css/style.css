@@ -7176,3 +7176,18 @@ ul {
         font-size: 18px;
     }
 }
+.breadcrumb-path{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: flex;
+}
+.breadcrumb > li {
+    font-size: 20px;
+    font-weight: 700;
+}
+.breadcrumb>li {
+    display: inline-block;
+}
+.breadcrumb > li a {
+    color: rgb(0, 0, 0);
+}

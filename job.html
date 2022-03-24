@@ -57,10 +57,9 @@
         .vacancies_link a:hover {
             color: #003e74;
         }
-        
-        .form-search {
+        /* .form-search {
             padding-top: 20px;
-        }
+        } */
         
         .btn_search {
             min-width: 100px;
@@ -70,7 +69,7 @@
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            grid-gap: 1rem;
+            /* grid-gap: 1rem; */
         }
         
         .grid>div {
@@ -78,8 +77,7 @@
             border-radius: 1rem;
         }
         
-        .trand-right-img-container img {
-            border-radius: 100%;
+        .trand-right-img img {
             width: 128px;
             height: 128px !important;
         }
@@ -96,46 +94,142 @@
             margin: 0 auto;
         }
         
-        .recent-articles {
+        .card2 {
+            padding-bottom: 20px;
+        }
+        
+        a:hover {
+            color: black;
+        }
+        
+        .card-header {
+            border: 1px double rgb(168, 156, 156);
+        }
+        
+        .vacancies_line {
+            border-bottom: 1px solid rgb(162, 164, 185);
+        }
+        
+        .form-check-input {
+            transform: scale(1.8);
+        }
+        
+        .form-check-label {
+            padding-bottom: 10px;
+        }
+        
+        .border_category {
+            padding: 20px;
+            border: 1px double rgb(175, 173, 173);
+        }
+        
+        .vacancy_item_link {
+            color: black;
+        }
+        
+        .vacancy_item_link:hover {
+            color: black;
+        }
+        
+        .vacancy_item {
+            border: 1px double rgb(170, 189, 136);
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fdfcfc;
+        }
+        
+        .vacancy_item_date {
+            align-self: right;
+            color: grey;
+        }
+        
+        .vacancies_category_btn {
+            margin-top: 20px;
+            background: #ff656a;
+            text-transform: uppercase;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            line-height: 0;
+            padding: 20px 20px;
+            border-radius: 5px;
+            min-width: 200px;
+            border: 0;
+        }
+        
+        .input-append {
+            padding-bottom: 20px;
+        }
+        
+        .vacancy_btn {
+            background: #60b5ee;
+            text-transform: uppercase;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            line-height: 0;
+            padding: 15px 20px;
+            border-radius: 5px;
+            min-width: 200px;
+            border: 0;
+        }
+        
+        .vacancies_group {
+            padding-bottom: 20px;
+        }
+        
+        .btn-group {
+            margin-left: 20px;
+        }
+        
+        .btn_resume {
+            margin-left: 20px;
+            padding: 15px 20px;
+            background-color: rgb(163, 211, 130);
+        }
+        
+        .fa .fa-angle-right {
+            transform: rotate(90deg);
+        }
+        
+        .btn-vacancies_group {
+            padding: 15px 20px;
+        }
+        
+        .news-author-list {
             padding-top: 20px;
+            grid-gap: 20px;
         }
         
-        .border:hover {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        .news-author-list-item {
+            display: flex;
+            padding-bottom: 10px;
         }
         
-        .text-link-vac {
-            color: #8f8f96;
+        .blog-info-link {
+            color: black;
         }
         
-        .text-link-vac:hover {
-            color: #fc3f00;
+        .news-image {
+            width: 100%;
+            border-radius: 5px;
         }
         
-        .job_item_text {
-            justify-content: center;
+        .border-color {
+            background: #fdfcfc;
+            border: 1px solid #dee2e6!important;
+            padding: 10px;
+            border-radius: 5px;
         }
         
-        .job_item_text2 {
-            line-height: 0.7
+        .border-color:hover {
+            box-shadow: 0 0 10px 3px rgb(0 0 0 / 50%);
         }
         
-        .job_item_text a h6:hover {
-            color: #fc3f00;
-        }
-        
-        .list-switch {
-            cursor: pointer;
-        }
-        
-        .list-switch :hover {
-            color: rgb(58, 50, 50);
-        }
-        
-        .grid2 {
-            display: grid;
-            grid-template-columns: auto;
-            grid-gap: 1rem;
+        .job-text {
+            line-height: 17px;
         }
     </style>
 </head>
@@ -154,6 +248,7 @@
                                     <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
                                 </div>
                             </div>
+
                             <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -182,7 +277,11 @@
                             <div class="col-xl-10 col-lg- col-md-10 header-flex">
                                 <!-- sticky -->
                                 <div class="sticky-logo info-open">
-                                    <img src="assets/img/logo/logo.png" alt="" style="display: block;max-width: 160%;height: auto;">
+                                    <img src="assets/img/logo/logo.png" alt="" style="
+                                    display: block;
+                                    max-width: 160%;
+                                    height: auto;
+                                ">
                                 </div>
                                 <!-- Main-menu -->
                                 <div class="main-menu d-none d-md-block">
@@ -262,303 +361,244 @@
         </div>
         <!-- Header End -->
     </header>
+    <!-- ================ contact section start ================= -->
     <section class="contact-section">
-        <div class="container ">
+        <div class="container">
             <div class="row">
-                <div class="col-12 ">
-                    <div class="section-tittle mb-30">
-                        <h3>Резюме</h3>
+                <div class="col-lg-12">
+                    <div class="breadcrumb-path">                                        
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                              <li class="breadcrumb-item">Работа</li>
+                              <li class="breadcrumb-item active" aria-current="page">Резюме</li>
+                            </ol>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-30">
+                <div class="col-12 vacancies_categories">
+                    <!-- <div class="section-tittle mb-30">
+                        <h3>Вакансии</h3>
                         <div class="pol"></div>
-                    </div>
-                    <div class="row mt-20">
-                        <div class="col-12 wrap mr-50">
-                            <div class="search">
-                                <input type="text" class="searchTerm" placeholder="Найти" style="width: 100%;">
-                                <button type="submit" class="searchButton">
-                          <i class="fa fa-search"></i>
-                          </button>
-                            </div>
+                    </div> -->
+                    <div class="col-lg-10 сol-sm-8"style="margin: auto;">
+                        <div class="search">
+                            <input type="text" class="searchTerm" placeholder="Найти" style="width: 100%;">
+                            <button type="submit" class="searchButton" ><i class="fa fa-search"></i></button>
                         </div>
                     </div>
-                    <div class="vacancies_item mt-30 ">
-                        <div class="grid " id="id2 ">
-                            <div class="col border ">
-                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
-                                    <div class="col ">
-                                        <div class="trand-right-img-container ">
-                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
-                                        </div>
-                                    </div>
-                                    <div class="row job_item_text ">
-                                        <a class="job_item_text-h6 " href=" resume_details.html ">
-                                            <h6>Инженер. Менеджер</h6>
-                                        </a>
-                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
-                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
-                                    </div>
-                                </a>
-                            </div>
 
-                            <div class="col border ">
-                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
-                                    <div class="col ">
-                                        <div class="trand-right-img-container ">
-                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
-                                        </div>
-                                    </div>
-                                    <div class="row job_item_text ">
-                                        <a class="job_item_text-h6 " href=" resume_details.html ">
-                                            <h6>Инженер. Менеджер</h6>
-                                        </a>
-                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
-                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
-                                    </div>
-                                </a>
+
+                    <div class="pt-20 row vacancies_group">
+                        <div class="">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-vacancies_group dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">По соответствию</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">По дате</a>
+                                    <a class="dropdown-item" href="#">По убыванию зарплат</a>
+                                    <a class="dropdown-item" href="#">По возрастанию зарплаты</a>
+                                    <a class="dropdown-item" href="#">По соответствию</a>
+                                </div>
                             </div>
-                            <div class="col border ">
-                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
-                                    <div class="col ">
-                                        <div class="trand-right-img-container ">
-                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
-                                        </div>
-                                    </div>
-                                    <div class="row job_item_text ">
-                                        <a class="job_item_text-h6 " href=" resume_details.html ">
-                                            <h6>Инженер. Менеджер</h6>
-                                        </a>
-                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
-                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
-                                    </div>
-                                </a>
+                        </div>
+                        <div class="">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-vacancies_group dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">По соответствию</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">По дате</a>
+                                    <a class="dropdown-item" href="#">По убыванию зарплат</a>
+                                    <a class="dropdown-item" href="#">По возрастанию зарплаты</a>
+                                    <a class="dropdown-item" href="#">По соответствию</a>
+                                </div>
                             </div>
-                            <div class="col border ">
-                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
-                                    <div class="col ">
-                                        <div class="trand-right-img-container ">
-                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                        </div>
+                        <a class="btn btn_resume " href="resume.html">Оставить резюме</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 ">
+                            <div id="accordion" class="border_category">
+                                <form action="">
+                                    <div class="card2">
+                                        <div class="card-header2" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <a class="vacancies_category" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Специализации
+                                                <i class="fa fa-angle-right"></i>
+                                                <i class="fa fa-angle-down" style="display: none;"></i>
+                                              </a>
+                                                <div></div>
+                                            </h5>
                                         </div>
+                                        <div class="collapse" id="collapseExample">
+                                            <div class="card2 card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">Программист</label><br>
+
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                    <label class="form-check-label" for="defaultCheck2">Бухгалтер</label><br>
+
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                                    <label class="form-check-label" for="defaultCheck3">Продавец</label><br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vacancies_line"></div>
                                     </div>
-                                    <div class="row job_item_text ">
-                                        <a class="job_item_text-h6 " href=" resume_details.html ">
-                                            <h6>Инженер. Менеджер</h6>
-                                        </a>
-                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
-                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                    <div class="card2">
+                                        <div class="card-header2" id="headingTwo">
+                                            <h5 class="mb-0"><a class="vacancies_category" data-toggle="collapse" href="#collapseExampleTwo" role="button" aria-expanded="false" aria-controls="collapseExample"> Опыт работы<i class="fa fa-angle-right"></i></a></h5>
+
+                                        </div>
+
+                                        <div class="collapse" id="collapseExampleTwo">
+                                            <div class="card2 card-body">
+
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                        Не имеет значения
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                        Нет опыта
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="exampleRadios3">
+                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                                        От 1 до 3 лет
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="vacancies_line"></div>
                                     </div>
-                                </a>
+                                    <div class="card2">
+                                        <div class="card-header2" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <a class="vacancies_category" data-toggle="collapse" href="#collapseExampleThree" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    Тип занятости
+                                                <i class="fa fa-angle-right"></i>
+                                              </a>
+                                                <div></div>
+                                            </h5>
+                                        </div>
+
+                                        <div class="collapse" id="collapseExampleThree">
+                                            <div class="card2 card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        Полная занятость
+                                                    </label><br>
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        Частичная занятость
+                                                    </label><br>
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        Стажировка
+                                                    </label><br>
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        Проектная работа
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vacancies_line"></div>
+                                    </div>
+                                    <button type="button" class="btn vacancies_category_btn">Найти</button>
+                                </form>
                             </div>
-                            <div class="col border ">
-                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
-                                    <div class="col ">
-                                        <div class="trand-right-img-container ">
-                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                        </div>
+                        <div class="col-8 border-vak">
+                            <div class="vacancy_list">
+                                <div class="news-author-list-item border-color mb-30">
+
+                                    <div class="col-3 news-author-list-item-image">
+                                        <div class="news-image-container">
+                                            <img class="news-image" src="assets/img/post/post_2.png" alt=" ">
                                         </div>
                                     </div>
-                                    <div class="row job_item_text ">
-                                        <a class="job_item_text-h6 " href=" resume_details.html ">
-                                            <h6>Инженер. Менеджер</h6>
+
+                                    <div class="col-9 news-author-list-item-text  ">
+                                        <a class="vacancy_item_link" href="#">
+                                            <h4>Бухгалтер, бухгалтер в одном лице</h4>
                                         </a>
-                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
-                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                        <p class="job-text">Марина, 33 года</p>
+                                        <p class="job-text">Среднее специальное образование • Опыт работы 5 лет 6 месяцев</p>
+                                        <p class="job-text">Заместитель главного бухгалтер </p>
+                                        <p class="job-text">АО " Астана-Энергия", Март 2012 — по настоящее время</p>
+                                        <p class="vacancy_item_date">Сегодня</p>
+
+                                        <a href="resume_details.html"><button type="submit" class="btn  vacancy_btn">подробнее</button></a>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="col border ">
-                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
-                                    <div class="col ">
-                                        <div class="trand-right-img-container ">
-                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                </div>
+                                <div class="news-author-list-item border-color mb-30">
+
+                                    <div class="col-3 news-author-list-item-image">
+                                        <div class="news-image-container">
+                                            <img class="news-image" src="assets/img/post/post_2.png" alt=" ">
                                         </div>
                                     </div>
-                                    <div class="row job_item_text ">
-                                        <a class="job_item_text-h6 " href=" resume_details.html ">
-                                            <h6>Инженер. Менеджер</h6>
+
+                                    <div class="col-9 news-author-list-item-text  ">
+                                        <a class="vacancy_item_link" href="#">
+                                            <h4>Бухгалтер, бухгалтер в одном лице</h4>
                                         </a>
-                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
-                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                        <p class="job-text">Марина, 33 года</p>
+                                        <p class="job-text">Среднее специальное образование • Опыт работы 5 лет 6 месяцев</p>
+                                        <p class="job-text">Заместитель главного бухгалтер </p>
+                                        <p class="job-text">АО " Астана-Энергия", Март 2012 — по настоящее время</p>
+                                        <p class="vacancy_item_date">Сегодня</p>
+
+                                        <a href="resume_details.html"><button type="submit" class="btn  vacancy_btn">подробнее</button></a>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="col border ">
-                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
-                                    <div class="col ">
-                                        <div class="trand-right-img-container ">
-                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
+                                </div>
+                                <div class="news-author-list-item border-color mb-30">
+
+                                    <div class="col-3 news-author-list-item-image">
+                                        <div class="news-image-container">
+                                            <img class="news-image" src="assets/img/post/post_2.png" alt=" ">
                                         </div>
                                     </div>
-                                    <div class="row job_item_text ">
-                                        <a class="job_item_text-h6 " href=" resume_details.html ">
-                                            <h6>Инженер. Менеджер</h6>
+
+                                    <div class="col-9 news-author-list-item-text  ">
+                                        <a class="vacancy_item_link" href="#">
+                                            <h4>Бухгалтер, бухгалтер в одном лице</h4>
                                         </a>
-                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
-                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
+                                        <p class="job-text">Марина, 33 года</p>
+                                        <p class="job-text">Среднее специальное образование • Опыт работы 5 лет 6 месяцев</p>
+                                        <p class="job-text">Заместитель главного бухгалтер </p>
+                                        <p class="job-text">АО " Астана-Энергия", Март 2012 — по настоящее время</p>
+                                        <p class="vacancy_item_date">Сегодня</p>
+
+                                        <a href="resume_details.html"><button type="submit" class="btn  vacancy_btn">подробнее</button></a>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="col border ">
-                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
-                                    <div class="col ">
-                                        <div class="trand-right-img-container ">
-                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
-                                        </div>
-                                    </div>
-                                    <div class="row job_item_text ">
-                                        <a class="job_item_text-h6 " href=" resume_details.html ">
-                                            <h6>Инженер. Менеджер</h6>
-                                        </a>
-                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
-                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col border ">
-                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
-                                    <div class="col ">
-                                        <div class="trand-right-img-container ">
-                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
-                                        </div>
-                                    </div>
-                                    <div class="row job_item_text ">
-                                        <a class="job_item_text-h6 " href=" resume_details.html ">
-                                            <h6>Инженер. Менеджер</h6>
-                                        </a>
-                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
-                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col border ">
-                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
-                                    <div class="col ">
-                                        <div class="trand-right-img-container ">
-                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
-                                        </div>
-                                    </div>
-                                    <div class="row job_item_text ">
-                                        <a class="job_item_text-h6 " href=" resume_details.html ">
-                                            <h6>Инженер. Менеджер</h6>
-                                        </a>
-                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
-                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col border ">
-                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
-                                    <div class="col ">
-                                        <div class="trand-right-img-container ">
-                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
-                                        </div>
-                                    </div>
-                                    <div class="row job_item_text ">
-                                        <a class="job_item_text-h6 " href=" resume_details.html ">
-                                            <h6>Инженер. Менеджер</h6>
-                                        </a>
-                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
-                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col border ">
-                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
-                                    <div class="col ">
-                                        <div class="trand-right-img-container ">
-                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
-                                        </div>
-                                    </div>
-                                    <div class="row job_item_text ">
-                                        <a class="job_item_text-h6 " href=" resume_details.html ">
-                                            <h6>Инженер. Менеджер</h6>
-                                        </a>
-                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
-                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col border ">
-                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
-                                    <div class="col ">
-                                        <div class="trand-right-img-container ">
-                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
-                                        </div>
-                                    </div>
-                                    <div class="row job_item_text ">
-                                        <a class="job_item_text-h6 " href=" resume_details.html ">
-                                            <h6>Инженер. Менеджер</h6>
-                                        </a>
-                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
-                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col border ">
-                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
-                                    <div class="col ">
-                                        <div class="trand-right-img-container ">
-                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
-                                        </div>
-                                    </div>
-                                    <div class="row job_item_text ">
-                                        <a class="job_item_text-h6 " href=" resume_details.html ">
-                                            <h6>Инженер. Менеджер</h6>
-                                        </a>
-                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
-                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col border ">
-                                <a href="resume_details.html " class="text-center text-link-vac stretched-link ">
-                                    <div class="col ">
-                                        <div class="trand-right-img-container ">
-                                            <img class="trand-right-img " src="assets/img/job/nofoto_f.jpg " alt=" ">
-                                        </div>
-                                    </div>
-                                    <div class="row job_item_text ">
-                                        <a class="job_item_text-h6 " href=" resume_details.html ">
-                                            <h6>Инженер. Менеджер</h6>
-                                        </a>
-                                        <p class="job_item_text2 ">Салтанат, 23 года</p>
-                                        <p class="job_item_text2 ">Опыт работы 9 лет</p>
-                                    </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div id="carouselExampleControls1 " class="carousel slide mt-40 " data-ride="carousel ">
-                <div class="carousel-inner ">
-                    <div class="carousel-item active ">
-                        <a href="https://mektepforma.kz/ "><img class="d-block w-100 " src="assets/img/hero/header_card.png " alt=" "></a>
-                    </div>
-                    <div class="carousel-item ">
-                        <a href="https://t.me/kdtkzchat "><img class="d-block w-100 " src="assets/img/hero/header_card2.png " alt=" "></a>
-                    </div>
-                    <div class="carousel-item ">
-                        <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi "></a><img class="d-block w-100 " src="assets/img/hero/header_card3.png " alt=" "></a>
-                    </div>
-                </div>
-                <a class="carousel-control-prev " href="#carouselExampleControls " role="button " data-slide="prev ">
-                    <span class="sr-only ">Previous</span>
-                </a>
-                <a class="carousel-control-next " href="#carouselExampleControls " role="button " data-slide="next ">
-                    <span class="sr-only ">Next</span>
-                </a>
-            </div>
-            <div class="pagination-area mt-60 text-center ">
-                <div class="container ">
-                    <div class="row ">
-                        <div class="col-xl-12 ">
-                            <div class="single-wrap d-flex justify-content-center ">
-                                <nav aria-label="Page navigation example ">
-                                    <ul class="pagination justify-content-start ">
-                                        <li class="page-item "><a class="page-link " href="# "><span class="flaticon-arrow roted "></span></a></li>
-                                        <li class="page-item active "><a class="page-link " href=" ">01</a></li>
-                                        <li class="page-item "><a class="page-link " href="vak2.html ">02</a></li>
-                                        <li class="page-item "><a class="page-link " href="# ">03</a></li>
-                                        <li class="page-item "><a class="page-link " href="vak2.html "><span class="flaticon-arrow right-arrow "></span></a></li>
+            <div class="pagination-area pb-45 text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="single-wrap d-flex justify-content-center">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-start">
+                                        <li class="page-item"><a class="page-link" href="#"><span class="flaticon-arrow roted"></span></a></li>
+                                        <li class="page-item active"><a class="page-link" href="">01</a></li>
+                                        <li class="page-item"><a class="page-link" href="vak2.html">02</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                        <li class="page-item"><a class="page-link" href="vak2.html"><span class="flaticon-arrow right-arrow"></span></a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -566,8 +606,105 @@
                     </div>
                 </div>
             </div>
+            <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://mektepforma.kz/"><img class="d-block w-100" src="assets/img/hero/header_card.png" alt=""></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://t.me/kdtkzchat"><img class="d-block w-100" src="assets/img/hero/header_card2.png" alt=""></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi"></a><img class="d-block w-100" src="assets/img/hero/header_card3.png" alt=""></a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
+        <main class="regportals_main">
+            <div class="recent-articles">
+                <div class="container">
+                    <div class="recent-wrapper">
+                        <!-- section Tittle -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="section-tittle mb-30">
+                                    <h3>Полезное</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="recent-active dot-style d-flex dot-style">
+                                    <div class="single-recent mb-100">
+                                        <div class="what-img">
+                                            <img src="assets/img/useful/7.jpg" alt="">
+                                        </div>
+                                        <div class="what-cap">
+                                            <h4><a href="https://agartu.kz/zayavka">Подавай заявки куда угодно!</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="single-recent mb-100">
+                                        <div class="what-img">
+                                            <img src="assets/img/useful/1.png" alt="">
+                                        </div>
+                                        <div class="what-cap">
+                                            <h4><a href="https://elib.kdt.kz/">Учись с умом с Е-библиотекой</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="single-recent mb-100">
+                                        <div class="what-img">
+                                            <img src="assets/img/useful/6.jpg" alt="">
+                                        </div>
+                                        <div class="what-cap">
+                                            <h4><a href="https://study.kdt.kz/">С нашими сервисами учиться проще!</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="single-recent mb-100">
+                                        <div class="what-img">
+                                            <img src="assets/img/useful/5.jpg" alt="">
+                                        </div>
+                                        <div class="what-cap">
+                                            <h4><a href="https://exams.kdt.kz/">Проверь свои знания с BMC Exams!</a></h4>
+                                        </div>
+                                    </div>
 
+                                    <div class="single-recent mb-100">
+                                        <div class="what-img">
+                                            <img src="assets/img/useful/4.jpg" alt="">
+                                        </div>
+                                        <div class="what-cap">
+                                            <h4><a href="http://security.kdt.kz/">Будь в безопасности с ВМС СМБР!</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="single-recent mb-100">
+                                        <div class="what-img">
+                                            <img src="assets/img/useful/2.jpg" alt="">
+                                        </div>
+                                        <div class="what-cap">
+                                            <h4><a href="http://vacancy.kdt.kz/">Найди работу своей мечты с ВМС Вакансии</a></h4>
+                                        </div>
+                                    </div>
+                                    <div class="single-recent mb-100">
+                                        <div class="what-img">
+                                            <img src="assets/img/useful/3.jpg" alt="">
+                                        </div>
+                                        <div class="what-cap">
+                                            <h4><a href="http://estol.kdt.kz/">Ешь не думая с Е-столовой!</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </section>
     <!-- ================ contact section end ================= -->
     <footer>
@@ -666,10 +803,9 @@
         </div>
         <!-- Footer Start-->
         <div class="footer-area footer-padding fix ">
-            
             <div class="container ">
                 <div class="row d-flex justify-content-between ">
-                    <div class="col-xl-4 col-lg-4 col-md-7 col-sm-12 ">
+                    <div class="col-xl-4 col-lg-5 col-md-7 col-sm-12 ">
                         <div class="single-footer-caption ">
                             <div class="single-footer-caption ">
                                 <!-- logo -->
@@ -694,7 +830,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 ">
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 ">
                         <div class="single-footer-caption mb-50 mt-60 ">
                             <nav>
                                 <div class="footer-tittle footer-tittle-navigation ">
@@ -707,7 +843,7 @@
                                         <li><a class="footer_navigation_text " href="blog.html ">Обсуждения</a></li>
                                         <li><a class="footer_navigation_text " href="regseti.html ">Региональные сети</a></li>
                                         <li><a class="footer_navigation_text " href="https://otanbilim.kz/" target="_blank">Otanbilim.kz</a></li>
-                                        <li><a class="footer_navigation_text " href="job.html">Резюме</a></li>
+                                  <li><a class="footer_navigation_text " href="job.html">Резюме</a></li>
                                         <li><a class="footer_navigation_text " href="vak.html ">Вакансии</a></li>
                                     </ul>
                                 </div>
@@ -732,30 +868,23 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-8 col-sm-5">
-                        <div class="site-statistics row">
-                            <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 ">
-                            <p class="count mt-60 "><span>Статистика сайта</span></p>
-                            <ul class="statistika ">
-                                <li>За месяц<span>: 130</span></li>
-                                <li>За неделю<span>: 17</span></li>
-                                <li>Вчера<span>: 4</span></li>
-                                <li>Сегодня<span>: 4</span></li>
-                                <li>Онлайн<span>: 0</span></li>
-                            </ul>
-                        </div>
-                        <div class="w-100"></div>
-                        <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12">
-                            <p class="count mt-60 "><span>Статистика платформы</span></p>
-                            <ul class="statistika ">
-                                <li>За месяц<span>: 135204</span></li>
-                                <li>За неделю<span>: 19218</span></li>
-                                <li>Вчера<span>: 4268</span></li>
-                                <li>Сегодня<span>: 2604</span></li>
-                                <li>Онлайн<span>: 187</span></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <div class="col-sm-6 col-lg-3 ">
+                        <p class="count mt-60 "><span>Статистика сайта</span></p>
+                        <ul class="statistika ">
+                            <li>За месяц<span>: 130</span></li>
+                            <li>За неделю<span>: 17</span></li>
+                            <li>Вчера<span>: 4</span></li>
+                            <li>Сегодня<span>: 4</span></li>
+                            <li>Онлайн<span>: 0</span></li>
+                        </ul>
+                        <p class="count mt-60 "><span>Статистика платформы</span></p>
+                        <ul class="statistika ">
+                            <li>За месяц<span>: 135204</span></li>
+                            <li>За неделю<span>: 19218</span></li>
+                            <li>Вчера<span>: 4268</span></li>
+                            <li>Сегодня<span>: 2604</span></li>
+                            <li>Онлайн<span>: 187</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
