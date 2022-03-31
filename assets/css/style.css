@@ -2660,7 +2660,7 @@ hr {
 .main-header .main-menu ul li a {
     color: #002e5b;
     font-weight: 500;
-    padding: 39px 10px;
+    padding: 15px 10px;
     display: block;
     font-size: 14px;
     -webkit-transition: all .3s ease-out 0s;
@@ -6858,6 +6858,8 @@ ul#statistika li {
 }
 
 .Search-news {
+    display: flex;
+    justify-content: flex-end;
     color: black;
 }
 
@@ -6897,6 +6899,10 @@ ul {
 
 
 /* баннер */
+
+#carouselExampleControls2 {
+    margin-right: 20px;
+}
 
 #carouselExampleControls3 {
     display: none;
@@ -6940,6 +6946,15 @@ ul {
 
 
 /* about */
+
+.about-text {
+    color: #212529;
+    text-indent: 40px;
+}
+
+.about-text2 {
+    color: #212529;
+}
 
 @media (min-width: 990px) and (max-width: 1115px) {}
 
@@ -7042,9 +7057,13 @@ ul {
     }
 }
 
-@media (min-width: 200px) and (max-width: 445px) {
-    .job_item_text {
-        display: grid;
+@media (min-width: 200px) and (max-width: 767px) {
+    .vacancies_group {
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .job-image {
+        width: 125%!important;
     }
 }
 
@@ -7131,6 +7150,7 @@ ul {
     }
 }
 
+
 /* news-list */
 
 .news-list-image {
@@ -7142,27 +7162,59 @@ ul {
         width: 105%!important;
     }
 }
+
+
 /*  Search*/
+
 @media (min-width: 200px) and (max-width: 991px) {
-    .input-append{
+    .input-append {
         text-align: center;
     }
 }
+
+
 /* header */
+
 #carouselExampleControls2 {
     margin-left: 300px;
     margin-top: -110px;
     padding-left: 10px;
 }
 
+#navigation>li>a {
+    text-transform: initial;
+}
+
+@media (min-width: 444px) and (max-width: 767px) {
+    .slicknav_nav {
+        width: 120%!important;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 443px) {
+    .slicknav_nav {
+        width: 130%!important;
+    }
+}
+
+.search-square {
+    background: black;
+    width: -webkit-fill-available;
+    height: 27px;
+}
+
+
 /* Подписывайтесь на нас */
+
 .subscribe {
     justify-content: space-around;
 }
 
+
 /* footer */
+
 @media (min-width: 200px) and (max-width: 991px) {
-    .site-statistics{
+    .site-statistics {
         flex-wrap: nowrap;
     }
     /* .statistika {  
@@ -7171,23 +7223,65 @@ ul {
         justify-content: space-evenly;
     } */
 }
+
 @media (min-width: 200px) and (max-width: 1199px) {
-    .footer-tittle .footer-tittle-navigation h4{
+    .footer-tittle .footer-tittle-navigation h4 {
         font-size: 18px;
     }
 }
-.breadcrumb-path{
+
+.breadcrumb-path {
     padding-top: 20px;
     padding-bottom: 15px;
     display: flex;
 }
-.breadcrumb > li {
+
+.breadcrumb>li {
     font-size: 20px;
     font-weight: 700;
 }
+
 .breadcrumb>li {
     display: inline-block;
 }
-.breadcrumb > li a {
+
+.breadcrumb>li a {
     color: rgb(0, 0, 0);
+}
+
+
+/* index */
+
+@media (min-width: 200px) and (max-width: 600px) {
+    .top-news {
+        overflow: auto;
+        height: auto!important;
+    }
+    #widgetmain {
+        overflow: auto;
+        height: auto!important;
+    }
+}
+
+
+/* vacancy-details */
+
+@media (min-width: 200px) and (max-width: 600px) {
+    .btn-vacancy-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    .btn-submit-job {
+        margin-bottom: 10px!important;
+    }
+}
+
+.mobile_menu {
+    right: -60px!important;
 }

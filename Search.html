@@ -54,11 +54,10 @@
             margin-right: 88px;
             margin-bottom: 25px;
         }
-        
-        #carouselExampleControls2 {
+        /*#carouselExampleControls2 {
             margin-left: 300px;
             margin-top: -90px;
-        }
+        }*/
         
         .col-3 {
             display: flex;
@@ -308,18 +307,16 @@
                             <div class="col-xl-10 col-lg- col-md-10 header-flex">
                                 <!-- sticky -->
                                 <div class="sticky-logo info-open">
-                                    <img src="assets/img/logo/logo.png" alt="" style="
-                                    display: block;
-                                    max-width: 160%;
-                                    height: auto;
-                                ">
+                                    <a href="index.html">
+                                        <img src="assets/img/logo/logo.png" alt="" style="display: block; max-width: 160%;height: auto;">
+                                    </a>
                                 </div>
                                 <!-- Main-menu -->
                                 <div class="main-menu d-none d-md-block">
                                     <nav>
                                         <ul id="navigation">
                                             <li><a href="index.html">Главная</a></li>
-                                            <li><a href="">Новости</a>
+                                            <li><a>Новости</a>
                                                 <ul class="submenu submenu2">
                                                     <li><a href="news-spheres.html">Новости по сферам</a></li>
                                                     <li><a href="news-KZ.html">Новости Казахстана</a></li>
@@ -330,35 +327,37 @@
                                             <li><a href="blog.html">Обсуждения</a></li>
                                             <li><a href="about.html">О нас</a></li>
                                             <li><a href="regseti.html">Региональные сети</a></li>
-                                            <li><a class="footer_navigation_text " href="https://otanbilim.kz/" target="_blank">Otanbilim.kz</a></li>
-                                            <li><a href="#">Работа</a>
-                                                <ul class="submenu">
-                                                    <li><a href="vak.html">Вакансии</a></li>
-                                                    <li>
-                                                       <a href="job.html">Резюме</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">3lvl</a>
-                                                <ul class="submenu">
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="#">Blog</a>
-                                                        <ul class="submenu" style="top: 10px;left: 100%;">
-                                                            <li><a href="elements.html">Element</a></li>
-                                                            <li><a href="blog.html">Blog</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="#">Blog</a>
-                                                        <ul class="submenu" style="top: 10px;left: 100%;">
-                                                            <li><a href="elements.html">Element</a></li>
-                                                            <li><a href="blog.html">Blog</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="elements.html">Element</a></li>
+                                            <li><a href="industry_portals.html">Отраслевые порталы</a>
+                                                <!-- <li><a class="footer_navigation_text " style="text-transform: initial;" href="https://otanbilim.kz/" target="_blank">Otanbilim.kz</a></li> -->
+                                                <li><a>Работа</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="vak.html">Вакансии</a></li>
+                                                        <li>
+                                                            <a href="job.html">Резюме</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="reviews.html">Отзывы</a></li>
+                                                <li><a href="#">3lvl</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="elements.html">Element</a></li>
+                                                        <li><a href="#">Blog</a>
+                                                            <ul class="submenu" style="top: 10px;left: 100%;">
+                                                                <li><a href="elements.html">Element</a></li>
+                                                                <li><a href="blog.html">Blog</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="elements.html">Element</a></li>
+                                                        <li><a href="elements.html">Element</a></li>
+                                                        <li><a href="#">Blog</a>
+                                                            <ul class="submenu" style="top: 10px;left: 100%;">
+                                                                <li><a href="elements.html">Element</a></li>
+                                                                <li><a href="blog.html">Blog</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="elements.html">Element</a></li>
 
-                                                </ul>
-                                            </li>
+                                                    </ul>
+                                                </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -380,7 +379,10 @@
                                 </div>
                             </div>
                             <div class="col-xl-1 col-lg-1 col-md-1">
-                                <a href="Search.html" class="Search-news header-right-btn"><i class="fas fa-search"></i></a>
+                                <a href="Search.html" class="Search-news header-right-btn">
+                                    <div сlass="search-square" style="width: -webkit-fill-available;height: 21px; align-self: center; border: 2px solid; border-radius: 7px;"> </div>
+                                    <i class="fas fa-search" style="padding: 6px 0 6px 6px;"></i>
+                                </a>
                             </div>
 
                         </div>
@@ -398,13 +400,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="breadcrumb-path">                                        
+                        <div class="breadcrumb-path">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                  <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                                  <li class="breadcrumb-item active" aria-current="page">Поиск</li>
+                                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Поиск</li>
                                 </ol>
-                              </nav>
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -419,10 +421,10 @@
                                     <div class="col-lg-2 сol-sm-4" style="margin: auto;">
                                         <h3>Новости</h3>
                                     </div>
-                                    <div class="col-lg-10 сol-sm-8"style="margin: auto;">
+                                    <div class="col-lg-10 сol-sm-8" style="margin: auto;">
                                         <div class="search">
                                             <input type="text" class="searchTerm" placeholder="Найти" style="width: 100%;">
-                                            <button type="submit" class="searchButton" ><i class="fa fa-search"></i></button>
+                                            <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -452,7 +454,7 @@
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                             </ul>
                                             <div class="btn-news-detail-container text-center ">
-                                                <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                <a class=" btn-news-detail" href=" ">подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -479,7 +481,7 @@
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                             </ul>
                                             <div class="btn-news-detail-container text-center ">
-                                                <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                <a class="btn-news-detail" href="latest_news.html">подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -506,7 +508,7 @@
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                             </ul>
                                             <div class="btn-news-detail-container text-center ">
-                                                <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                <a class="btn-news-detail" href="latest_news.html">подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -533,7 +535,7 @@
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                             </ul>
                                             <div class="btn-news-detail-container text-center ">
-                                                <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                <a class="btn-news-detail" href="latest_news.html">подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -560,7 +562,7 @@
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                             </ul>
                                             <div class="btn-news-detail-container text-center ">
-                                                <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                <a class="btn-news-detail" href="latest_news.html">подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -587,7 +589,7 @@
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                             </ul>
                                             <div class="btn-news-detail-container text-center ">
-                                                <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                <a class="btn-news-detail" href="latest_news.html">подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -615,7 +617,7 @@
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                             </ul>
                                             <div class="btn-news-detail-container text-center ">
-                                                <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                <a class="btn-news-detail" href="latest_news.html">подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -642,7 +644,7 @@
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                             </ul>
                                             <div class="btn-news-detail-container text-center ">
-                                                <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                <a class="btn-news-detail" href="latest_news.html">подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -669,7 +671,7 @@
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                             </ul>
                                             <div class="btn-news-detail-container text-center ">
-                                                <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                <a class="btn-news-detail" href="latest_news.html">подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -697,7 +699,7 @@
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                             </ul>
                                             <div class="btn-news-detail-container text-center ">
-                                                <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                <a class="btn-news-detail" href="latest_news.html">подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -724,7 +726,7 @@
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                             </ul>
                                             <div class="btn-news-detail-container text-center ">
-                                                <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                <a class="btn-news-detail" href="latest_news.html">подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -751,7 +753,7 @@
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                             </ul>
                                             <div class="btn-news-detail-container text-center ">
-                                                <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                <a class="btn-news-detail" href="latest_news.html">подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -778,7 +780,7 @@
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                             </ul>
                                             <div class="btn-news-detail-container text-center ">
-                                                <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                <a class="btn-news-detail" href="latest_news.html">подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -805,7 +807,7 @@
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                             </ul>
                                             <div class="btn-news-detail-container text-center ">
-                                                <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                <a class="btn-news-detail" href="latest_news.html">подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -832,7 +834,7 @@
                                                 <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                             </ul>
                                             <div class="btn-news-detail-container text-center ">
-                                                <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                <a class="btn-news-detail" href="latest_news.html">подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -843,10 +845,10 @@
                                             <div class="col-lg-2 сol-sm-4" style="margin: auto;">
                                                 <h3>Обсуждения</h3>
                                             </div>
-                                            <div class="col-lg-10 сol-sm-8"style="margin: auto;">
+                                            <div class="col-lg-10 сol-sm-8" style="margin: auto;">
                                                 <div class="search">
                                                     <input type="text" class="searchTerm" placeholder="Найти" style="width: 100%;">
-                                                    <button type="submit" class="searchButton" ><i class="fa fa-search"></i></button>
+                                                    <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -856,7 +858,7 @@
                                             <div class="p-3 border-color">
                                                 <div class="row single-bottom">
                                                     <div class="col-5   mb-30">
-                                                        <img class="Search-img" src="  assets/img/blog/blog_4.png" alt="">
+                                                        <img class="Search-img" src="assets/img/blog/blog_4.png" alt="">
                                                     </div>
                                                     <div class="col-7 trend-bottom-cap">
                                                         <span class="color1">Культура</span>
@@ -876,7 +878,7 @@
                                                         <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                                     </ul>
                                                     <div class="btn-news-detail-container text-center ">
-                                                        <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                        <a class="btn-news-detail" href="details.html">подробнее</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -903,7 +905,7 @@
                                                         <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                                     </ul>
                                                     <div class="btn-news-detail-container text-center ">
-                                                        <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                        <a class="btn-news-detail" href="details.html">подробнее</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -930,7 +932,34 @@
                                                         <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                                     </ul>
                                                     <div class="btn-news-detail-container text-center ">
-                                                        <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                        <a class="btn-news-detail" href="details.html">подробнее</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-3 border-color">
+                                                <div class="row single-bottom">
+                                                    <div class="col-5   mb-30">
+                                                        <img class="Search-img" src="assets/img/blog/blog_4.png" alt="">
+                                                    </div>
+                                                    <div class="col-7 trend-bottom-cap">
+                                                        <span class="color1">Культура</span>
+                                                        <h5><a href="details.html">Создайте иллюзию более полных ресниц с помощью “Маскировки”.</a></h5>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col ">
+                                                        <p class=" "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство "...</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="news-author-list-item-text ">
+                                                    <ul class="blog-info-link ">
+                                                        <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
+                                                        <li><a href="# "><i class="fa fa-user "></i> Travel</a></li>
+                                                        <li><a href="# "><i class="fa fa-eye "></i> 15 </a></li>
+                                                        <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
+                                                    </ul>
+                                                    <div class="btn-news-detail-container text-center ">
+                                                        <a class="btn-news-detail" href="details.html">подробнее</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -957,7 +986,7 @@
                                                         <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                                     </ul>
                                                     <div class="btn-news-detail-container text-center ">
-                                                        <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                        <a class="btn-news-detail" href="details.html">подробнее</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -984,34 +1013,7 @@
                                                         <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
                                                     </ul>
                                                     <div class="btn-news-detail-container text-center ">
-                                                        <a class=" btn-news-detail " href=" ">подробнее</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="p-3 border-color">
-                                                <div class="row single-bottom">
-                                                    <div class="col-5   mb-30">
-                                                        <img class="Search-img" src="  assets/img/blog/blog_4.png" alt="">
-                                                    </div>
-                                                    <div class="col-7 trend-bottom-cap">
-                                                        <span class="color1">Культура</span>
-                                                        <h5><a href="details.html">Создайте иллюзию более полных ресниц с помощью “Маскировки”.</a></h5>
-                                                    </div>
-                                                    <div class="w-100"></div>
-                                                    <div class="col ">
-                                                        <p class=" "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство "...</p>
-                                                    </div>
-
-                                                </div>
-                                                <div class="news-author-list-item-text ">
-                                                    <ul class="blog-info-link ">
-                                                        <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                        <li><a href="# "><i class="fa fa-user "></i> Travel</a></li>
-                                                        <li><a href="# "><i class="fa fa-eye "></i> 15 </a></li>
-                                                        <li><a href="# "><i class="fa fa-comments "></i> 03 </a></li>
-                                                    </ul>
-                                                    <div class="btn-news-detail-container text-center ">
-                                                        <a class=" btn-news-detail " href=" ">подробнее</a>
+                                                        <a class="btn-news-detail" href="details.html">подробнее</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1024,10 +1026,10 @@
                                             <div class="col-lg-2 сol-sm-4" style="margin: auto;">
                                                 <h3>Сообщества</h3>
                                             </div>
-                                            <div class="col-lg-10 сol-sm-8"style="margin: auto;">
+                                            <div class="col-lg-10 сol-sm-8" style="margin: auto;">
                                                 <div class="search">
                                                     <input type="text" class="searchTerm" placeholder="Найти" style="width: 100%;">
-                                                    <button type="submit" class="searchButton" ><i class="fa fa-search"></i></button>
+                                                    <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1038,7 +1040,7 @@
                                                 <img class="communities-search-img " src="assets/img/logo/photo.jpg " alt=" ">
                                             </div>
                                             <div class="trend-bottom-cap ">
-                                                <h5><a href="comunit/photo.html ">Сообщество фотографов</a></h5>
+                                                <h5><a href="photo.html">Сообщество фотографов</a></h5>
                                                 <ul class="blog-info-link ">
                                                     <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
                                                     <li><a href="# "><i class="fa fa-user "></i> Travel</a></li>
@@ -1052,7 +1054,7 @@
                                                 <img class="communities-search-img " src="assets/img/logo/photo.jpg " alt=" ">
                                             </div>
                                             <div class="trend-bottom-cap ">
-                                                <h5><a href="comunit/photo.html ">Сообщество фотографов</a></h5>
+                                                <h5><a href="photo.html ">Сообщество фотографов</a></h5>
                                                 <ul class="blog-info-link ">
                                                     <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
                                                     <li><a href="# "><i class="fa fa-user "></i> Travel</a></li>
@@ -1066,7 +1068,7 @@
                                                 <img class="communities-search-img " src="assets/img/logo/photo.jpg " alt=" ">
                                             </div>
                                             <div class="trend-bottom-cap ">
-                                                <h5><a href="comunit/photo.html ">Сообщество фотографов</a></h5>
+                                                <h5><a href="photo.html ">Сообщество фотографов</a></h5>
                                                 <ul class="blog-info-link ">
                                                     <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
                                                     <li><a href="# "><i class="fa fa-user "></i> Travel</a></li>
@@ -1112,7 +1114,7 @@
                                         </a>
                                     </div>
                                     <div class="item ">
-                                        <a href="https://elib.kdt.kz/"> 
+                                        <a href="https://elib.kdt.kz/">
                                             <div class="what-img ">
                                                 <img src="assets/img/useful/1.png " alt=" ">
                                             </div>
@@ -1120,7 +1122,7 @@
                                                 <p><a class="what-cap-link " href="https://elib.kdt.kz/ ">Учись с умом с Е-библиотекой</a>
                                                 </p>
                                             </div>
-                                        </a> 
+                                        </a>
                                     </div>
                                     <div class="item ">
                                         <a href="https://study.kdt.kz/">
@@ -1150,7 +1152,7 @@
                                             <div class="what-cap ">
                                                 <p><a class="what-cap-link " href="http://security.kdt.kz/ ">Будь в безопасности с ВМС СМБР!</a></p>
                                             </div>
-                                        </a>   
+                                        </a>
                                     </div>
                                     <div class="item ">
                                         <a href="http://vacancy.kdt.kz/">
@@ -1160,7 +1162,7 @@
                                             <div class="what-cap ">
                                                 <p><a class="what-cap-link " href="http://vacancy.kdt.kz/ ">Найди работу своей мечты с ВМС Вакансии</a></p>
                                             </div>
-                                        </a> 
+                                        </a>
                                     </div>
                                     <div class="item ">
                                         <a href="http://estol.kdt.kz/">
@@ -1181,7 +1183,7 @@
         </div>
         <!-- Footer Start-->
         <div class="footer-area footer-padding fix ">
-            
+
             <div class="container ">
                 <div class="row d-flex justify-content-between ">
                     <div class="col-xl-4 col-lg-4 col-md-7 col-sm-12 ">
@@ -1221,9 +1223,10 @@
                                         <li><a class="footer_navigation_text " href="blog.html ">Обсуждения</a></li>
                                         <li><a class="footer_navigation_text " href="about.html ">О нас</a></li>
                                         <li><a class="footer_navigation_text " href="regseti.html ">Региональные сети</a></li>
-                                        <li><a class="footer_navigation_text " href="https://otanbilim.kz/" target="_blank">Otanbilim.kz</a></li>
-                                  <li><a class="footer_navigation_text " href="job.html">Резюме</a></li>
-                                        <li><a class="footer_navigation_text " href="vak.html ">Вакансии</a></li>
+                                        <li><a href="industry_portals.html">Отраслевые порталы</a>
+                                            <li><a class="footer_navigation_text " href="vak.html ">Вакансии</a></li>
+                                            <li><a class="footer_navigation_text " href="job.html">Резюме</a></li>
+                                            <li><a class="footer_navigation_text " href="reviews.html">Отзывы</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -1250,27 +1253,27 @@
                     <div class="col-xl-3 col-lg-3 col-md-8 col-sm-5">
                         <div class="site-statistics row">
                             <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 ">
-                            <p class="count mt-60 "><span>Статистика сайта</span></p>
-                            <ul class="statistika ">
-                                <li>За месяц<span>: 130</span></li>
-                                <li>За неделю<span>: 17</span></li>
-                                <li>Вчера<span>: 4</span></li>
-                                <li>Сегодня<span>: 4</span></li>
-                                <li>Онлайн<span>: 0</span></li>
-                            </ul>
+                                <p class="count mt-60 "><span>Статистика сайта</span></p>
+                                <ul class="statistika ">
+                                    <li>За месяц<span>: 130</span></li>
+                                    <li>За неделю<span>: 17</span></li>
+                                    <li>Вчера<span>: 4</span></li>
+                                    <li>Сегодня<span>: 4</span></li>
+                                    <li>Онлайн<span>: 0</span></li>
+                                </ul>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12">
+                                <p class="count mt-60 "><span>Статистика платформы</span></p>
+                                <ul class="statistika ">
+                                    <li>За месяц<span>: 135204</span></li>
+                                    <li>За неделю<span>: 19218</span></li>
+                                    <li>Вчера<span>: 4268</span></li>
+                                    <li>Сегодня<span>: 2604</span></li>
+                                    <li>Онлайн<span>: 187</span></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="w-100"></div>
-                        <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12">
-                            <p class="count mt-60 "><span>Статистика платформы</span></p>
-                            <ul class="statistika ">
-                                <li>За месяц<span>: 135204</span></li>
-                                <li>За неделю<span>: 19218</span></li>
-                                <li>Вчера<span>: 4268</span></li>
-                                <li>Сегодня<span>: 2604</span></li>
-                                <li>Онлайн<span>: 187</span></li>
-                            </ul>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>
