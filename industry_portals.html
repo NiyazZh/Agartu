@@ -7,18 +7,19 @@
     <title>Agartu</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/ticker-style.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/slicknav.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -30,108 +31,93 @@
     <!-- javascript -->
     <script src="../assets3/vendors/jquery.min.js"></script>
     <script src="../assets3/owlcarousel/owl.carousel.js"></script>
-
-
     <style>
-        #carouselExampleControls3 {
-            display: none;
-        }
-        
-        @media (min-width: 0px) and (max-width: 991px) {
-            #carouselExampleControls3 {
-                display: block;
-                padding-bottom: 20px;
-            }
-            .mb-90 {
-                margin-bottom: 0px;
-            }
-        }
-        
-        .news-author-list {
-            padding-top: 20px;
-            grid-gap: 20px;
-        }
-        
-        .news-author-list-item {
-            display: flex;
-        }
-        
-        .blog-info-link {
-            color: black;
-        }
-        
-        .blog-info-link li {
-            float: left;
-            font-size: 13px;
-        }
-        
-        .news-image {
-            width: 100%;
-        }
-        
-        .border-color {
-            border: 1px solid #dee2e6!important;
-            background: #fbf9ff;
-            padding: 10px;
-        }
-        
-        .border-color:hover {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        
-        .btn-news-detail-container {
-            padding-top: 20px;
-        }
-        
-        .btn-news-detail {
-            color: #f89e53;
-            text-transform: capitalize;
-            font-size: 18px;
-        }
-        
-        .btn-news-detail:hover {
-            color: #f85523;
-            text-transform: capitalize;
-            font-size: 18px;
-        }
-        
-        .nav-tabs2 {
-            margin-bottom: 31px;
-            padding-bottom: 0px;
-            color: #506172;
-            position: relative;
-            border: 0;
-            display: flex;
-            justify-content: center;
-            background: #fbf9ff;
-            flex-direction: column;
-        }
-        
-        .nav-item-color {
-            color: #506172;
-        }
-        
-        .nav-item-color:hover {
-            color: #2a84dd;
+        .contact-section {
+            padding: 30px 0 30px;
         }
         
         .pol {
-            border-bottom: 1px solid #f0e9ff;
+            border-bottom: 1px solid rgb(77, 87, 218);
         }
         
-        .news-image {
-            width: 100%;
+        .trand-right-img img {
+            width: 110px;
+            height: 110px !important;
+            margin: 0px auto 0px auto;
+            display: block;
         }
         
-        .blog-info-link .btn-news-detail {
-            color: #f89e53;
-            font-size: 15px;
+        .regportals_text {
+            padding-top: 20px;
+        }
+        
+        .regportals_indent {
+            padding-bottom: 10px;
+        }
+        
+        .regportals_useful {
+            padding-top: 40px;
+        }
+        
+        .pol3 {
+            border-bottom: 1px solid rgb(167, 168, 190);
+        }
+        
+        .regportals_carousel_text {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        .brd {
+            border: 1px double #a1a1a1;
+            padding: 5px;
+        }
+        
+        .col-5 .brd {
+            margin: auto;
+        }
+        
+        .border {
+            padding: 20px;
+        }
+        
+        .border:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .btn {
+            padding: 20px 30px;
+            background: #3c7edd;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            grid-gap: 1rem;
+        }
+        
+        .grid>div {
+            border-radius: 1rem;
+        }
+        
+        .name_service {
+            text-align: center;
+            text-transform: capitalize;
+            margin: auto;
+        }
+        
+        .list-switch {
+            cursor: pointer;
+        }
+        
+        .list-switch :hover {
+            color: rgb(58, 50, 50);
         }
     </style>
 </head>
 
 <body>
-   <header>
+     <header>
         <!-- Header Start -->
         <div class="header-area">
             <div class="main-header ">
@@ -260,215 +246,252 @@
         </div>
         <!-- Header End -->
     </header>
-    <main>
-        <!-- About US Start -->
-        <div class="about-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="breadcrumb-path">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                                    <li class="breadcrumb-item " aria-current="page">Новости</li>
-                                    <li class="breadcrumb-item"><a href="news-spheres.html">Новости По Сферам</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Новости в сфере образование</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="news-author-list">
-                            <div class="text-center mt-20 mb-50">
-                                <h3>Новости в сфере образование</h3>
-                            </div>
-                            <div class="tab-content" id="nav-tabContent">
-                                <!-- Все -->
-                                <div class="tab-pane fade show active" id="nav-all-news" role="tabpanel" aria-labelledby="nav-all-news">
-                                    <div class="news-author-list-item border-color mb-30">
-
-                                        <div class="col-3 -author-list-item-image">
-                                            <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png " alt=" ">
-                                            </div>
-                                        </div>
-                                        <div class="col-9 -author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Образование</p>
-                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
-                                            </p>
-                                            <ul class="blog-info-link ">
-                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
-                                                <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
-                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="news-author-list-item border-color mb-30">
-
-                                        <div class="col-3 -author-list-item-image">
-                                            <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png " alt=" ">
-                                            </div>
-                                        </div>
-                                        <div class="col-9 -author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Образование1</p>
-                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
-                                            </p>
-                                            <ul class="blog-info-link ">
-                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
-                                                <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
-                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="news-author-list-item border-color mb-30">
-
-                                        <div class="col-3 -author-list-item-image">
-                                            <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png " alt=" ">
-                                            </div>
-                                        </div>
-                                        <div class="col-9 -author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>Образование2</p>
-                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
-                                            </p>
-                                            <ul class="blog-info-link ">
-                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
-                                                <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
-                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Образование -->
-                                <div class="tab-pane fade show" id="nav-subcategory1" role="tabpanel" aria-labelledby="nav-subcategory1">
-                                    <div class="news-author-list-item border-color mb-30">
-
-                                        <div class="col-3 -author-list-item-image">
-                                            <div class="news-image-container">
-                                                <img class="news-image" src="assets/img/blog/blog_4.png " alt=" ">
-                                            </div>
-                                        </div>
-                                        <div class="col-9 -author-list-item-text  ">
-                                            <h3>Окунаются в мир книг.</h3>
-                                            <p>подкатегория1</p>
-                                            <p class="tannounce "> По традиции для приобщения учащихся предшкольной подготовки к чтению, библиотекарь приглашает ребят в свое "царство"...
-                                            </p>
-                                            <ul class="blog-info-link ">
-                                                <li><a href="# "><i class="fa "></i> 14.12.2018</a></li>
-                                                <li><a href="# "><i class="fa fa-user "></i> Автор Автор</a></li>
-                                                <li><a href="# "><i class="fa fa-eye "></i> 15 просмотра</a></li>
-                                                <li><a href="# "><i class="fa fa-comments "></i> 03 Ответа</a></li>
-                                                <li><a class="btn-news-detail" href="latest_news.html">Перейти</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-4 ">
-                        <div class="properties__button mt-30">
-                            <!--Nav Button  -->
-                            <nav>
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist" style="display: flex; flex-direction: column; background-color: #fbf9ff;">
-                                    <a class="nav-item nav-item-color nav-link active" id="nav-all-news-tab" data-toggle="tab" href="#nav-all-news" role="tab" aria-controls="nav-all-news" aria-selected="true">все новости</a>
-                                    <div class="pol"></div>
-                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory1-tab" data-toggle="tab" href="#nav-subcategory1" role="tab" aria-controls="nav-subcategory1" aria-selected="false">подкатегория 1</a>
-                                    <div class="pol"></div>
-                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory2-tab" data-toggle="tab" href="#nav-subcategory2" role="tab" aria-controls="nav-subcategory2" aria-selected="false">подкатегория 2</a>
-                                    <div class="pol"></div>
-                                    <a class="nav-item nav-item-color nav-link" id="nav-subcategory3-tab" data-toggle="tab" href="#nav-subcategory3" role="tab" aria-controls="nav-subcategory3" aria-selected="false">подкатегория 3</a>
-                                    <div class="pol"></div>
-                                </div>
-                            </nav>
-                            <!--End Nav Button  -->
-                        </div>
-
-                        <!-- Section Tittle -->
-                        <div class="section-tittle mb-40 ">
-                            <h3>Подписывайтесь на нас</h3>
-                        </div>
-                        <!-- Flow Socail -->
-                        <div class="single-follow mb-45 ">
-                            <div class="row subscribe ">
-                                <div class=" ">
-                                    <a href="https://vk.com/bmc_sales "><img src="assets/img/news/icon-vk.png " /></a>
-                                </div>
-
-                                <div class=" ">
-                                    <a href="https://twitter.com/bmcsales2 "><img src="assets/img/news/icon-tw.png " /></a>
-                                </div>
-
-                                <div class=" ">
-                                    <a href="https://www.facebook.com/benchmarkconsultingltd/ "><img src="assets/img/news/icon-fb.png " /></a>
-                                </div>
-
-                                <div class=" ">
-                                    <a href="https://www.youtube.com/user/bmcsales1 "><img src="assets/img/news/icon-yo.png " /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- New Poster -->
-                        <div id="carouselExampleControls " class="carousel slide carousel1 " data-ride="carousel ">
-                            <div class="carousel-inner ">
-                                <div class="carousel-item active ">
-                                    <a href="https://mektepforma.kz/ "><img class="d-block w-100 " src="assets/img/news/news_card.png " alt=" "></a>
-                                </div>
-                                <div class="carousel-item ">
-                                    <a href="https://t.me/kdtkzchat "><img class="d-block w-100 " src="assets/img/news/news_card2.png " alt=" "></a>
-                                </div>
-                                <div class="carousel-item ">
-                                    <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi "><img class="d-block w-100 " src="assets/img/news/news_card3.png " alt=" "></a>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev " href="#carouselExampleControls " role="button " data-slide="prev ">
-                                <span class="sr-only ">Previous</span>
-                            </a>
-                            <a class="carousel-control-next " href="#carouselExampleControls " role="button " data-slide="next ">
-                                <span class="sr-only ">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pagination-area mt-30 pb-40 text-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="single-wrap d-flex justify-content-center">
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination justify-content-start">
-                                            <li class="page-item"><a class="page-link" href="#"><span
-                                                        class="flaticon-arrow roted"></span></a></li>
-                                            <li class="page-item active"><a class="page-link" href="">01</a></li>
-                                            <li class="page-item"><a class="page-link" href="vak2.html">02</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">03</a></li>
-                                            <li class="page-item"><a class="page-link" href="vak2.html"><span
-                                                        class="flaticon-arrow right-arrow"></span></a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
+    <!-- ================ contact section start ================= -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-path">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Отраслевые порталы</li>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- <div class="section-tittle mb-30">
+                        <h3>Региональные сети Казахстана</h3>
+                        <div class="pol"></div>
+                    </div> -->
+                    <div class="wrap pb-30">
+                        <div class="search">
+                            <input type="text" class="searchTerm" placeholder="Найти" style="width: -webkit-fill-available;">
+                            <button type="submit" class="searchButton">
+                          <i class="fa fa-search"></i>
+                          </button>
+                        </div>
+                    </div>
+                    <div class="grid " id="id1 ">
+                        <div class="col border ">
+                            <div class="col ">
+                                <div class="trand-right-img ">
+                                    <a href="http://astana-bilim.agartu.kz/" style="margin: auto;" target="_blank"><img src="assets/img/regportals/arms_of_Astana.svg.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row vacancies_item_text ">
+                                <a href="http://astana-bilim.agartu.kz/" style="margin: auto;" target="_blank">
+                                    <h6 class="name_service">Астана Бiлiм</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col border ">
+                            <div class="col ">
+                                <div class="trand-right-img ">
+                                    <a href="http://sko-bilim.kz/" style="margin: auto;" target="_blank"><img src="assets/img/regportals/North_Kazakhstan_province_seal.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row vacancies_item_text ">
+                                <a href="http://sko-bilim.kz/" style="margin: auto;" target="_blank">
+                                    <h6 class="name_service">СКО</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col border ">
+                            <div class="col ">
+                                <div class="trand-right-img ">
+                                    <a href="http://bko-bilim.agartu.kz/" style="margin: auto;" target="_blank"><img src="assets/img/regportals/Coat_of_Arms_Batys_Oblysy.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row vacancies_item_text ">
+                                <a href="http://bko-bilim.agartu.kz/" style="margin: auto;" target="_blank">
+                                    <h6 class="name_service">ЗКО</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col border ">
+                            <div class="col ">
+                                <div class="trand-right-img ">
+                                    <a href="http://akmo-bilim.agartu.kz/" style="margin: auto;" target="_blank"><img src="assets/img/regportals/arms_of_Almaty.svg.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row vacancies_item_text ">
+                                <a href="http://akmo-bilim.agartu.kz/" style="margin: auto;" target="_blank">
+                                    <h6 class="name_service">Алматы</h6>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col border ">
+                            <div class="col ">
+                                <div class="trand-right-img ">
+                                    <a href="http://kostanay.agartu.kz/" style="margin: auto;" target="_blank"><img src="assets/img/regportals/Coat_of_Arms_of_Aqmola_Province.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row vacancies_item_text ">
+                                <a href="http://kostanay.agartu.kz/" style="margin: auto;" target="_blank">
+                                    <h6 class="name_service">Акмолинская область</h6>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col border ">
+                            <div class="col ">
+                                <div class="trand-right-img ">
+                                    <a href="http://aktobe-bilim.agartu.kz/" style="margin: auto;" target="_blank"><img src="assets/img/regportals/Aktyubinsk-obl-coat-of-arms.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row vacancies_item_text ">
+                                <a href="http://aktobe-bilim.agartu.kz/" style="margin: auto;" target="_blank">
+                                    <h6 class="name_service">Актюбинский единый портал образования</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col border ">
+                            <div class="col ">
+                                <div class="trand-right-img ">
+                                    <a href="http://mangystau-bilim.agartu.kz/" style="margin: auto;" target="_blank"><img src="assets/img/regportals/_logotibi.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row vacancies_item_text ">
+                                <a href="http://mangystau-bilim.agartu.kz/" style="margin: auto;" target="_blank">
+                                    <h6 class="name_service">Мангистауская область</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col border ">
+                            <div class="col ">
+                                <div class="trand-right-img ">
+                                    <a href="http://pavlodar.agartu.kz/" style="margin: auto;" target="_blank"><img src="assets/img/regportals/Logo_Pavlodar_region.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="row vacancies_item_text ">
+                                <a href="http://pavlodar.agartu.kz/" style="margin: auto;" target="_blank">
+                                    <h6 class="name_service">Павлодарская область</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination-area pt-85" style="text-align: center;">
+                        <div class="container">
+                            <div class="row regseti-row-content">
+                                <div class="col-xl-12">
+                                    <div class="single-wrap d-flex justify-content-center">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-start">
+                                                <li class="page-item"><a class="page-link" href="#"><span class="flaticon-arrow roted"></span></a></li>
+                                                <li class="page-item active"><a class="page-link" href="">01</a></li>
+                                                <li class="page-item"><a class="page-link" href="regseti2">02</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                                <li class="page-item"><a class="page-link" href="regseti2.html"><span class="flaticon-arrow right-arrow"></span></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle mb-40">
+                        <h3>Подписывайтесь на нас</h3>
+                    </div>
+                    <!-- Flow Socail -->
+                    <div class="single-follow mb-45 ">
+                        <div class="row subscribe ">
+                            <div class=" ">
+                                <a href="https://vk.com/bmc_sales "><img src="assets/img/news/icon-vk.png " /></a>
+                            </div>
+
+                            <div class=" ">
+                                <a href="https://twitter.com/bmcsales2 "><img src="assets/img/news/icon-tw.png " /></a>
+                            </div>
+
+                            <div class=" ">
+                                <a href="https://www.facebook.com/benchmarkconsultingltd/ "><img src="assets/img/news/icon-fb.png " /></a>
+                            </div>
+
+                            <div class=" ">
+                                <a href="https://www.youtube.com/user/bmcsales1 "><img src="assets/img/news/icon-yo.png " /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- New Poster -->
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="https://mektepforma.kz/"><img class="d-block w-100" src="assets/img/news/icon4.png" alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://t.me/kdtkzchat"> <img class="d-block w-100" src="assets/img/news/icon5.png" alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi"> <img class="d-block w-100" src="assets/img/news/icon6.png" alt=""></a>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <br>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="https://mektepforma.kz/"><img class="d-block w-100" src="assets/img/news/icon4.png" alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://t.me/kdtkzchat"> <img class="d-block w-100" src="assets/img/news/icon5.png" alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi"> <img class="d-block w-100" src="assets/img/news/icon6.png" alt=""></a>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://mektepforma.kz/"><img class="d-block w-100" src="assets/img/hero/header_card.png" alt=""></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://t.me/kdtkzchat"><img class="d-block w-100" src="assets/img/hero/header_card2.png" alt=""></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://play.google.com/store/apps/details?id=kz.kdt.bmcmobi"></a><img class="d-block w-100" src="assets/img/hero/header_card3.png" alt=""></a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
         </div>
-        <!-- About US End -->
-    </main>
+    </section>
+    <!-- ================ contact section end ================= -->
     <footer>
         <div class="recent-articles ">
             <div class="container ">
